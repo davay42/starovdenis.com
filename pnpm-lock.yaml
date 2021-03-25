@@ -6,6 +6,7 @@ dependencies:
 devDependencies:
   '@iconify/json': 1.1.321
   '@rollup/plugin-alias': 3.1.2
+  '@rollup/plugin-yaml': 3.0.0
   '@types/node': 14.14.35
   esbuild-register: 2.3.0
   markdown-it-classy: 0.2.0
@@ -215,6 +216,34 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-wzDnQ6v7CcoRzS0qVwFPrFdYA4Qlr+ookA217Y2Z3DPZE1R8jrFNM3jvGgOf6o6DMjbnQIn5lCIJgHPe1Bt3uw==
+  /@rollup/plugin-yaml/3.0.0:
+    dependencies:
+      '@rollup/pluginutils': 3.1.0
+      js-yaml: 3.14.1
+      tosource: 1.0.0
+    dev: true
+    engines:
+      node: '>=10.0.0'
+    peerDependencies:
+      rollup: ^1.20.0 || ^2.0.0
+    resolution:
+      integrity: sha512-nXYI3WsfG7Oq5K5k7evGQ1ZABGCPhHxMaMX4T3GRSDi9VyhkaU1+8R1RzTRFXITFJHx0QEGn8jR+P9pux5FuBQ==
+  /@rollup/pluginutils/3.1.0:
+    dependencies:
+      '@types/estree': 0.0.39
+      estree-walker: 1.0.1
+      picomatch: 2.2.2
+    dev: true
+    engines:
+      node: '>= 8.0.0'
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0
+    resolution:
+      integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
+  /@types/estree/0.0.39:
+    dev: true
+    resolution:
+      integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
   /@types/node/14.14.35:
     dev: true
     resolution:
@@ -801,6 +830,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
+  /estree-walker/1.0.1:
+    dev: true
+    resolution:
+      integrity: sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==
   /estree-walker/2.0.2:
     resolution:
       integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
@@ -1916,6 +1949,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-zCAOqyYT9BZtJ/+a/HylbUnfbrQ=
+  /tosource/1.0.0:
+    dev: true
+    engines:
+      node: '>=0.4.0'
+    resolution:
+      integrity: sha1-QtiN0RZhi88A1hBt1URvNCeQL/E=
   /totalist/1.1.0:
     dev: true
     engines:
@@ -2150,6 +2189,7 @@ packages:
 specifiers:
   '@iconify/json': ^1.1.321
   '@rollup/plugin-alias': ^3.1.2
+  '@rollup/plugin-yaml': ^3.0.0
   '@types/node': ^14.14.35
   '@vueuse/core': ^4.4.1
   change-case: ^4.1.2

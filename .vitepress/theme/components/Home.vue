@@ -1,7 +1,9 @@
 <template lang="pug">
 main(aria-labelledby="main-title")
   HomeHero
+  Content
   HomeFooter
+  
 </template>
 
 <script setup lang="ts">

@@ -3,9 +3,13 @@ import Components from 'vite-plugin-components'
 import Icons, { ViteIconsResolver } from 'vite-plugin-icons'
 import WindiCSS from 'vite-plugin-windicss'
 import ViteRestart from 'vite-plugin-restart'
+// @ts-ignore
+import yaml from '@rollup/plugin-yaml';
+
 
 export default defineConfig({
   plugins: [
+    yaml(),
     Components({
       dirs: [
         '.vitepress/theme/components',

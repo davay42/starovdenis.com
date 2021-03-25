@@ -28,8 +28,7 @@ import type { DefaultTheme } from './config'
 const route = useRoute()
 const siteData = useSiteData<DefaultTheme.Config>()
 const siteRouteData = useSiteDataByRoute()
-const theme = computed(() => siteData.value.themeConfig)
-console.log(theme.value)
+
 // const page = usePageData()
 
 // home

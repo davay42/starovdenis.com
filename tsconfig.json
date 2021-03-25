@@ -11,12 +11,13 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "noUnusedLocals": true,
-
+    "allowJs": true
   },
   "include": [
     ".vitepress/**/*.ts",
     ".vitepress/**/*.vue",
     "components/**/*.vue",
+    "components/**/*.yml",
     "cards/**/*.vue",
   ],
   "exclude": [

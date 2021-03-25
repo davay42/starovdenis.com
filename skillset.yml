@@ -1,0 +1,20 @@
+---
+music:
+  title: Музыка
+  skills:
+    - title: Игра на барабанной установке
+      current: 3
+      total: 8
+      comment: Изредка практикуюсь на электронной установке
+      status: 1
+      icon: "\U0001F941"
+
+design:
+  title: Дизайн
+  skills:
+    - title: Графический дизайн
+      current: 6
+      total: 8
+      comment: Изредка практикуюсь на электронной установке
+      status: 1
+      icon: '✍️'

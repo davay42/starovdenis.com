@@ -6,8 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import EditLink from './EditLink.vue'
-import LastUpdated from './LastUpdated.vue'
+
 </script>
 
 <style scoped lang="postcss">
