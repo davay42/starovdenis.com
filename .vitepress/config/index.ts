@@ -7,7 +7,7 @@ import themeConfig from './theme'
 const config: UserConfig<DefaultTheme.Config> = {
   title: metaData.title,
   description: metaData.description,
-  lang: 'ru-RU',
+  lang: metaData.locale,
   head,
   themeConfig,
   markdown: {

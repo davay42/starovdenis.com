@@ -1,15 +1,8 @@
-<template>
-  <div class="edit-link">
-    <a
-      v-if="url"
-      class="link"
-      :href="url"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {{ text }}<carbon:launch class="inline-block ml-1.5 text-xs leading-6 opacity-50" />
-    </a>
-  </div>
+<template lang="pug">
+.edit-link
+  a.link(v-if="url" :href="url" target="_blank" rel="noopener noreferrer")
+    | {{ text }}
+    carbon:launch(class="inline-block ml-1.5 text-xs leading-6 opacity-50")
 </template>
 
 <script setup lang="ts">

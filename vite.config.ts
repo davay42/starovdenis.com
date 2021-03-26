@@ -13,11 +13,11 @@ export default defineConfig({
     Components({
       dirs: [
         '.vitepress/theme/components',
-        'components',
+        '.vitepress/my/',
       ],
       extensions: ['vue', 'ts'],
       directoryAsNamespace: true,
-      globalNamespaces: ['content'],
+      globalNamespaces: ['global'],
       customLoaderMatcher: id => id.endsWith('.md'),
       customComponentResolvers: [
         ViteIconsResolver({
@@ -41,9 +41,6 @@ export default defineConfig({
       restart: '.vitepress/config/*.*',
     }),
   ],
-  build: {
-    outDir: '/dist'
-  },
   optimizeDeps: {
     include: [
       'vue',

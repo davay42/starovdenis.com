@@ -5,7 +5,7 @@ header.nav-bar
   div(class="hidden lg:flex px-3 ml-4 lg:ml-10")
     NavLinks
   .flex-grow
-  edit-dark-mode
+  dark-mode
 </template>
 
 <script setup lang="ts">

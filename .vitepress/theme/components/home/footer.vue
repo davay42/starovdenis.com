@@ -1,11 +1,8 @@
-<template>
-  <footer v-if="$frontmatter.footer" class="mx-auto max-w-960px md:px-6">
-    <div class="container">
-      <p class="m-0 text-center leading-6 text-0.9rem text-$c-text-light">
-        {{ $frontmatter.footer }}
-      </p>
-    </div>
-  </footer>
+<template lang="pug">
+footer(class="mx-auto max-w-960px md:px-6" v-if="$frontmatter.footer")
+  .container
+    p(class="m-0 text-center leading-6 text-0.9rem text-$c-text-light")
+      | {{ $frontmatter.footer }}
 </template>
 
 <style scoped lang="postcss">

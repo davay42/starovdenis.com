@@ -8,24 +8,16 @@ const headers = computed(() => {
 })
 </script>
 
-<template>
-  <aside class="hidden lg:block h-full">
-    <div v-if="headers.length" class="headers-sidebar">
-      <div class="sidebar-link-item head !pl-0 !mb-1">
-        Sections
-      </div>
-      <ul class="sidebar-links space-y-1.5">
-        <li v-for="item of headers" :key="item.title" class="sidebar-link">
-          <!-- '!ml-0 !ml-4 !ml-8 !ml-16' -->
-          <a
-            class="sidebar-link-item"
-            :href="`#${item.slug}`"
-            :class="`!ml-${(item.level - 2) * 4} ${item.level >2 ? 'text-sm opacity-65': ''}`"
-          >{{ item.title }}</a>
-        </li>
-      </ul>
-    </div>
-  </aside>
+<template lang="pug">
+aside(class="hidden lg:block h-full")
+  .headers-sidebar(v-if="headers.length")
+    div(class="sidebar-link-item head !pl-0 !mb-1")
+      | Sections
+    ul(class="sidebar-links space-y-1.5")
+      li.sidebar-link(v-for="item of headers" :key="item.title")
+        // '!ml-0 !ml-4 !ml-8 !ml-16'
+        a.sidebar-link-item(:href="`#${item.slug}`" :class="`!ml-${(item.level - 2) * 4} ${item.level >2 ? 'text-sm opacity-65': ''}`")
+          | {{ item.title }}
 </template>
 
 <style scoped lang="postcss">

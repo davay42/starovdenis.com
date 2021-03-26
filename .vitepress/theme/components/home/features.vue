@@ -1,24 +1,13 @@
-<template>
-  <div v-if="hasFeatures" class="home-features">
-    <div class="wrapper">
-      <div class="container">
-        <div class="features">
-          <section
-            v-for="(feature, index) in features"
-            :key="index"
-            class="feature space-y-2"
-          >
-            <h2 v-if="feature.title" class="title">
-              {{ feature.title }}
-            </h2>
-            <p v-if="feature.details" class="details">
-              {{ feature.details }}
-            </p>
-          </section>
-        </div>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+.home-features(v-if="hasFeatures")
+  .wrapper
+    .container
+      .features
+        section.feature.space-y-2(v-for="(feature, index) in features" :key="index")
+          h2.title(v-if="feature.title")
+            | {{ feature.title }}
+          p.details(v-if="feature.details")
+            | {{ feature.details }}
 </template>
 
 <script setup lang="ts">

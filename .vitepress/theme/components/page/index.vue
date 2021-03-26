@@ -1,6 +1,6 @@
 <template lang="pug">
 main.main
-  Content.content(:class="{ cards: !!$frontmatter.cards }")
+  Content.content
   PageFooter
   page-next-prev
 </template>
