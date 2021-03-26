@@ -1,9 +1,9 @@
-const fs = require('fs')
-const path = require('path')
-const matter = require('gray-matter')
-const glob = require('glob')
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import { glob } from 'glob'
 
-exports.getPages = function getPages(dir = '../pages', pattern = '/**/*') {
+export default function (dir = '../pages', pattern = '/**/*') {
   const pageDir = path.resolve(__dirname, dir)
 
   const filesList = glob.sync(pageDir + pattern, { nodir: true })
