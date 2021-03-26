@@ -3,7 +3,8 @@ import { DefaultTheme } from '../theme/config'
 import { metaData } from './constants'
 import head from './head'
 import themeConfig from './theme'
-const { getPosts } = require("./getPosts");
+const { getPages } = require("./getPages");
+
 
 const config: UserConfig<DefaultTheme.Config> = {
   title: metaData.title,
@@ -18,7 +19,7 @@ const config: UserConfig<DefaultTheme.Config> = {
     }
   },
   customData: {
-    posts: getPosts()
+    pages: getPages('../../pages'),
   }
 }
 

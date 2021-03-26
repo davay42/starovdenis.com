@@ -3,7 +3,6 @@ import Components from 'vite-plugin-components'
 import Icons, { ViteIconsResolver } from 'vite-plugin-icons'
 import WindiCSS from 'vite-plugin-windicss'
 import ViteRestart from 'vite-plugin-restart'
-// @ts-ignore
 import yaml from '@rollup/plugin-yaml';
 
 
@@ -14,7 +13,7 @@ export default defineConfig({
     Components({
       dirs: [
         '.vitepress/theme/components',
-        '.vitepress/my/',
+        'components',
       ],
       extensions: ['vue', 'ts'],
       directoryAsNamespace: true,
@@ -26,7 +25,6 @@ export default defineConfig({
         }),
       ],
     }),
-
     Icons({
       defaultStyle: 'vertical-align: middle;',
     }),
@@ -46,9 +44,6 @@ export default defineConfig({
     include: [
       'vue',
       '@vueuse/core',
-    ],
-    exclude: [
-      'vue-demi',
     ],
   },
 })

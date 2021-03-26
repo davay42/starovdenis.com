@@ -17,7 +17,7 @@
     ".vitepress/**/*.ts",
     ".vitepress/**/*.vue",
     "components/**/*.vue",
-    "components/**/*.yml",
+    "**/*.yml",
     "cards/**/*.vue",
   ],
   "exclude": [

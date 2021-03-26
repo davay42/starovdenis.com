@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import areas from '../../../skillset.yml'
+import areas from '../../skillset.yml'
 
 
 </script>

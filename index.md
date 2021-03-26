@@ -23,4 +23,6 @@ footer: 2021 ♻︎
 
 <my-areas />
 
+<my-pages />
+
 {{ $site.customData }}
