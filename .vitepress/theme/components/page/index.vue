@@ -1,10 +1,8 @@
 <template lang="pug">
 main.main
-  slot(name="top")
   Content.content(:class="{ cards: !!$frontmatter.cards }")
   PageFooter
-  NextAndPrevLinks
-  slot(name="bottom")
+  page-next-prev
 </template>
 
 <script setup lang="ts">

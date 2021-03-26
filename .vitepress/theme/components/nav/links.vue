@@ -20,8 +20,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useSiteDataByRoute } from 'vitepress'
-import { useLocaleLinks } from '../composables/nav'
-import { useRepo } from '../composables/repo'
+import { useLocaleLinks } from '../../composables/nav'
+import { useRepo } from '../../composables/repo'
 
 const site = useSiteDataByRoute()
 const localeLinks = useLocaleLinks()

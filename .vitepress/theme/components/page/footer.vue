@@ -1,8 +1,7 @@
-<template>
-  <footer class="page-footer">
-    <EditLink />
-    <LastUpdated />
-  </footer>
+<template lang="pug">
+footer.page-footer
+  edit-link
+  page-last-updated
 </template>
 
 <script setup lang="ts">

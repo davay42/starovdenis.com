@@ -8,7 +8,7 @@ interface HeaderWithChildren extends Header {
   children?: Header[]
 }
 
-export const SideBarLink: FunctionalComponent<{
+const SideBarLink: FunctionalComponent<{
   item: DefaultTheme.SideBarItem
 }> = (props) => {
   const route = useRoute()
@@ -88,3 +88,6 @@ function mapHeaders(headers: HeaderWithChildren[]): DefaultTheme.SideBarItem[] {
     children: header.children ? mapHeaders(header.children) : undefined,
   }))
 }
+
+
+export default SideBarLink

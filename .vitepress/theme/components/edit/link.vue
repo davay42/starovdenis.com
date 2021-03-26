@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { useEditLink } from '../composables/editLink'
+import { useEditLink } from '../../composables/editLink'
 
 const { url, text } = useEditLink()
 </script>

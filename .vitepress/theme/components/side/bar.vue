@@ -1,9 +1,9 @@
 <template lang="pug">
 aside(class="h-auto border-r-1px border-$c-divider")
   .sidebar(:class="{ open }")
-    NavLinks.nav
+    nav-links.nav
     slot(name="sidebar-top")
-    SideBarLinks
+    side-Links
     slot(name="sidebar-bottom")
 </template>
 

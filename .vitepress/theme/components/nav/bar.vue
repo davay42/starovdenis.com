@@ -1,11 +1,11 @@
 <template lang="pug">
 header.nav-bar
-  ToggleSideBarButton(@toggle="$emit('toggle')")
-  NavBarTitle
+  nav-toggle-sidebar(@toggle="$emit('toggle')")
+  nav-bar-title
   div(class="hidden lg:flex px-3 ml-4 lg:ml-10")
     NavLinks
   .flex-grow
-  DarkModeSwitch
+  edit-dark-mode
 </template>
 
 <script setup lang="ts">

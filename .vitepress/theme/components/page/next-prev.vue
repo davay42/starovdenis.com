@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import { useNextAndPrevLinks } from '../composables/nextAndPrevLinks'
+import { useNextAndPrevLinks } from '../../composables/nextAndPrevLinks'
 
 const { hasLinks, prev, next } = useNextAndPrevLinks()
 </script>

@@ -1,12 +1,11 @@
 <template>
   <div class="theme" :class="pageClasses">
-    <NavBar v-if="showNavbar" @toggle="toggleSidebar" />
+    <nav-bar v-if="showNavbar" @toggle="toggleSidebar" />
     <div class="pt-$header-height min-h-screen" :class="{'grid-layout': !enableHome }">
-      <SideBar :open="openSideBar" />
+      <side-bar :open="openSideBar" />
       <div class="sidebar-mask" @click="toggleSidebar(false)" />
-      <Home v-if="enableHome" />
-      <Page v-else>
-      </Page>
+      <home v-if="enableHome" />
+      <page v-else />
     </div>
   </div>
 
