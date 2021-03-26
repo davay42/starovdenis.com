@@ -1,14 +1,12 @@
 dependencies:
   '@vueuse/core': 4.4.1_vue@3.0.7
-  change-case: 4.1.2
-  json5: 2.2.0
   vue: 3.0.7
 devDependencies:
   '@iconify/json': 1.1.321
-  '@rollup/plugin-alias': 3.1.2
   '@rollup/plugin-yaml': 3.0.0
   '@types/node': 14.14.35
   esbuild-register: 2.3.0
+  gray-matter: 4.0.2
   markdown-it-classy: 0.2.0
   markdown-it-container: 3.0.0
   pug: 3.0.2
@@ -206,16 +204,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3NsZsJIA/22P3QUyrEDNA2D133H4j224twJrdipXN38dpnIOzAbUDtOwkcJ5pXmn75w7LSQDjA4tO9dm1XlqlA==
-  /@rollup/plugin-alias/3.1.2:
-    dependencies:
-      slash: 3.0.0
-    dev: true
-    engines:
-      node: '>=8.0.0'
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0
-    resolution:
-      integrity: sha512-wzDnQ6v7CcoRzS0qVwFPrFdYA4Qlr+ookA217Y2Z3DPZE1R8jrFNM3jvGgOf6o6DMjbnQIn5lCIJgHPe1Bt3uw==
   /@rollup/plugin-yaml/3.0.0:
     dependencies:
       '@rollup/pluginutils': 3.1.0
@@ -530,21 +518,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==
-  /camel-case/4.1.2:
-    dependencies:
-      pascal-case: 3.1.2
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==
-  /capital-case/1.0.4:
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.1.0
-      upper-case-first: 2.0.2
-    dev: false
-    resolution:
-      integrity: sha512-ds37W8CytHgwnhGGTi88pcPyR15qoNkOpYwmMMfnWqqWgESapLqvDx6huFjQ5vqWSn2Z06173XNA7LtMOeUh1A==
   /chalk/4.1.0:
     dependencies:
       ansi-styles: 4.3.0
@@ -554,23 +527,6 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-qwx12AxXe2Q5xQ43Ac//I6v5aXTipYrSESdOgzrN+9XjgEpyjpKuvSGaN4qE93f7TQTlerQQ8S+EQ0EyDoVL1A==
-  /change-case/4.1.2:
-    dependencies:
-      camel-case: 4.1.2
-      capital-case: 1.0.4
-      constant-case: 3.0.4
-      dot-case: 3.0.4
-      header-case: 2.0.4
-      no-case: 3.0.4
-      param-case: 3.0.4
-      pascal-case: 3.1.2
-      path-case: 3.0.4
-      sentence-case: 3.0.4
-      snake-case: 3.0.4
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-bSxY2ws9OtviILG1EiY5K7NNxkqg/JnRnFxLtKQ96JaviiIxi7djMrSd0ECT9AC+lttClmYwKw53BWpOMblo7A==
   /character-parser/2.2.0:
     dependencies:
       is-regex: 1.1.2
@@ -678,14 +634,6 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha512-Nhl1wzCslqXYTJVDyJCu3ODohy9OfBMB5uD2BiBTzd7w+QY0lBzafkR8y8755yMYHAaMD4NuzbAw03/xzfw+eQ==
-  /constant-case/3.0.4:
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.1.0
-      upper-case: 2.0.2
-    dev: false
-    resolution:
-      integrity: sha512-I2hSBi7Vvs7BEuJDr5dDHfzb/Ruj3FyvFyh7KLilAjNQw3Be+xgqUBA2W6scVEcL0hL1dwPRtIqEPVUCKkSsyQ==
   /constantinople/4.0.1:
     dependencies:
       '@babel/parser': 7.13.11
@@ -789,13 +737,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-6oCxBqh1OHdOijpKWv4pPeSJ4Kk=
-  /dot-case/3.0.4:
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==
   /emojis-list/3.0.0:
     dev: true
     engines:
@@ -992,13 +933,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==
-  /header-case/2.0.4:
-    dependencies:
-      capital-case: 1.0.4
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-H/vuk5TEEVZwrR0lp2zed9OCo1uAILMlx0JEMgC26rzyJJ3N1v6XkwHHXJQdR2doSjcGPM6OKPYoJgf0plJ11Q==
   /icss-replace-symbols/1.1.0:
     dev: true
     resolution:
@@ -1129,15 +1063,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==
-  /json5/2.2.0:
-    dependencies:
-      minimist: 1.2.5
-    dev: false
-    engines:
-      node: '>=6'
-    hasBin: true
-    resolution:
-      integrity: sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA==
   /jsonc-parser/3.0.0:
     dev: true
     resolution:
@@ -1199,12 +1124,6 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==
-  /lower-case/2.0.2:
-    dependencies:
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==
   /lru-cache/5.1.1:
     dependencies:
       yallist: 3.1.1
@@ -1335,6 +1254,7 @@ packages:
     resolution:
       integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
   /minimist/1.2.5:
+    dev: true
     resolution:
       integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
   /mkdirp/1.0.4:
@@ -1373,13 +1293,6 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
-  /no-case/3.0.4:
-    dependencies:
-      lower-case: 2.0.2
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==
   /node-modules-regexp/1.0.0:
     dev: true
     engines:
@@ -1434,27 +1347,6 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-1StwyXQGoU6gdjYkyVcqOLnVlbKj+6yPNNOxJVgpt9t4eksKjiriiHuxktLYkgllwk+D6MbC4ihH84L1udRXPg==
-  /param-case/3.0.4:
-    dependencies:
-      dot-case: 3.0.4
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-RXlj7zCYokReqWpOPH9oYivUzLYZ5vAPIfEmCTNViosC78F8F0H9y7T7gG2M39ymgutxF5gcFEsyZQSph9Bp3A==
-  /pascal-case/3.1.2:
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==
-  /path-case/3.0.4:
-    dependencies:
-      dot-case: 3.0.4
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-qO4qCFjXqVTrcbPt/hQfhTQ+VhFsqNKOPtytgNKkKxSoEp3XPUQ8ObFuePylOIok5gjn69ry8XiULxCwot3Wfg==
   /path-is-absolute/1.0.1:
     dev: true
     engines:
@@ -1785,14 +1677,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
-  /sentence-case/3.0.4:
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.1.0
-      upper-case-first: 2.0.2
-    dev: false
-    resolution:
-      integrity: sha512-8LS0JInaQMCRoQ7YUytAo/xUu5W2XnQxV2HI/6uM6U7CITS1RqPElr30V6uIqyMKM9lJGRVFy5/4CuzcixNYSg==
   /signal-exit/3.0.3:
     dev: true
     resolution:
@@ -1813,13 +1697,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
-  /snake-case/3.0.4:
-    dependencies:
-      dot-case: 3.0.4
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-LAOh4z89bGQvl9pFfNF8V146i7o7/CqFPbqzYgP+yYzDIDeS9HaNFtXABamRW+AQzEVODcvE79ljJ+8a9YSdMg==
   /source-map-resolve/0.5.3:
     dependencies:
       atob: 2.1.2
@@ -1973,10 +1850,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
-  /tslib/2.1.0:
-    dev: false
-    resolution:
-      integrity: sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
   /typescript/4.2.3:
     dev: true
     engines:
@@ -1998,18 +1871,6 @@ packages:
       node: '>= 10.0.0'
     resolution:
       integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
-  /upper-case-first/2.0.2:
-    dependencies:
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-514ppYHBaKwfJRK/pNC6c/OxfGa0obSnAl106u97Ed0I625Nin96KAjttZF6ZL3e1XLtphxnqrOi9iWgm+u+bg==
-  /upper-case/2.0.2:
-    dependencies:
-      tslib: 2.1.0
-    dev: false
-    resolution:
-      integrity: sha512-KgdgDGJt2TpuwBUIjgG6lzw2GWFRCW9Qkfkiv0DxqHHLYJHmtmdUIKcZd8rHgFSjopVTlw6ggzCm1b8MFQwikg==
   /urix/0.1.0:
     deprecated: Please see https://github.com/lydell/urix#deprecated
     dev: true
@@ -2188,13 +2049,11 @@ packages:
       integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 specifiers:
   '@iconify/json': ^1.1.321
-  '@rollup/plugin-alias': ^3.1.2
   '@rollup/plugin-yaml': ^3.0.0
   '@types/node': ^14.14.35
   '@vueuse/core': ^4.4.1
-  change-case: ^4.1.2
   esbuild-register: ^2.3.0
-  json5: ^2.2.0
+  gray-matter: ^4.0.2
   markdown-it-classy: ^0.2.0
   markdown-it-container: ^3.0.0
   pug: 3.0.2

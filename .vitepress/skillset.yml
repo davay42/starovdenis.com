@@ -42,7 +42,20 @@ design:
 webdev:
   title: Веб-разработка
   crafts:
-    - title: CSS
+    - title: Технологии
+      skills:
+        - title: HTML
+          current: 5
+          total: 6
+        - title: CSS
+          current: 7
+          total: 8
+        - title: JS
+          current: 22
+          total: 36
+        - title: PHP
+          current: 2
+          total: 15
 
 filming:
   title:

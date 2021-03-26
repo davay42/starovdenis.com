@@ -3,6 +3,7 @@ import { DefaultTheme } from '../theme/config'
 import { metaData } from './constants'
 import head from './head'
 import themeConfig from './theme'
+const { getPosts } = require("./getPosts");
 
 const config: UserConfig<DefaultTheme.Config> = {
   title: metaData.title,
@@ -15,6 +16,9 @@ const config: UserConfig<DefaultTheme.Config> = {
       md.use(require('markdown-it-classy'));
       md.use(require('markdown-it-container'), 'card')
     }
+  },
+  customData: {
+    posts: getPosts()
   }
 }
 

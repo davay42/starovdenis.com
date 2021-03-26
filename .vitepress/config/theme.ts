@@ -12,7 +12,6 @@ const themeConfig: DefaultTheme.Config = {
   editLinkText: 'Нашли ошибку?',
   nav,
   sidebar,
-  
 }
 
 export default themeConfig

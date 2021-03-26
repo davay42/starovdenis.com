@@ -1,6 +1,6 @@
 const isProd = process.env.NODE_ENV === 'production'
 
-const site = isProd ? 'https://www.psyfield.ru' : 'http://localhost:3000'
+const site = isProd ? 'https://www.starovdenis.com' : 'http://localhost:3000'
 
 export const metaData = {
   title: 'Денис К Старов',
@@ -10,5 +10,5 @@ export const metaData = {
   image: `${site}/assets/logo-color.png`,
   icon: '/assets/s-exp.svg',
   author: 'Денис Старов',
-  tags: 'психология, сознание, карта, схема, график, чертеж, иллюстрации, презентации, ментальная модель, модель, нлп, транзактный анализ',
+  tags: 'денис, старов, старов денис, сайт, страничка, умения, блог',
 }

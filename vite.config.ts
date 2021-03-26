@@ -9,6 +9,7 @@ import yaml from '@rollup/plugin-yaml';
 
 export default defineConfig({
   plugins: [
+    // @ts-ignore
     yaml(),
     Components({
       dirs: [
@@ -37,16 +38,14 @@ export default defineConfig({
         fileExtensions: ['vue', 'ts'],
       },
     }),
-    ViteRestart({
-      restart: '.vitepress/config/*.*',
-    }),
+    // ViteRestart({
+    //   restart: ['.vitepress/config/*.*', 'posts/*.md'],
+    // }),
   ],
   optimizeDeps: {
     include: [
       'vue',
-      'json5',
       '@vueuse/core',
-      'change-case',
     ],
     exclude: [
       'vue-demi',

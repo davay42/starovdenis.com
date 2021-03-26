@@ -1,7 +1,7 @@
 ---
 
 
-title: 'Поле'
+title: 'Главная'
 editLink: false
 heroText: Старов Денис
 tagline: Универсализированный умелец и цифровой садовод
@@ -23,3 +23,4 @@ footer: 2021 ♻︎
 
 <my-areas />
 
+{{ $site.customData }}
