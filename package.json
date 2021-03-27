@@ -27,6 +27,7 @@
     "vite-plugin-icons": "^0.4.0",
     "vite-plugin-restart": "^0.0.1",
     "vite-plugin-windicss": "^0.10.2",
+    "vite-tsconfig-paths": "^2.3.0",
     "vitepress": "^0.12.2",
     "windicss": "2.5.5"
   }
