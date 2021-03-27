@@ -1,7 +1,6 @@
 <template lang="pug">
-.flex.flex-col 
-  .text-2xl.z-2 HELLO
-  canvas.z-1.absolute.top-0.left-0.right-0.w-full.h-full(ref="canvas", data-paper-resize="true", @click="setFigures()")
+.flex
+  canvas.w-sm.h-sm(class="md:w-lg md:h-lg",ref="canvas", @click="setFigures()")
 </template>
 
 <script setup>
