@@ -1,19 +1,5 @@
 ---
-
-
 title: 'Главная'
-editLink: false
-heroText: Старов Денис
-tagline: Универсализированный умелец и цифровой садовод
-actionText: Войти
-actionLink: /field/
-altActionText: Поддержать
-altActionLink: /support
-navbar: false
-heroImage: /assets/logo-color.svg
-heroAlt: Денис Старов
-
-footer: 2021 ♻︎
 ---
 
 
@@ -34,7 +20,7 @@ footer: 2021 ♻︎
 К истинному благу для себя человек идет сам, без навязывания и принуждения. Я верю в подлинную свободу самоопределения и добрую волю людей. Поэтому я делаю свои проекты открытыми и общедоступными. И радуюсь, когда находятся те, кто к ним сам приходит и у кого они отзываются изнутри. 
 
 
-<my-areas :areas="$site.customData.skills.all"/>
+<my-areas :areas="$site.customData.skills.main"/>
 
 
 

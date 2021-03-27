@@ -2,22 +2,11 @@ import type { DefaultTheme } from 'vitepress'
 
 export const nav: DefaultTheme.Config['nav'] = [
   {
-    text: 'Поле',
+    text: 'Умения',
     items: [
-      { text: 'Приветствие', link: '/field/' },
-      { text: 'Направления', link: '/field/areas' },
+      { text: 'Музыка', link: '/skills/music' },
+      { text: 'Фото-видео', link: '/skills/photovideo' },
     ],
   },
-  {
-    text: 'Карточки',
-    items: [
-      { text: 'Психотипы', link: '/cards/types/' },
-    ],
-  },
-  {
-    text: 'Конспекты',
-    items: [
-      { text: 'Транзактный анализ', link: '/synopsis/transact/' },
-    ],
-  },
+
 ]

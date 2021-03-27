@@ -1,6 +1,6 @@
 ---
 title: Музыка
-tags: Эфир
+tags: [main]
 crafts:
   - title: Игра на инструментах
     comment:

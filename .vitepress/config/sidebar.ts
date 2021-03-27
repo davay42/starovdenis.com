@@ -5,7 +5,8 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     {
       text: 'Умения',
       children: [
-        { text: 'Список', link: '/' },
+        { text: 'Музыка', link: '/skills/music' },
+        { text: 'Фото и видео', link: '/skills/photovideo' },
       ],
     },
   ],
