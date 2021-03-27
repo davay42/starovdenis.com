@@ -3,7 +3,7 @@ import { DefaultTheme } from '../theme/config'
 import { metaData } from './constants'
 import head from './head'
 import themeConfig from './theme'
-import getPages from './getPages'
+import {getTags} from './getTags'
 
 
 const config: UserConfig<DefaultTheme.Config> = {
@@ -19,7 +19,7 @@ const config: UserConfig<DefaultTheme.Config> = {
     }
   },
   customData: {
-    pages: getPages('../../pages'),
+    skills: getTags('../../skills'),
   }
 }
 

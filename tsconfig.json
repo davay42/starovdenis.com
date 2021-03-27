@@ -19,7 +19,7 @@
     ".vitepress/**/*.vue",
     "components/**/*.vue",
     "**/*.yml",
-    "cards/**/*.vue",
+    "cards/**/*.vue", ".vitepress/config/getTags.js",
   ],
   "exclude": [
     "**/dist/**"

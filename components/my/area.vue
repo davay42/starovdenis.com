@@ -1,12 +1,7 @@
 <template lang="pug">
-.my-8
-  slot
-
-  .text-2xl {{area?.title}}
-
+.my-8 
   my-craft(v-for="craft in area?.crafts", :key="craft.title", :craft="craft")
 
-    
 </template>
 
 <script  setup>

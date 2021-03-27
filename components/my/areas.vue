@@ -1,12 +1,15 @@
 <template lang="pug">
 .flex.flex-col
-  
-  my-area(v-for="area in areas", :key="area.title", :area="area") 
+  a.text-2xl.p-4.my-2.bg-gray-100(v-for="area in areas", :key="area.title", :href="area.url")  {{area.title}}
    
 </template>
 
 <script setup>
-import areas from '../../skillset.yml'
+import { defineProps } from "vue";
+
+const props = defineProps({
+  areas: Object,
+});
 
 
 </script>
