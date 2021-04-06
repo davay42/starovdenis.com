@@ -9,10 +9,14 @@ import { Theme } from 'vitepress'
 import Layout from './layout.vue'
 import NotFound from './not-found.vue'
 
+import { TroisJSVuePlugin } from 'troisjs';
+
 const theme: Theme = {
   Layout,
   NotFound,
-  enhanceApp({ app }) {},
+  enhanceApp({ app }) {
+    app.use(TroisJSVuePlugin)
+  },
 }
 
 export default theme

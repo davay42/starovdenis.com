@@ -3,7 +3,7 @@ import { DefaultTheme } from '../theme/config'
 import { metaData } from './constants'
 import head from './head'
 import themeConfig from './theme'
-import {getTags} from './getTags'
+import {getTags} from '../utils/getTags'
 
 
 const config: UserConfig<DefaultTheme.Config> = {

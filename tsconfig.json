@@ -16,10 +16,9 @@
   },
   "include": [
     ".vitepress/**/*.ts",
-    ".vitepress/**/*.vue",
     "components/**/*.vue",
     "**/*.yml",
-    "cards/**/*.vue", ".vitepress/config/getTags.js",
+    "cards/**/*.vue", 
   ],
   "exclude": [
     "**/dist/**"
