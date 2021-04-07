@@ -1,5 +1,7 @@
 ---
 title: 'Главная'
+backgroundImage: '/img/garden.jpg'
+home: true
 ---
 
 

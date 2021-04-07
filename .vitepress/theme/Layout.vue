@@ -1,15 +1,12 @@
-<template>
-  <div class="theme" :class="pageClasses">
-    <nav-bar v-if="showNavbar" @toggle="toggleSidebar" />
-    <div class="pt-$header-height min-h-screen" :class="{'grid-layout': !enableHome }">
-      <side-bar :open="openSideBar" />
-      <div class="sidebar-mask" @click="toggleSidebar(false)" />
-      <home v-if="enableHome" />
-      <page v-else />
-    </div>
-  </div>
-
-  <Debug />
+<template lang="pug">
+.theme(:class="pageClasses")
+  nav-bar(v-if="showNavbar", @toggle="toggleSidebar")
+  .main(:class="{ 'grid-layout': !enableHome }", :style="{ backgroundImage: 'url(' + $frontmatter.backgroundImage + ')' }")
+    side-bar(:open="openSideBar")
+      .sidebar-mask(@click="toggleSidebar(false)")
+    home(v-if="enableHome")
+    page(v-else)
+  debug
 </template>
 
 <script setup lang="ts">
@@ -30,7 +27,7 @@ const siteRouteData = useSiteDataByRoute()
 
 // const page = usePageData()
 
-// home
+
 const enableHome = computed(() => !!route?.data?.frontmatter?.home)
 
 // navbar
@@ -88,7 +85,12 @@ const pageClasses = computed(() => {
 })
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
+.main {
+  background-blend-mode: overlay;
+  @apply min-h-screen bg-cover bg-fixed pt-$header-height;
+}
+
 @screen lg {
   .grid-layout {
     display: grid;
@@ -103,34 +105,4 @@ const pageClasses = computed(() => {
     grid-template-columns: min-content minmax(100px, 2fr) 16rem;
   }
 } */
-
-#ads-container {
-  margin: 0 auto;
-}
-
-@media (min-width: 420px) {
-  #ads-container {
-    position: relative;
-    right: 0;
-    float: right;
-    margin: -8px -8px 24px 24px;
-    width: 146px;
-  }
-}
-
-@media (max-width: 420px) {
-  #ads-container {
-    /* Avoid layout shift */
-    height: 105px;
-    margin: 1.75rem 0;
-  }
-}
-
-@media (min-width: 1400px) {
-  #ads-container {
-    position: fixed;
-    right: 8px;
-    bottom: 8px;
-  }
-}
 </style>

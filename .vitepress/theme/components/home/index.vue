@@ -1,9 +1,8 @@
 <template lang="pug">
-main(aria-labelledby="main-title")
-  HomeHero
-  Content
-  HomeFooter
-  
+main.pb-12(aria-labelledby="main-title")
+  home-hero.text-warm-gray-100
+  content.content
+  home-footer
 </template>
 
 <script setup lang="ts">
@@ -11,7 +10,7 @@ main(aria-labelledby="main-title")
 </script>
 
 <style scoped lang="postcss">
-.home-content {
-  @apply max-w-62rem mx-auto py-6 md:(p-0);
+.content {
+  @apply max-w-65ch mx-auto p-6 md:(p-12)  bg-gray-50 bg-opacity-96 dark:(bg-warm-gray-900 bg-opacity-96);
 }
 </style>
