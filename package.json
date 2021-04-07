@@ -9,8 +9,6 @@
   "dependencies": {
     "@vueuse/core": "^4.6.4",
     "paper": "^0.12.15",
-    "three": "0.127",
-    "troisjs": "^0.2.3",
     "vue": "^3.0.11"
   },
   "devDependencies": {

@@ -29,6 +29,5 @@ crafts:
 ### Эксперименты
 
 - [paper.js](./paper.md)
-- [trois.js](./trois.md)
 
 <my-area :area="$frontmatter" />
