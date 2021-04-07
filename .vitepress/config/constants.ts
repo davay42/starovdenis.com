@@ -4,7 +4,7 @@ const site = isProd ? 'https://www.starovdenis.com' : 'http://localhost:3000'
 
 export const metaData = {
   title: 'Денис К Старов',
-  description: 'Цифровой садовод и фруктовый затейщик',
+  description: 'Персональный сайт',
   site,
   locale: 'ru-RU',
   image: `${site}/assets/logo-color.png`,

@@ -1,6 +1,6 @@
 <template lang="pug">
 main.pb-12(aria-labelledby="main-title")
-  home-hero.text-warm-gray-100
+  home-hero
   content.content
   home-footer
 </template>

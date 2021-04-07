@@ -2,16 +2,45 @@ import { UserConfig } from 'vitepress'
 import { DefaultTheme } from '../theme/config'
 import { metaData } from './constants'
 import head from './head'
-import themeConfig from './theme'
 import {getTags} from '../utils/getTags'
 
+const tags = getTags('../../skills')
 
 const config: UserConfig<DefaultTheme.Config> = {
   title: metaData.title,
   description: metaData.description,
   lang: metaData.locale,
   head,
-  themeConfig,
+  themeConfig: {
+    repo: 'DeFUCC/starovdenis.com',
+    logo: '/assets/s-exp.svg',
+    docsDir: '.',
+    docsBranch: 'master',
+    docsRepo: 'DeFUCC/starovdenis.com',
+    editLinks: false,
+    editLinkText: 'Нашли ошибку?',
+    nav: [
+      {
+        text: 'Умения',
+        items: [
+          { text: 'Музыка', link: '/skills/music' },
+          { text: 'Фото-видео', link: '/skills/photovideo' },
+        ],
+      },
+    
+    ],
+    sidebar: {
+      '/': [
+        {
+          text: 'Умения',
+          children: [
+            { text: 'Музыка', link: '/skills/music' },
+            { text: 'Фото и видео', link: '/skills/photovideo' },
+          ],
+        },
+      ],
+    },
+  },
   markdown: {
     config: (md) => {
       md.use(require('markdown-it-classy'));
@@ -19,7 +48,7 @@ const config: UserConfig<DefaultTheme.Config> = {
     }
   },
   customData: {
-    skills: getTags('../../skills'),
+    skills: tags,
   }
 }
 

@@ -6,10 +6,10 @@ specifiers:
   '@types/node': ^14.14.37
   '@vueuse/core': ^4.6.4
   esbuild-register: ^2.3.0
+  glob: ^7.1.6
   gray-matter: ^4.0.2
   markdown-it-classy: ^0.2.0
   markdown-it-container: ^3.0.0
-  node-glob: ^1.2.0
   paper: ^0.12.15
   pug: 3.0.2
   stylus: ^0.54.8
@@ -21,6 +21,7 @@ specifiers:
   vite-plugin-windicss: ^0.12.2
   vite-tsconfig-paths: ^2.5.0
   vitepress: ^0.12.2
+  vitepress-tags: ^0.0.1
   vue: ^3.0.11
   windicss: 2.5.10
 
@@ -34,10 +35,10 @@ devDependencies:
   '@rollup/plugin-yaml': 3.0.0
   '@types/node': 14.14.37
   esbuild-register: 2.3.0
+  glob: 7.1.6
   gray-matter: 4.0.2
   markdown-it-classy: 0.2.0
   markdown-it-container: 3.0.0
-  node-glob: 1.2.0
   pug: 3.0.2
   stylus: 0.54.8
   typescript: 4.2.3
@@ -48,6 +49,7 @@ devDependencies:
   vite-plugin-windicss: 0.12.5_vite@2.1.5
   vite-tsconfig-paths: 2.5.0_vite@2.1.5
   vitepress: 0.12.2
+  vitepress-tags: 0.0.1
   windicss: 2.5.10
 
 packages:
@@ -526,10 +528,6 @@ packages:
     resolution: {integrity: sha512-TaTivMB6pYI1kXwrFlEhLeGfOqoDNdTxjCdwRfFFkEA30Eu+k48W34nlok2EYWJfFFzqaEmichdNM7th6M5HNw==}
     dev: true
 
-  /async/1.5.2:
-    resolution: {integrity: sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=}
-    dev: true
-
   /at-least-node/1.0.0:
     resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==}
     engines: {node: '>= 4.0.0'}
@@ -937,10 +935,6 @@ packages:
       is-glob: 4.0.1
     dev: true
 
-  /glob-to-regexp/0.1.0:
-    resolution: {integrity: sha1-4DadQmV4/UVtR9wjsJ3gXB2p6l0=}
-    dev: true
-
   /glob/7.1.6:
     resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
     dependencies:
@@ -1339,13 +1333,6 @@ packages:
   /negotiator/0.6.2:
     resolution: {integrity: sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==}
     engines: {node: '>= 0.6'}
-    dev: true
-
-  /node-glob/1.2.0:
-    resolution: {integrity: sha1-UkD/7e/G1mPOhRXleWpNR6dQwNU=}
-    dependencies:
-      async: 1.5.2
-      glob-to-regexp: 0.1.0
     dev: true
 
   /node-modules-regexp/1.0.0:
@@ -2023,6 +2010,13 @@ packages:
       rollup: 2.44.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /vitepress-tags/0.0.1:
+    resolution: {integrity: sha512-wS1irGig4J08nJ7j9R6a4bShSDriOhhj0r+w7v0jCCFXIiOFUKjaWZ7ihscfUBJp/RzvsOZ9/cFVctQS9Oj0hQ==}
+    dependencies:
+      glob: 7.1.6
+      gray-matter: 4.0.2
     dev: true
 
   /vitepress/0.12.2:

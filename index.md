@@ -1,7 +1,8 @@
 ---
 title: 'Главная'
-backgroundImage: '/img/garden.jpg'
+backgroundImage: /img/contour.png
 home: true
+heroImage: 
 ---
 
 
