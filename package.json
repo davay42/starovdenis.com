@@ -34,5 +34,6 @@
     "vitepress": "^0.12.2",
     "vitepress-tags": "^0.0.3",
     "windicss": "2.5.12"
-  }
+  },
+  "version": "0.0.1"
 }
