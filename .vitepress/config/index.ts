@@ -4,7 +4,7 @@ import { metaData } from './constants'
 import head from './head'
 import getTags from '../utils/getTags'
 
-const tags = getTags('../../skills')
+const areas = getTags('../../areas')
 
 const config: UserConfig<DefaultTheme.Config> = {
   title: metaData.title,
@@ -13,7 +13,7 @@ const config: UserConfig<DefaultTheme.Config> = {
   head,
   themeConfig: {
     repo: 'DeFUCC/starovdenis.com',
-    logo: '/assets/s-exp.svg',
+    logo: '/img/davay.svg',
     docsDir: '.',
     docsBranch: 'master',
     docsRepo: 'DeFUCC/starovdenis.com',
@@ -21,18 +21,18 @@ const config: UserConfig<DefaultTheme.Config> = {
     editLinkText: 'Нашли ошибку?',
     nav: [
       {
-        text: 'Умения',
+        text: 'Направления',
         //@ts-ignore
-        items: tags.skill
+        items: areas.area
       },
     
     ],
     sidebar: {
       '/': [
         {
-          text: 'Умения',
+          text: 'Направления',
           //@ts-ignore
-          children: tags.skill
+          children: areas.main
         },
       ],
     },
@@ -47,7 +47,7 @@ const config: UserConfig<DefaultTheme.Config> = {
     }
   },
   customData: {
-    skills: tags
+    areas: areas
   }
 }
 

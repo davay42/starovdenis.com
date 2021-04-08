@@ -12,10 +12,14 @@ module.exports = function (dir = '../../pages', pattern = '/**/*.md') {
   const tags = {}
 
   const all = filesList.map((file) => {
-    let info = matter(fs.readFileSync(path.resolve(pageDir, file), 'utf8'))
+    let pathToFile = path.resolve(pageDir, file)
+    let stats = fs.statSync(pathToFile)
+    let fileContent = fs.readFileSync(pathToFile, 'utf8')
+    let info = matter(fileContent)
     let data = {
       title: info.data?.title,
       text: info.data?.title,
+      lastModified: stats.mtime,
       link:
         '/' +
         dir.split('/').pop() +

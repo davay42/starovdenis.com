@@ -1,6 +1,8 @@
 <template lang="pug">
 main
-  content.content
+  .content
+    .text-4xl.font-bold.mb-12(v-if="$frontmatter.title") {{ $frontmatter.title }}
+    content
   page-footer
   page-next-prev
 </template>

@@ -37,9 +37,9 @@ export default defineConfig({
         fileExtensions: ['vue', 'ts'],
       },
     }),
-    // ViteRestart({
-    //   restart: ['.vitepress/config/*.*', 'posts/*.md'],
-    // }),
+    //  ViteRestart({
+    //    restart: ['.vitepress/config/*.*', 'areas/*.md'],
+    //  }),
   ],
   optimizeDeps: {
     include: [
