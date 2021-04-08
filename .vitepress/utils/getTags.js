@@ -19,7 +19,7 @@ module.exports = function (dir = '../../pages', pattern = '/**/*.md') {
     let data = {
       title: info.data?.title,
       text: info.data?.title,
-      lastModified: stats.mtime,
+      lastModified: stats.mtime.toISOString().slice(0, 10),
       link:
         '/' +
         dir.split('/').pop() +

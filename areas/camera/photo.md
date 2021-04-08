@@ -1,5 +1,5 @@
 ---
-title: Съемка
+title: Фотография
 tags: [main, area]
 crafts:
   - title: Фото
