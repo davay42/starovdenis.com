@@ -1,7 +1,6 @@
 <template lang="pug">
 .flex.flex-col
-  a.text-2xl.p-4.my-2.bg-gray-100(v-for="area in areas", :key="area.title", :href="area.url")  {{area.title}}
-   
+  a.text-2xl.p-4.my-2.bg-gray-100(v-for="area in areas", :key="area.title", :href="area.link")  {{ area.title }}
 </template>
 
 <script setup>
@@ -15,5 +14,4 @@ const props = defineProps({
 </script>
 
 <style lang="postcss" scoped>
-
 </style>

@@ -5,12 +5,7 @@ tags: web
 
 # PaperJS
 
-
-## [face](face)
-
-
-
-## [figures](figures)
+<my-areas :areas="$site.customData.skills.paperjs" />
 
 
 

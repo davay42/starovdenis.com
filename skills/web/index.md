@@ -1,6 +1,6 @@
 ---
 title: Веб-разработка
-tags: main
+tags: [main, skill]
 crafts:
   - title: Технологии
     skills:
@@ -28,6 +28,6 @@ crafts:
 
 ### Эксперименты
 
-- [paper.js](./paper.md)
+<my-areas :areas="$site.customData.skills.web" />
 
 <my-area :area="$frontmatter" />

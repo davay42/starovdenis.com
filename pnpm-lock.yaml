@@ -21,7 +21,7 @@ specifiers:
   vite-plugin-windicss: ^0.12.2
   vite-tsconfig-paths: ^2.5.0
   vitepress: ^0.12.2
-  vitepress-tags: ^0.0.1
+  vitepress-tags: ^0.0.3
   vue: ^3.0.11
   windicss: 2.5.10
 
@@ -49,7 +49,7 @@ devDependencies:
   vite-plugin-windicss: 0.12.5_vite@2.1.5
   vite-tsconfig-paths: 2.5.0_vite@2.1.5
   vitepress: 0.12.2
-  vitepress-tags: 0.0.1
+  vitepress-tags: 0.0.3
   windicss: 2.5.10
 
 packages:
@@ -2012,8 +2012,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress-tags/0.0.1:
-    resolution: {integrity: sha512-wS1irGig4J08nJ7j9R6a4bShSDriOhhj0r+w7v0jCCFXIiOFUKjaWZ7ihscfUBJp/RzvsOZ9/cFVctQS9Oj0hQ==}
+  /vitepress-tags/0.0.3:
+    resolution: {integrity: sha512-hCbrxIiD4RRP99+ifVUwQX1kLHUF/Q3VhVAu21oQtnQpuP0dlHml0aa/0U43atQwJlWIy5LpCzu+6Mr2afGvig==}
     dependencies:
       glob: 7.1.6
       gray-matter: 4.0.2

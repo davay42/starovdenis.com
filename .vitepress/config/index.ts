@@ -2,7 +2,7 @@ import { UserConfig } from 'vitepress'
 import { DefaultTheme } from '../theme/config'
 import { metaData } from './constants'
 import head from './head'
-import {getTags} from '../utils/getTags'
+import getTags from '../utils/getTags'
 
 const tags = getTags('../../skills')
 
@@ -22,10 +22,8 @@ const config: UserConfig<DefaultTheme.Config> = {
     nav: [
       {
         text: 'Умения',
-        items: [
-          { text: 'Музыка', link: '/skills/music' },
-          { text: 'Фото-видео', link: '/skills/photovideo' },
-        ],
+        //@ts-ignore
+        items: tags.skill
       },
     
     ],
@@ -33,10 +31,8 @@ const config: UserConfig<DefaultTheme.Config> = {
       '/': [
         {
           text: 'Умения',
-          children: [
-            { text: 'Музыка', link: '/skills/music' },
-            { text: 'Фото и видео', link: '/skills/photovideo' },
-          ],
+          //@ts-ignore
+          children: tags.skill
         },
       ],
     },
@@ -48,7 +44,7 @@ const config: UserConfig<DefaultTheme.Config> = {
     }
   },
   customData: {
-    skills: tags,
+    skills: tags
   }
 }
 

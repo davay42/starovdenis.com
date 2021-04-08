@@ -1,6 +1,6 @@
 ---
 title: Съемка
-tags: main
+tags: [main, skill]
 crafts:
   - title: Фото
     skills:

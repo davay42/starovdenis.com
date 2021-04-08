@@ -1,10 +1,10 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
+const fs = require('fs')
+const path = require('path')
+const matter = require('gray-matter')
 
-import { glob } from 'glob'
+const glob = require('glob')
 
-export function getTags(dir = '../../pages', pattern = '/**/*.md') {
+module.exports = function (dir = '../../pages', pattern = '/**/*.md') {
   const pageDir = path.resolve(__dirname, dir)
 
   const filesList = glob.sync(pageDir + pattern, { nodir: true })
@@ -15,7 +15,9 @@ export function getTags(dir = '../../pages', pattern = '/**/*.md') {
     let info = matter(fs.readFileSync(path.resolve(pageDir, file), 'utf8'))
     let data = {
       title: info.data?.title,
-      url:
+      text: info.data?.title,
+      link:
+        '/' +
         dir.split('/').pop() +
         '/' +
         path.relative(pageDir, file).split('.').shift(),
