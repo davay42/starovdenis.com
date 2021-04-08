@@ -15,29 +15,19 @@ defineProps({
 
 <style scoped lang="postcss">
 .sidebar {
-  /* position: fixed;
-  top: var(--header-height);
-  bottom: 0;
-  left: 0; */
   z-index: var(--z-index-sidebar);
   width: 16.4rem;
   background-color: var(--c-bg);
   overflow-y: auto;
-  transform: translateX(-100%);
-  transition: transform 0.25s ease;
+  transform: translateX(100%);
+  transition: all 0.15s ease-out;
   height: calc(100vh - var(--header-height));
-  @apply fixed top-$header-height bottom-0 left-0 lg:sticky;
+  @apply fixed top-$header-height bottom-0 right-0 lg:sticky;
 }
 
 @screen lg {
   .sidebar {
     transform: translateX(0);
-  }
-}
-
-@media (min-width: 960px) {
-  .sidebar {
-    width: auto;
   }
 }
 

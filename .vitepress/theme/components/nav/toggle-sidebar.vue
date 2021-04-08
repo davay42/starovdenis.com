@@ -1,11 +1,11 @@
 <template>
   <div class="sidebar-button -ml-2 text-xl" @click="emit('toggle')">
-    <ri-menu-4-fill />
+    <ri-menu-5-fill />
   </div>
 </template>
 
 <script setup lang="ts">
-import { defineEmit} from 'vue'
+import { defineEmit } from 'vue'
 
 
 const emit = defineEmit(['toggle'])

@@ -1,11 +1,11 @@
 <template lang="pug">
 header.nav-bar
-  nav-toggle-sidebar(@toggle="$emit('toggle')")
   nav-bar-title
+  dark-mode.ml-2
   div(class="hidden lg:flex px-3 ml-4 lg:ml-10")
     NavLinks
   .flex-grow
-  dark-mode
+  nav-toggle-sidebar(@toggle="$emit('toggle')")
 </template>
 
 <script setup lang="ts">
@@ -16,8 +16,7 @@ defineEmit(['toggle'])
 
 <style scoped lang="postcss">
 .nav-bar {
-  @apply
-    fixed top-0 inset-x-0 z-$z-index-navbar
+  @apply fixed top-0 inset-x-0 z-$z-index-navbar
     flex space-between align-center select-none
     border-b-1px border-$c-divider
     py-0.7rem px-4

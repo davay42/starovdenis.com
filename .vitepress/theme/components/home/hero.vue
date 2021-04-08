@@ -1,6 +1,6 @@
 <template lang="pug">
 header.home-hero(v-if="showHero")
-  .text-left.max-w-40em.m-auto
+  .w-45ch.m-auto
     figure(v-if="$frontmatter.heroImage")
       img.block.w-auto(:src="$withBase($frontmatter.heroImage)", :alt="$frontmatter.heroAlt")
     .ml-2
@@ -11,7 +11,6 @@ header.home-hero(v-if="showHero")
       .mt-8.text-center
         nav-link.action(v-if="hasAction", :item="{ link: data.actionLink, text: data.actionText }")
         nav-link.action.alt(v-if="hasAltAction", :item="{ link: data.altActionLink, text: data.altActionText }").
-
 </template>
 
 <script setup lang="ts">

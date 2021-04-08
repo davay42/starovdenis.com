@@ -1,6 +1,6 @@
 ---
 title: Вопрос о величии
-tags: writing
+tags: writingArchive
 date: 2012-11-08
 ---
 
