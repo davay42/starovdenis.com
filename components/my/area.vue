@@ -1,6 +1,6 @@
 <template lang="pug">
 .my-8 
-  my-craft(v-for="craft in area?.crafts", :key="craft.title", :craft="craft",v-motion-fade)
+  my-craft(v-for="craft in area?.crafts", :key="craft.title", :craft="craft")
 </template>
 
 <script  setup>
