@@ -272,6 +272,16 @@ form {
   opacity: 0.7;
 }
 
+.external-link::after {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  opacity: 0.5;
+  margin-bottom: -1px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgcm9sZT0iaW1nIiBjbGFzcz0iaWNvbmlmeSBpY29uaWZ5LS1sYSIgd2lkdGg9IjFlbSIgaGVpZ2h0PSIxZW0iIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiIHZpZXdCb3g9IjAgMCAzMiAzMiIgc3R5bGU9InRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7Ij48cGF0aCBkPSJNMTggNXYyaDUuNTYzTDExLjI4IDE5LjI4MWwxLjQzOCAxLjQzOEwyNSA4LjQzN1YxNGgyVjV6TTUgOXYxOGgxOFYxNGwtMiAydjlIN1YxMWg5bDItMnoiIGZpbGw9ImN1cnJlbnRDb2xvciI+PC9wYXRoPjwvc3ZnPg==');
+}
+
 .card {
   @apply shadow-xl p-4 my-40 bg-warm-gray-50 bg-opacity-20
   dark:(bg-warm-gray-700 bg-opacity-20) 

@@ -41,6 +41,9 @@ const config: UserConfig<DefaultTheme.Config> = {
     config: (md) => {
       md.use(require('markdown-it-classy'));
       md.use(require('markdown-it-container'), 'card')
+      md.use(require('markdown-it-external-links'), {
+        internalDomains: ['localhost','starovdenis.com']
+      })
     }
   },
   customData: {

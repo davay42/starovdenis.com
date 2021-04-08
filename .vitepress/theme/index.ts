@@ -1,4 +1,5 @@
 import 'virtual:windi.css'
+import { MotionPlugin } from '@vueuse/motion'
 
 import './styles/vars.css'
 import './styles/layout.postcss'
@@ -15,7 +16,7 @@ const theme: Theme = {
   Layout,
   NotFound,
   enhanceApp({ app }) {
-
+    app.use(MotionPlugin)
   },
 }
 

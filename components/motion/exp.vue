@@ -1,5 +1,6 @@
 <template lang="pug">
-p motion
+.flex.flex-col
+  .absolute(v-motion-fade) Hello!
 </template>
 
 <script setup>
