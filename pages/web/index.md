@@ -1,6 +1,6 @@
 ---
 title: Веб-разработка
-tags: [main, area]
+tags: art
 crafts:
   - title: Технологии
     skills:
@@ -26,6 +26,6 @@ crafts:
 
 ### Эксперименты
 
-<my-areas :areas="$site.customData.areas.web" />
+<my-areas :areas="$site.customData.pages.web" />
 
 <my-area :area="$frontmatter" />

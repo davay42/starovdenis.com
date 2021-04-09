@@ -1,6 +1,6 @@
 ---
 title: Музыка
-tags: [main, area]
+tags: art
 crafts:
   - title: Игра на инструментах
     comment:

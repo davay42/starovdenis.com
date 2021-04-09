@@ -1,5 +1,5 @@
 <template lang="pug">
-aside(class="h-auto border-r-1px border-$c-divider")
+aside(class="h-auto border-l-1px border-$c-divider")
   .sidebar(:class="{ open }")
     nav-links.nav
     side-Links

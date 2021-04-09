@@ -4,7 +4,7 @@ import { metaData } from './constants'
 import head from './head'
 import getTags from '../utils/getTags'
 
-const areas = getTags('../../areas')
+const pages = getTags('../../pages')
 
 const config: UserConfig<DefaultTheme.Config> = {
   title: metaData.title,
@@ -21,27 +21,53 @@ const config: UserConfig<DefaultTheme.Config> = {
     editLinkText: 'Нашли ошибку?',
     nav: [
       {
-        text: 'Ценности',
+        text: 'Философия',
+        link: '/philosophy',
         //@ts-ignore
-        items: areas.value
+        items: pages.philosophy
       },
       {
-        text: 'Направления',
+        text: 'Творчество',
+        link: '/creativity',
         //@ts-ignore
-        items: areas.area
+        items: pages.art
+      },
+      {
+        text: 'Сотрудничество',
+        //@ts-ignore
+        items: pages.collab
+      },
+      {
+        text: 'Контакты',
+        link: '/contact',
+        //@ts-ignore
+        items: pages.contact
       },
     ],
     sidebar: {
       '/': [
         {
-          text: 'Ценности',
+          text: 'Философия',
+          link: '/philosophy',
           //@ts-ignore
-          children: areas.value
+          children: pages.philosophy
         },
         {
-          text: 'Направления',
+          text: 'Творчество',
+          link: '/creativity',
           //@ts-ignore
-          children: areas.main
+          children: pages.art
+        },
+        {
+          text: 'Сотрудничество',
+          //@ts-ignore
+          children: pages.collab
+        },
+        {
+          text: 'Контакты',
+          link: '/contact',
+          //@ts-ignore
+          children: pages.contact
         },
       ],
     },
@@ -56,7 +82,7 @@ const config: UserConfig<DefaultTheme.Config> = {
     }
   },
   customData: {
-    areas: areas
+    pages: pages
   }
 }
 

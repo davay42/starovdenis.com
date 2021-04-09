@@ -1,6 +1,6 @@
 ---
 title: Фотография
-tags: [main, area]
+tags: art
 crafts:
   - title: Фото
     skills:

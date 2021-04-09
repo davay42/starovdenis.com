@@ -1,6 +1,6 @@
 ---
 title: Философия
-tags: [main,area]
+tags: philosophy
 ---
 
 Я начал интересоваться философией достаточно рано. Старался балансировать западную и восточную философию. На основе глубоких размышлений, наблюдений и откровений составляется моя философия жизни. 
@@ -24,4 +24,4 @@ tags: [main,area]
 
 ## [Мои учителя](./teachers/index.md)
 
-<my-areas :areas="$site.customData.areas.philosophyTeacher" />
+<my-areas :areas="$site.customData.pages.philosophyTeacher" />
