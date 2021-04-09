@@ -21,14 +21,23 @@ const config: UserConfig<DefaultTheme.Config> = {
     editLinkText: 'Нашли ошибку?',
     nav: [
       {
+        text: 'Ценности',
+        //@ts-ignore
+        items: areas.value
+      },
+      {
         text: 'Направления',
         //@ts-ignore
         items: areas.area
       },
-    
     ],
     sidebar: {
       '/': [
+        {
+          text: 'Ценности',
+          //@ts-ignore
+          children: areas.value
+        },
         {
           text: 'Направления',
           //@ts-ignore

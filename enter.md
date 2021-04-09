@@ -9,7 +9,10 @@
 
 Придумываю, разрабатываю и воплощаю некоммерческие общественно-полезные проекты.
 
+## Ценности
 
+<my-areas :areas="$site.customData.areas.value"/>
 
+## Интересы
 
 <my-areas :areas="$site.customData.areas.main"/>
