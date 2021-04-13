@@ -1,5 +1,6 @@
 ---
 title: Мои учителя
+tags: philosophy
 ---
 
-### [Эдмунд Гуссерль](./husserl.md)
+<my-areas :areas="$site.customData.pages?.philosophyTeacher" />

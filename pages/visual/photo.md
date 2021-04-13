@@ -1,6 +1,6 @@
 ---
 title: Фотография
-tags: art
+tags: visual
 crafts:
   - title: Фото
     skills:

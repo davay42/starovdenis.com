@@ -22,12 +22,13 @@ const config: UserConfig<DefaultTheme.Config> = {
     nav: [
       {
         text: 'Сотрудничество',
+        link: '/collab',
         //@ts-ignore
         items: pages.collab
       },
       {
         text: 'Творчество',
-        link: '/creativity',
+        link: '/art',
         //@ts-ignore
         items: pages.art
       },
@@ -48,12 +49,13 @@ const config: UserConfig<DefaultTheme.Config> = {
       '/': [
         {
           text: 'Сотрудничество',
+          link: '/collab',
           //@ts-ignore
           children: pages.collab
         },
         {
           text: 'Творчество',
-          link: '/creativity',
+          link: '/art',
           //@ts-ignore
           children: pages.art
         },

@@ -1,7 +1,7 @@
 <template>
   <div class="nav-dropdown-link" :class="{ open }">
     <button class="button" :aria-label="item.ariaLabel" @click="toggle">
-      <span class="button-text">{{ item.text }}</span>
+      <a :href="item?.link" class="button-text">{{ item.text }}</a>
       <span class="button-arrow" :class="open ? 'down' : 'right'" />
     </button>
 
@@ -40,8 +40,7 @@ function toggle() {
 
 <style scoped lang="postcss">
 .nav-dropdown-link {
-  @apply
-    relative h-36px overflow-hidden cursor-pointer
+  @apply relative h-36px overflow-hidden cursor-pointer
     lg:(h-auto overflow-visible);
 }
 
@@ -56,8 +55,7 @@ function toggle() {
 }
 
 .button {
-  @apply
-    block border-0 px-3 py-1.5 w-full
+  @apply block border-0 px-3 py-1.5 w-full
     text-left font-$font-family-base font-semibold text-$c-text whitespace-nowrap bg-transparent cursor-pointer
     lg:(border-b-2px border-transparent px-0 py-5 font-normal text-0.9rem);
 }

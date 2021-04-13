@@ -1,5 +1,5 @@
 ---
-title: Веб-разработка
+title: Интерфейсы
 tags: art
 crafts:
   - title: Технологии
