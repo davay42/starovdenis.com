@@ -1,6 +1,6 @@
 ---
 title: Графический дизайн
-tags: [collab, art]
+tags: collab
 ---
 
 

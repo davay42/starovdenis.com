@@ -21,10 +21,9 @@ const config: UserConfig<DefaultTheme.Config> = {
     editLinkText: 'Нашли ошибку?',
     nav: [
       {
-        text: 'Философия',
-        link: '/philosophy',
+        text: 'Сотрудничество',
         //@ts-ignore
-        items: pages.philosophy
+        items: pages.collab
       },
       {
         text: 'Творчество',
@@ -33,9 +32,10 @@ const config: UserConfig<DefaultTheme.Config> = {
         items: pages.art
       },
       {
-        text: 'Сотрудничество',
+        text: 'Философия',
+        link: '/philosophy',
         //@ts-ignore
-        items: pages.collab
+        items: pages.philosophy
       },
       {
         text: 'Контакты',
@@ -47,10 +47,9 @@ const config: UserConfig<DefaultTheme.Config> = {
     sidebar: {
       '/': [
         {
-          text: 'Философия',
-          link: '/philosophy',
+          text: 'Сотрудничество',
           //@ts-ignore
-          children: pages.philosophy
+          children: pages.collab
         },
         {
           text: 'Творчество',
@@ -59,9 +58,10 @@ const config: UserConfig<DefaultTheme.Config> = {
           children: pages.art
         },
         {
-          text: 'Сотрудничество',
+          text: 'Философия',
+          link: '/philosophy',
           //@ts-ignore
-          children: pages.collab
+          children: pages.philosophy
         },
         {
           text: 'Контакты',

@@ -1,5 +1,5 @@
 ---
-title: Философия
+title: Убеждения
 tags: philosophy
 ---
 

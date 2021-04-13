@@ -38,7 +38,7 @@ export default defineConfig({
       },
     }),
     //  ViteRestart({
-    //    restart: ['.vitepress/config/*.*', 'areas/*.md'],
+    //    restart: ['.vitepress/config/*.*', 'pages/*.md'],
     //  }),
   ],
   optimizeDeps: {

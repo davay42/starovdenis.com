@@ -2,10 +2,16 @@
 
 Придумываю, разрабатываю и воплощаю некоммерческие общественно-полезные проекты.
 
-## Философия
 
-<my-areas :areas="$site.customData.pages.philosophy"/>
+
+## Сотрудничество
+
+<my-areas :areas="$site.customData.pages?.collab"/>
 
 ## Творчество
 
-<my-areas :areas="$site.customData.pages.art"/>
+<my-areas :areas="$site.customData.pages?.art"/>
+
+## Философия
+
+<my-areas :areas="$site.customData.pages?.philosophy"/>
