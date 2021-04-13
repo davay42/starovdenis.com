@@ -4,9 +4,9 @@
 
 
 
-## Работа
+## Сотрудничество
 
-<my-areas :areas="$site.customData.pages?.work"/>
+<my-areas :areas="$site.customData.pages?.collab"/>
 
 ## Творчество
 

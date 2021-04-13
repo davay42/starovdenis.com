@@ -1,5 +1,5 @@
 ---
-title: Интерфейсы
+title: Сайты и интерфейсы
 tags: art
 crafts:
   - title: Технологии
