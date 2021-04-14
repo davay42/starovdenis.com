@@ -1,6 +1,6 @@
 <template lang="pug">
 .flex.flex-col
-  .absolute Hello!
+  .flex-1(v-motion-roll-top) Hello!
 </template>
 
 <script setup>

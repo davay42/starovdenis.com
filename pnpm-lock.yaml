@@ -13,6 +13,7 @@ specifiers:
   markdown-it-container: ^3.0.0
   markdown-it-external-links: ^0.0.6
   paper: ^0.12.15
+  patch-vue-directive-ssr: ^0.0.1
   pug: 3.0.2
   stylus: ^0.54.8
   typescript: ^4.2.4
@@ -43,6 +44,7 @@ devDependencies:
   markdown-it-classy: 0.2.0
   markdown-it-container: 3.0.0
   markdown-it-external-links: 0.0.6
+  patch-vue-directive-ssr: 0.0.1
   pug: 3.0.2
   stylus: 0.54.8
   typescript: 4.2.4
@@ -1418,6 +1420,11 @@ packages:
     resolution: {integrity: sha512-9qqtcY+V0Sd2RTLZKh7rTfWDbhfitOrtq3kzgOufhGpuYpCUXM+3UIK61au14tI0F9NA4xSttDYfk376O50aPA==}
     engines: {node: '>=8.0.0'}
     dev: false
+
+  /patch-vue-directive-ssr/0.0.1:
+    resolution: {integrity: sha512-n84llktHah+EXUGo+RvmTJcAQJQVW0kHHHiJ34ZSLijzhHi32zCMjCc5VAFv4jmdC91bpaYGPk0cDW1D8hQ3GQ==}
+    requiresBuild: true
+    dev: true
 
   /path-is-absolute/1.0.1:
     resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
