@@ -8,7 +8,7 @@ export const metaData = {
   site,
   locale: 'ru-RU',
   image: `${site}/assets/logo-color.png`,
-  icon: '/assets/s-exp.svg',
+  icon: '/img/davay.svg',
   author: 'Денис Старов',
   tags: 'денис, старов, старов денис, сайт, страничка, умения, блог',
 }

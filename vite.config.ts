@@ -4,7 +4,6 @@ import Icons, { ViteIconsResolver } from 'vite-plugin-icons'
 import WindiCSS from 'vite-plugin-windicss'
 import ViteRestart from 'vite-plugin-restart'
 import yaml from '@rollup/plugin-yaml';
-import {resolve} from 'path'
 
 
 export default defineConfig({

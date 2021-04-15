@@ -3,6 +3,7 @@ main
   .content
     .text-4xl.font-bold.mb-12(v-if="$frontmatter.title") {{ $frontmatter.title }}
     content
+    <my-areas v-if="$frontmatter.list" :areas="$site.customData.pages?.[$frontmatter.list]"/>
   page-footer
   page-next-prev
 </template>

@@ -1,8 +1,5 @@
 ---
 title: Визуальное искусство
 tags: art
+list: visual
 ---
-
-## Направления 
-
-<my-areas :areas="$site.customData.pages?.visual"/>

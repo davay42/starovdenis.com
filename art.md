@@ -1,5 +1,4 @@
 ---
 title: Творчество
+list: art
 ---
-
-<my-areas :areas="$site.customData.pages?.art"/>
