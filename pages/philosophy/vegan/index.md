@@ -1,5 +1,5 @@
 ---
-title: Веганство
+title: Веган
 tags: philosophy
 ---
 
