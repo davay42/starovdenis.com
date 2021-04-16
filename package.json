@@ -2,9 +2,9 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "serve": "vitepress serve"
+    "dev": "vitepress dev pages",
+    "build": "vitepress build pages",
+    "serve": "vitepress serve pages"
   },
   "dependencies": {
     "@vueuse/core": "^4.8.1",

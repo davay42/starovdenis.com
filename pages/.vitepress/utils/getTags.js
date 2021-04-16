@@ -3,12 +3,12 @@ const path = require('path')
 const matter = require('gray-matter')
 
 const glob = require('glob')
+const { url } = require('inspector')
 
 module.exports = function (dir = '../../pages', pattern = '/**/*.md') {
   const pageDir = path.resolve(__dirname, dir)
 
   const filesList = glob.sync(pageDir + pattern, { nodir: true })
-
   const tags = {}
 
   const all = filesList.map((file) => {
@@ -16,15 +16,15 @@ module.exports = function (dir = '../../pages', pattern = '/**/*.md') {
     let stats = fs.statSync(pathToFile)
     let fileContent = fs.readFileSync(pathToFile, 'utf8')
     let info = matter(fileContent)
+    let relLink = path.relative(pageDir, file)
+    let url = relLink.includes('index.md')
+      ? relLink.slice(0, -8)
+      : relLink.slice(0, -3)
     let data = {
       title: info.data?.title,
       text: info.data?.title,
       lastModified: stats.mtime,
-      link:
-        '/' +
-        dir.split('/').pop() +
-        '/' +
-        path.relative(pageDir, file).split('.').shift(),
+      link: '/' + url,
       data: info?.data,
     }
 

@@ -4,7 +4,7 @@ import { metaData } from './constants'
 import head from './head'
 import getTags from '../utils/getTags'
 
-const pages = getTags('../../pages')
+const pages = getTags('../../')
 
 const config: UserConfig<DefaultTheme.Config> = {
   title: metaData.title,
@@ -22,19 +22,19 @@ const config: UserConfig<DefaultTheme.Config> = {
     nav: [
       {
         text: 'Сотрудничество',
-        link: '/collab',
+        link: '/collab/',
         //@ts-ignore
         items: pages.collab
       },
       {
         text: 'Творчество',
-        link: '/art',
+        link: '/art/',
         //@ts-ignore
         items: pages.art
       },
       {
         text: 'Философия',
-        link: '/philosophy',
+        link: '/philosophy/',
         //@ts-ignore
         items: pages.philosophy
       },
@@ -49,19 +49,19 @@ const config: UserConfig<DefaultTheme.Config> = {
       '/': [
         {
           text: 'Сотрудничество',
-          link: '/collab',
+          link: '/collab/',
           //@ts-ignore
           children: pages.collab
         },
         {
           text: 'Творчество',
-          link: '/art',
+          link: '/art/',
           //@ts-ignore
           children: pages.art
         },
         {
           text: 'Философия',
-          link: '/philosophy',
+          link: '/philosophy/',
           //@ts-ignore
           children: pages.philosophy
         },
