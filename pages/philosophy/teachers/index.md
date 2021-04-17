@@ -1,6 +1,5 @@
 ---
 title: Мои учителя
 tags: philosophy
+list: philosophyTeacher
 ---
-
-<my-areas :areas="$site.customData.pages?.philosophyTeacher" />
