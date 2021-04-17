@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "355572b3e2ce1384",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ebdc015d4bcdee2",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "collab/photo/retouche.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "34c8e8ced8929c6e",
+    "type": "split",
+    "children": [
+      {
+        "id": "2067ca248f97e2b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b04ba7bfbb2bfec4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "896ebf2c371746dc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "246161dfb638b49e",
+    "type": "split",
+    "children": [
+      {
+        "id": "523a9c7a09b2feeb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "842cf50c483f9c3b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "collab/photo/retouche.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "collab/photo/retouche.md",
+    "collab/teach/Untitled.md",
+    "philosophy/vegan/Untitled.md",
+    "index.md",
+    "enter.md"
+  ]
+}

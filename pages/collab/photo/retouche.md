@@ -1,6 +1,6 @@
 ---
 title: Ретушь и цветокоррекция фотографий
-tags: graphic
+tags: photo
 price: 2000
 ---
 

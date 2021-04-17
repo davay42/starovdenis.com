@@ -1,5 +1,6 @@
 <template lang="pug">
-a.p-4.my-2.flex.flex-col.rounded(
+a(
+  class="hover:shadow-md",
   style="background-color: var(--c-bg-secondary);"
   :href="item.link", 
   :title="item.lastModified",
@@ -7,14 +8,14 @@ a.p-4.my-2.flex.flex-col.rounded(
   :initial="{ opacity: 0, y: 40 }",
   :enter="{ opacity: 0, y: 0, scale: 1 }",
   :visible="{ opacity: 1, y: 0, scale: 1 }",
-  :tapped="{ scale: 0.99, opacity: 0 }",
+  :tapped="{ scale: 0.99, opacity: 0.8 }",
   :delay="i * 80",
   )
   .flex.flex-1.items-center
     h3.text-2xl {{ item.title }}
     .flex-1 
     card-date(:date="item.lastModified")
-  .text-md.mt-4(v-if="item.subtitle") {{ item.subtitle }}
+  .text-md.mt-4.mb-2.font-normal(v-if="item.subtitle") {{ item.subtitle }}
   
 </template>
 
@@ -26,7 +27,11 @@ const props = defineProps({
 });
 </script>
 
-<style lang="stylus" scoped>
+<style lang="postcss" scoped>
+a {
+  @apply p-4 my-4 flex flex-col rounded shadow-sm;
+}
+
 a:hover {
   text-decoration: none;
 }

@@ -1,6 +1,6 @@
 <template lang="pug">
 .text-sm.rounded-full.py-1.px-2.flex.items-center
-  mdi-watering-can.mr-1.opacity-50
+  mdi-watering-can.mr-1.opacity-50.text-green-800.transition(class="dark:text-green-200")
   .flex-1 {{ elapsed }}
 </template>
 

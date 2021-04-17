@@ -46,6 +46,15 @@ export default defineConfig({
       '@vueuse/core',
     ],
   },
+  build: {
+    rollupOptions:{
+      output:{
+        manualChunks: {
+          motion: ['@vueuse/motion']
+        }
+      }
+    }
+  }
 })
 
 
