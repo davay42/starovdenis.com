@@ -1,6 +1,6 @@
 ---
 title: Студийная фотосъемка
-subtitle: 3000 ₽ в час
+price: 3000 ₽ в час
 tags: photoCollab
 ---
 

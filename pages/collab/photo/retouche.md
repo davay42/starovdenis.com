@@ -1,7 +1,7 @@
 ---
 title: Ретушь и цветокоррекция фотографий
-tags: photo
-price: 2000
+tags: photoCollab
+price: 2000 ₽ в час
 ---
 
 Обработка фотографий в Adobe Lightroom и Adobe Photoshop.

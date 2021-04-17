@@ -2,8 +2,11 @@
 main
   .content
     page-parents
-    .text-4xl.font-bold.mb-12(v-if="$frontmatter.title", v-motion-fade, :key="$frontmatter.title") {{ $frontmatter.title }}
-    content
+    .text-4xl.font-bold.mb-6(v-if="$frontmatter.title", v-motion-fade, :key="$frontmatter.title") {{ $frontmatter.title }}
+    .flex.items-center(v-if="$frontmatter.price")
+      .text-xl.font-bold.rounded-xl.bg-orange-200.p-2.mr-2 {{ $frontmatter.price }}
+      a.text-xl.font-bold.rounded-xl.border-orange-200.border-8.px-2(href="/contact") Заказать
+    content.mt-6
   my-areas.max-w-55ch.mx-auto(
     v-if="$frontmatter.list", 
     :areas="$site.customData.pages?.[$frontmatter.list]"
@@ -25,7 +28,7 @@ main {
 
 .content {
   padding-bottom: 1.5rem;
-  @apply p-8 max-w-55ch mx-auto;
+  @apply p-8 max-w-55ch mx-auto relative flex flex-col items-start;
 }
 
 .content.cards {
