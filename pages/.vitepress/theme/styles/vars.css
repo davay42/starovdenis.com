@@ -20,10 +20,10 @@
   --c-text-light-2: #476582;
   --c-text-light-3: #90a4b7;
 
-  --c-brand: #0ea5e9;
-  --c-brand-active: #0e8fc9;
-  --c-brand-dark: #0e8fc9;
-  --c-brand-light: #25b3f5;
+  --c-brand: hsl(10, 10%, 20%);
+  --c-brand-active: hsl(10, 60%, 50%);
+  --c-brand-dark: hsl(5, 30%, 30%);
+  --c-brand-light: hsl(20, 60%, 55%);
 
   --c-disabled-bg: #e5e5e5;
   --c-disabled-fg: #666;
@@ -90,6 +90,11 @@ html.dark {
 
   --c-disabled-bg: #333;
   --c-disabled-fg: #aaa;
+
+  --c-brand: hsl(10, 10%, 90%);
+  --c-brand-active: hsl(10, 60%, 50%);
+  --c-brand-dark: hsl(5, 30%, 30%);
+  --c-brand-light: hsl(20, 60%, 55%);
 }
 
 /** Fallback Styles */

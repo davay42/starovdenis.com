@@ -22,6 +22,7 @@ module.exports = function (dir = '../../pages', pattern = '/**/*.md') {
       : relLink.slice(0, -3)
     let data = {
       title: info.data?.title,
+      subtitle: info.data?.subtitle,
       text: info.data?.title,
       lastModified: stats.mtime,
       link: '/' + url,

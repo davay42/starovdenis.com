@@ -1,5 +1,5 @@
 ---
-title: Дзен
+title: Дзен-буддизм
 tags: yoga
 ---
 

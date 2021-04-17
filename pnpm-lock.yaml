@@ -11,6 +11,7 @@ specifiers:
   esbuild-register: ^2.4.0
   glob: ^7.1.6
   gray-matter: ^4.0.2
+  javascript-time-ago: ^2.3.4
   markdown-it-classy: ^0.2.0
   markdown-it-container: ^3.0.0
   markdown-it-external-links: ^0.0.6
@@ -35,6 +36,7 @@ dependencies:
   '@svgdotjs/svg.js': 3.0.16
   '@vueuse/core': 4.8.1_vue@3.0.11
   '@vueuse/motion': 1.5.4_vue@3.0.11
+  javascript-time-ago: 2.3.4
   paper: 0.12.15
   vue: 3.0.11
 
@@ -1137,6 +1139,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /javascript-time-ago/2.3.4:
+    resolution: {integrity: sha512-Tmy9C4MBGtC19AYhV8updznKqtiRSwJHIbDMeypsy3F0vxqgX5ytln4jwXRLVh82WW6ig4VGegi/Qhykpr4YQw==}
+    dependencies:
+      relative-time-format: 1.0.5
+    dev: false
+
   /js-stringify/1.0.2:
     resolution: {integrity: sha1-Fzb939lyTyijaCrcYjCufk6Weds=}
     dev: true
@@ -1694,6 +1702,10 @@ packages:
     dependencies:
       picomatch: 2.2.2
     dev: true
+
+  /relative-time-format/1.0.5:
+    resolution: {integrity: sha512-MAgx/YKcUQYJpIaWcfetPstElnWf26JxVis4PirdwVrrymFdbxyCSm6yENpfB1YuwFbtHSHksN3aBajVNxk10Q==}
+    dev: false
 
   /resolve-url/0.2.1:
     resolution: {integrity: sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=}

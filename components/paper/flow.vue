@@ -2,11 +2,9 @@
 .flex.flex-col
   svg
     filter#blur
-      feGaussianBlur(:stdDeviation="10")
+      feGaussianBlur(:stdDeviation="20")
     filter#mirror
       feTile(width="50%", x="0",y="0")
-
-
 
   canvas(:style="{ filter: 'url(#blur)' }",ref="glsl",@click="setFigures()")
 </template>
@@ -26,7 +24,7 @@ onMounted(() => {
   setFigures()
   intervalId = setInterval(() => {
     setFigures()
-  }, 1000)
+  }, 4000)
 });
 
 onBeforeUnmount(() => {
@@ -40,8 +38,9 @@ function setFigures() {
   const circles = []
   let x = Math.random() * w
   let y = Math.random() * h
+  let tox = Math.random() * w
+  let toy = Math.random() * h
   let rStart = Math.random() * w / 2
-  let rFinish = Math.random() * w / 2
   let num = circles.length
 
   circles[num] = new paper.Shape.Circle({
@@ -57,10 +56,17 @@ function setFigures() {
   })
 
   circles[num].tween(
-    { opacity: 1, radius: rFinish },
-    { duration: 1000, easing: 'easeInOutQuad', }
-  )
+    { opacity: 1, position: { x: tox, y: toy } },
+    { duration: 10000, easing: 'easeInOutQuad', }
+  ).then(() => {
+    circles[num].tween(
+      { opacity: 0 },
+      { duration: 1000, easing: 'easeInOutQuad', }
+    ).then(() => {
+      circles.shift()
+    })
 
+  })
   // circles[num+1] = circles[num].clone()
   // circles[num+1].position = {
   //   x:Math.abs(x-w),
@@ -79,6 +85,6 @@ function setFigures() {
 
 <style lang="postcss" scoped>
 canvas {
-  @apply fixed w-full h-full top-0 left-0 right-0 bottom-0 z-0;
+  @apply fixed w-full h-full top-0 left-0 right-0 bottom-0 -z-4;
 }
 </style>

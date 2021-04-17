@@ -11,6 +11,7 @@
     "@svgdotjs/svg.js": "^3.0.16",
     "@vueuse/core": "^4.8.1",
     "@vueuse/motion": "^1.5.4",
+    "javascript-time-ago": "^2.3.4",
     "paper": "^0.12.15",
     "vue": "^3.0.11"
   },

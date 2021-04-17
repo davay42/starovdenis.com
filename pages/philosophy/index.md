@@ -1,5 +1,6 @@
 ---
 title: Философия
+subtitle: Различные грани моего мировоззрения
 list: philosophy
 tags: area
 ---
