@@ -3,6 +3,8 @@ lockfileVersion: 5.3
 specifiers:
   '@iconify/json': ^1.1.329
   '@rollup/plugin-yaml': ^3.0.0
+  '@svgdotjs/svg.filter.js': ^3.0.7
+  '@svgdotjs/svg.js': ^3.0.16
   '@types/node': ^14.14.37
   '@vueuse/core': ^4.8.1
   '@vueuse/motion': ^1.5.4
@@ -29,6 +31,8 @@ specifiers:
   windicss: 2.5.14
 
 dependencies:
+  '@svgdotjs/svg.filter.js': 3.0.7
+  '@svgdotjs/svg.js': 3.0.16
   '@vueuse/core': 4.8.1_vue@3.0.11
   '@vueuse/motion': 1.5.4_vue@3.0.11
   paper: 0.12.15
@@ -276,6 +280,17 @@ packages:
       estree-walker: 1.0.1
       picomatch: 2.2.2
     dev: true
+
+  /@svgdotjs/svg.filter.js/3.0.7:
+    resolution: {integrity: sha512-OxCDe37EEiHSfR+3y9k7oNAdx7SNEDKoD3nDSAQW9RG1nSeeMh/C0xKY1J61NrqDWa0GoFPtN5nVRxb5ecnBMg==}
+    engines: {node: '>= 0.8.0'}
+    dependencies:
+      '@svgdotjs/svg.js': 3.0.16
+    dev: false
+
+  /@svgdotjs/svg.js/3.0.16:
+    resolution: {integrity: sha512-yZ4jfP/SeLHEnCi9PIrzienKCrA4vW9+jm5uUV3N5DG2e9zgXLY5FgywK2u8/gMFIeKO0HuqTLFFfWJj+MfMLA==}
+    dev: false
 
   /@types/estree/0.0.39:
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}

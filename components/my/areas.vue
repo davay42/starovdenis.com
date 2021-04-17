@@ -1,6 +1,9 @@
 <template lang="pug">
 .flex.flex-col
-  a.text-2xl.p-4.my-2.bg-gray-100(v-for="area in sorted", :key="area.title", :href="area.link", :title="area.lastModified" )  {{ area.title }}
+  a.p-4.my-2.bg-gray-100.flex.items-center(v-for="area in sorted", :key="area.title", :href="area.link", :title="area.lastModified" )  
+    .text-2xl {{ area.title }}
+    .flex-1
+    .text-sm {{ area.lastModified.slice(0, 10) }}
 </template>
 
 <script setup>

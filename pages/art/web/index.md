@@ -1,5 +1,5 @@
 ---
-title: Сайты и интерфейсы
+title: Веб-дизайн
 tags: art
 list: web
 crafts:

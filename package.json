@@ -7,6 +7,8 @@
     "serve": "vitepress serve pages"
   },
   "dependencies": {
+    "@svgdotjs/svg.filter.js": "^3.0.7",
+    "@svgdotjs/svg.js": "^3.0.16",
     "@vueuse/core": "^4.8.1",
     "@vueuse/motion": "^1.5.4",
     "paper": "^0.12.15",
