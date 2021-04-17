@@ -4,10 +4,10 @@ main
     page-parents
     .text-4xl.font-bold.mb-12(v-if="$frontmatter.title", v-motion-fade, :key="$frontmatter.title") {{ $frontmatter.title }}
     content
-    my-areas(
-      v-if="$frontmatter.list", 
-      :areas="$site.customData.pages?.[$frontmatter.list]"
-      )
+  my-areas.max-w-55ch.mx-auto(
+    v-if="$frontmatter.list", 
+    :areas="$site.customData.pages?.[$frontmatter.list]"
+    )
   page-footer
   page-next-prev
 </template>
@@ -19,7 +19,7 @@ main
 
 <style lang="postcss" scoped>
 main {
-  @apply px-4 pb-16 pt-$header-height container max-w-sm mx-auto 
+  @apply px-4 max-w-55ch pb-16 pt-$header-height container mx-auto 
   md:(px-8);
 }
 
@@ -30,9 +30,5 @@ main {
 
 .content.cards {
   @apply max-w-65ch mx-auto;
-}
-
-.content tbody tr td:nth-child(1) {
-  white-space: nowrap;
 }
 </style>

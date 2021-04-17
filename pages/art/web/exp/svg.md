@@ -1,6 +1,6 @@
 ---
 title: SVG
-tags: web
+tags: webExp
 ---
 
 <svg-exp />

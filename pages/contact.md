@@ -2,8 +2,6 @@
 editLink: false
 ---
 
-
-
 ![](/img/starov.jpg) {avatar}
 
 ## Денис К Старов

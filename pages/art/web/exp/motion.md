@@ -1,6 +1,6 @@
 ---
 title: vueuse/motion
-tags: web
+tags: webExp
 ---
 
 # Vueuse/motion experiments
