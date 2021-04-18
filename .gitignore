@@ -49,3 +49,6 @@ wiki/
 
 # vscode
 .vscode/
+
+# Obsidian
+*/.obsidian/
