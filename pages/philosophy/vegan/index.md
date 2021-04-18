@@ -1,4 +1,5 @@
 ---
+emoji: ✌️
 title: Веган
 tags: philosophy
 list: vegan

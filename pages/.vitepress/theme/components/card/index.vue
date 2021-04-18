@@ -1,6 +1,6 @@
 <template lang="pug">
 a(
-  class="hover:shadow-md",
+  class="hover:shadow",
   style="background-color: var(--c-bg-secondary);"
   :href="item.link", 
   :title="item.lastModified",
@@ -12,7 +12,9 @@ a(
   :delay="i * 80",
   )
   .flex.flex-1.items-center.self-stretch
+
     h3.text-2xl {{ item.title }}
+    .ml-4.text-4xl(v-if="item.data.emoji") {{ item.data.emoji}}
     .flex-1 
     card-date(:date="item.lastModified")
   .text-md.mt-4.mb-2.font-normal(v-if="item.subtitle") {{ item.subtitle }}
@@ -31,6 +33,7 @@ const props = defineProps({
 <style lang="postcss" scoped>
 a {
   @apply p-4 my-4 flex flex-col items-start rounded shadow-sm;
+  transition: box-shadow color 100ms ease-in-out;
 }
 
 a:hover {
