@@ -5,7 +5,7 @@
  * --------------------------------------------------------------------- */
   --c-bg: #fff;
   --c-bg-semi: rgba(255, 255, 255, 0.8);
-  --c-bg-secondary: #f3f5f7;
+  --c-bg-secondary: hsla(0, 0%, 0%, 0.05);
 
   --c-scrollbar: theme('colors.gray.200');
   --c-scrollbar-bg: theme('colors.gray.100');
@@ -75,7 +75,7 @@
 html.dark {
   --c-bg: hsla(30, 2%, 15%, 1);
   --c-bg-semi: rgba(17, 17, 17, 0.8);
-  --c-bg-secondary: #222;
+  --c-bg-secondary: hsla(0, 0%, 100%, 0.05);
 
   --c-scrollbar: #333;
   --c-scrollbar-bg: #212121;
@@ -114,4 +114,30 @@ html.dark {
   --code-line-height: 24px;
   --code-font-family: var(--font-family-mono);
   --code-font-size: 14px;
+}
+
+/* commissioner-regular - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-regular.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-regular.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* commissioner-700 - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-700.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-700.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
