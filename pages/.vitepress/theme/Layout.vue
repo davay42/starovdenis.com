@@ -7,7 +7,7 @@
     home(v-if="enableHome")
     page(v-else)
 
-  debug
+// debug
 </template>
 
 <script setup lang="ts">

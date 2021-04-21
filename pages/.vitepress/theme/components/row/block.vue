@@ -9,17 +9,18 @@
   :delay="i * 80",
   :style="{ zIndex: i + 10 }"
   )
-  a.flex.flex-col.m-4.min-content.flex-1(:href="item.link")
-    .art.w-full.h-16em.bg-cover.bg-center(v-if="item.data.art", :style="{ backgroundImage: 'url(' + '/art/' + item.data.art + ')' }", v-motion-fade)
-    .flex.flex-1.self-stretch.flex-wrap
+  a.flex.flex-col.min-content.flex-1(:href="item.link")
+    .art.w-full.h-12em.bg-cover.bg-center.mb-8.rounded(v-if="item.data.art", :style="{ backgroundImage: 'url(' + '/art/' + item.data.art + ')' }", v-motion-fade)
+    .flex.flex-1.self-stretch.flex-wrap.items-center
       .mr-2.text-2xl(v-if="item.data.emoji") {{ item.data.emoji }}
-      h3.text-3xl {{ item.title }}
+      h3.text-3xl.flex.items-center {{ item.title }}
+      .px-2.mt-2(v-if="item.more") 
+        radix-icons-text-align-left
       .flex-auto
       card-date(:date="item.lastModified")
     .text-md.mt-4.mb-2.font-normal(v-if="item.subtitle") {{ item.subtitle }}
-    .text-md.mt-4(v-if="item.more") Подробнее
     .text-xl.font-bold.rounded-xl.text-orange-800.p-2.mt-4(class="dark:text-orange-300",v-if="item.data.price") {{ item.data.price }}
-  .flex.flex-col.flex-auto.w-full( v-if="$site.customData.pages?.[item.data.list]")
+  .mt-4.flex.flex-col.flex-auto.w-full( v-if="$site.customData.pages?.[item.data.list]")
     my-areas(:areas="$site.customData.pages?.[item.data.list]")
 </template>
 

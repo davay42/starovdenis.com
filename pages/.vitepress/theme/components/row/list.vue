@@ -1,5 +1,5 @@
 <template lang="pug">
-.flex.flex-col.max-w-60ch.mx-auto
+.flex.flex-col.max-w-55ch.mx-auto
   row-block(
     v-for="(area,i) in sorted", 
     :key="area.title", 

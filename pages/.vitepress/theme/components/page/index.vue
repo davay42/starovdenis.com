@@ -3,13 +3,14 @@ main
   .art.h-md.bg-cover(v-if="$frontmatter.art", :style="{ backgroundImage: 'url(' + '/art/' + $frontmatter.art + ')' }", v-motion-fade)
   .content(:class="{ 'full-width': $frontmatter.fullWidth }")
     page-parents
-    .text-4xl.font-bold.mb-6.flex.flex-wrap.items-center(v-if="$frontmatter.title", v-motion-fade, :key="$frontmatter.title") 
+    .text-4xl.font-bold.mb-4.flex.flex-wrap.items-center(v-if="$frontmatter.title", v-motion-fade, :key="$frontmatter.title") 
       .mr-2 {{ $frontmatter.title }}
       .flex-1
-      .mx-2.text-6xl {{ $frontmatter.emoji }}
+      .mx-2.my-4.text-6xl {{ $frontmatter.emoji }}
     .flex.items-center(v-if="$frontmatter.price")
       .text-xl.font-bold.rounded-xl.text-orange-800.p-2.mr-2(class="dark:text-orange-200") {{ $frontmatter.price }}
       a.text-xl.font-bold.rounded-xl.bg-orange-300.px-2.py-1(href="/contact") Заказать
+    .font-bold.mt-2.mb-4(v-if="$frontmatter.subtitle") {{$frontmatter.subtitle}}
     content
   row-list(
     v-if="$frontmatter.list", 

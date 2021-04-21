@@ -1,5 +1,5 @@
 ---
-title: Мои учителя
+title: Учителя философии
 tags: philosophy
 list: philosophyTeacher
 ---
