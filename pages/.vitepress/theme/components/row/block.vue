@@ -33,7 +33,7 @@ const props = defineProps({
 
 <style lang="postcss" scoped>
 .block {
-  @apply p-4 mt-8 flex flex-col items-stretch shadow-lg static md:p-8;
+  @apply p-4 my-8 flex flex-col items-stretch shadow-lg static md:p-8;
 }
 
 .art {

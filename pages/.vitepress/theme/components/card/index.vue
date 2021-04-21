@@ -17,10 +17,11 @@ a(
 
       h3.text-xl {{ item.title }}
       .ml-4.text-4xl(v-if="item.data.emoji") {{ item.data.emoji}}
-      .flex-auto
-      .flex.items-center.mr-2.font-normal.text-lg(v-if="$site.customData.pages?.[item.data.list]") 
+
+      .flex.items-center.mx-2.font-normal.text-lg(v-if="$site.customData.pages?.[item.data.list]") 
         la-file-alt
         .flex-1.ml-1 {{$site.customData.pages?.[item.data.list].length}}
+      .flex-auto
       card-date(:date="item.lastModified")
     .text-md.mt-4.mb-2.font-normal(v-if="item.subtitle") {{ item.subtitle }}
     .text-xl.font-bold.rounded-xl.text-orange-800.p-2.mt-4(class="dark:text-orange-300",v-if="item.data.price") {{ item.data.price }}
