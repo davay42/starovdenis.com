@@ -27,6 +27,7 @@ defineProps({
 
 @screen lg {
   .sidebar {
+    display: none;
     transform: translateX(0);
   }
 }

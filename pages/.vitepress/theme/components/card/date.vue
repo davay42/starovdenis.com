@@ -14,7 +14,7 @@ const props = defineProps({
 
 const timeAgo = new TimeAgo('ru-RU')
 const elapsed = computed(() => {
-  return timeAgo.format(new Date(props.date))
+  return timeAgo.format(new Date(props.date), 'mini')
 })
 </script>
 

@@ -1,30 +1,26 @@
 <template lang="pug">
-a(
-  class="hover:shadow",
-  style="background-color: var(--c-bg);"
-  :href="item.link", 
+.block(
   :title="item.lastModified",
+  style="background-color: var(--c-bg-secondary);"
   v-motion,
   :initial="{ opacity: 0, y: 40 }",
   :enter="{ opacity: 0, y: 0, scale: 1 }",
   :visible="{ opacity: 1, y: 0, scale: 1 }",
-  :tapped="{ scale: 0.99, opacity: 0.8 }",
   :delay="i * 80",
+  :style="{ zIndex: i + 10 }"
   )
-
-  .flex.flex-col.p-4.w-full
-    .flex.flex-1.items-center.self-stretch.flex-wrap
-
-      h3.text-xl {{ item.title }}
-      .ml-4.text-4xl(v-if="item.data.emoji") {{ item.data.emoji}}
+  a.flex.flex-col.m-4.min-content.flex-1(:href="item.link")
+    .art.w-full.h-16em.bg-cover.bg-center(v-if="item.data.art", :style="{ backgroundImage: 'url(' + '/art/' + item.data.art + ')' }", v-motion-fade)
+    .flex.flex-1.self-stretch.flex-wrap
+      .mr-2.text-2xl(v-if="item.data.emoji") {{ item.data.emoji }}
+      h3.text-3xl {{ item.title }}
       .flex-auto
-      .flex.items-center.mr-2.font-normal.text-lg(v-if="$site.customData.pages?.[item.data.list]") 
-        la-file-alt
-        .flex-1.ml-1 {{$site.customData.pages?.[item.data.list].length}}
       card-date(:date="item.lastModified")
     .text-md.mt-4.mb-2.font-normal(v-if="item.subtitle") {{ item.subtitle }}
+    .text-md.mt-4(v-if="item.more") Подробнее
     .text-xl.font-bold.rounded-xl.text-orange-800.p-2.mt-4(class="dark:text-orange-300",v-if="item.data.price") {{ item.data.price }}
-  .art.w-full.h-16em.bg-cover.bg-center(v-if="item.data.art", :style="{ backgroundImage: 'url(' + '/art/' + item.data.art + ')' }", v-motion-fade)
+  .flex.flex-col.flex-auto.w-full( v-if="$site.customData.pages?.[item.data.list]")
+    my-areas(:areas="$site.customData.pages?.[item.data.list]")
 </template>
 
 <script setup>
@@ -36,9 +32,8 @@ const props = defineProps({
 </script>
 
 <style lang="postcss" scoped>
-a {
-  @apply my-4 flex  items-start rounded shadow-sm;
-  transition: box-shadow color 100ms ease-in-out;
+.block {
+  @apply p-4 mt-8 flex flex-col items-stretch shadow-lg static md:p-8;
 }
 
 .art {
@@ -46,7 +41,7 @@ a {
   transition: all 200ms ease-in-out;
 }
 
-a:hover .art {
+.block:hover .art {
   filter: saturate(50%);
 }
 

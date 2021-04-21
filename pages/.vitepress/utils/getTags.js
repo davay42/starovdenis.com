@@ -27,6 +27,7 @@ module.exports = function (dir = '../../pages', pattern = '/**/*.md') {
       lastModified: stats.mtime,
       link: '/' + url,
       data: info?.data,
+      more: !!info.content,
     }
 
     if (typeof info?.data?.tags == 'string') {

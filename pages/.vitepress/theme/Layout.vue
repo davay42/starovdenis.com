@@ -2,11 +2,11 @@
 .theme(:class="pageClasses")
   nav-bar(v-if="showNavbar", @toggle="toggleSidebar")
   .main(:class="{ 'grid-layout': !enableHome }", :style="{ backgroundImage: 'url(' + $frontmatter.backgroundImage + ')' }")
-
-    home(v-if="enableHome")
-    page(v-else)
     side-bar(:open="openSideBar")
       .sidebar-mask(@click="toggleSidebar(false)")
+    home(v-if="enableHome")
+    page(v-else)
+
   debug
 </template>
 
@@ -93,9 +93,9 @@ const pageClasses = computed(() => {
 }
 
 @screen lg {
-  .grid-layout {
+  .grid-layout-2 {
     display: grid;
-    grid-template-columns: minmax(100px, 1fr) 16rem;
+    grid-template-columns: 16rem minmax(100px, 1fr);
     grid-template-rows: 1fr;
     gap: 0px 16px;
   }
