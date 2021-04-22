@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@iconify/json': ^1.1.331
   '@rollup/plugin-yaml': ^3.0.0
+  '@types/javascript-time-ago': ^2.0.2
   '@types/node': ^14.14.41
   '@vueuse/core': 4.8.4
   '@vueuse/motion': ^1.5.4
@@ -43,6 +44,7 @@ dependencies:
 devDependencies:
   '@iconify/json': 1.1.331
   '@rollup/plugin-yaml': 3.0.0
+  '@types/javascript-time-ago': 2.0.2
   '@types/node': 14.14.41
   esbuild-register: 2.5.0
   glob: 7.1.6
@@ -289,6 +291,10 @@ packages:
 
   /@types/estree/0.0.39:
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
+    dev: true
+
+  /@types/javascript-time-ago/2.0.2:
+    resolution: {integrity: sha512-uBUXwIG8YzPuWw5c6yV5RGvskkNOxnR+9hctOv8cptyMlB0IgfzeqFo0jkK+Ich8zGchvWghOT3Ryqr3bZmH3A==}
     dev: true
 
   /@types/json5/0.0.29:
