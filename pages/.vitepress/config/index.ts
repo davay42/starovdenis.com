@@ -2,9 +2,10 @@ import { UserConfig } from 'vitepress'
 import { DefaultTheme } from '../theme/config'
 import { metaData } from './constants'
 import head from './head'
-import getTags from '../utils/getTags'
+//@ts-ignore
+import getTags from 'vitepress-tags'
 
-const pages = getTags('../../')
+const pages = getTags()
 
 const config: UserConfig<DefaultTheme.Config> = {
   title: metaData.title,
@@ -40,7 +41,7 @@ const config: UserConfig<DefaultTheme.Config> = {
       },
       {
         text: 'Контакты',
-        link: '/contact',
+        link: '/contact.html',
         //@ts-ignore
         items: pages.contact
       },
@@ -67,7 +68,7 @@ const config: UserConfig<DefaultTheme.Config> = {
         },
         {
           text: 'Контакты',
-          link: '/contact',
+          link: '/contact.html',
           //@ts-ignore
           children: pages.contact
         },
