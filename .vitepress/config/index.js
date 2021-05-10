@@ -1,5 +1,3 @@
-import { UserConfig } from 'vitepress'
-import { DefaultTheme } from '../theme/config'
 import { metaData } from './constants'
 import head from './head'
 //@ts-ignore
@@ -7,13 +5,13 @@ import getTags from 'vitepress-tags'
 
 const pages = getTags('./')
 
-const config: UserConfig<DefaultTheme.Config> = {
+const config = {
   title: metaData.title,
   description: metaData.description,
   lang: metaData.locale,
   head,
   themeConfig: {
-    repo: 'DeFUCC/starovdenis.com', 
+    repo: 'DeFUCC/starovdenis.com',
     logo: '/img/davay.svg',
     docsDir: '.',
     docsBranch: 'master',
@@ -25,25 +23,25 @@ const config: UserConfig<DefaultTheme.Config> = {
         text: 'Сотрудничество',
         link: '/collab/',
         //@ts-ignore
-        items: pages.collab
+        items: pages.collab,
       },
       {
         text: 'Творчество',
         link: '/art/',
         //@ts-ignore
-        items: pages.art
+        items: pages.art,
       },
       {
         text: 'Философия',
         link: '/philosophy/',
         //@ts-ignore
-        items: pages.philosophy
+        items: pages.philosophy,
       },
       {
         text: 'Контакты',
         link: '/contact.html',
         //@ts-ignore
-        items: pages.contact
+        items: pages.contact,
       },
     ],
     sidebar: {
@@ -52,41 +50,41 @@ const config: UserConfig<DefaultTheme.Config> = {
           text: 'Сотрудничество',
           link: '/collab/',
           //@ts-ignore
-          children: pages.collab
+          children: pages.collab,
         },
         {
           text: 'Творчество',
           link: '/art/',
           //@ts-ignore
-          children: pages.art
+          children: pages.art,
         },
         {
           text: 'Философия',
           link: '/philosophy/',
           //@ts-ignore
-          children: pages.philosophy
+          children: pages.philosophy,
         },
         {
           text: 'Контакты',
           link: '/contact.html',
           //@ts-ignore
-          children: pages.contact
+          children: pages.contact,
         },
       ],
     },
   },
   markdown: {
     config: (md) => {
-      md.use(require('markdown-it-classy'));
+      md.use(require('markdown-it-classy'))
       md.use(require('markdown-it-container'), 'card')
       md.use(require('markdown-it-external-links'), {
-        internalDomains: ['localhost','starovdenis.com']
+        internalDomains: ['localhost', 'starovdenis.com'],
       })
-    }
+    },
   },
   customData: {
-    pages: pages
-  }
+    pages: pages,
+  },
 }
 
 export default config

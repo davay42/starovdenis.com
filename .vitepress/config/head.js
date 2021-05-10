@@ -1,7 +1,6 @@
-import { HeadConfig } from 'vitepress'
 import { metaData } from './constants'
 
-const head: HeadConfig[] = [
+const head = [
   ['meta', { name: 'author', content: metaData?.author }],
   ['meta', { name: 'keywords', content: metaData?.tags }],
   ['link', { rel: 'icon', type: 'image/svg+xml', href: metaData.icon }],
@@ -9,7 +8,10 @@ const head: HeadConfig[] = [
   ['meta', { name: 'HandheldFriendly', content: 'True' }],
   ['meta', { name: 'MobileOptimized', content: '320' }],
   ['meta', { name: 'theme-color', content: '#0ea5e9' }],
-  ['meta', { name: 'viewport', content:'width=device-width, initial-scale=1'}],
+  [
+    'meta',
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  ],
 
   ['meta', { name: 'description', content: metaData.description }],
 
