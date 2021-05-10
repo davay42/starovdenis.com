@@ -11,7 +11,7 @@ export default defineConfig({
     Components({
       dirs: [
         '.vitepress/theme/components',
-        'components',
+        '.vitepress/components',
       ],
       extensions: ['vue', 'ts'],
       directoryAsNamespace: true,
@@ -28,7 +28,7 @@ export default defineConfig({
     }),
     WindiCSS({
       scan: {
-        dirs: ['.vitepress', 'components'],
+        dirs: ['.vitepress'],
         include: ['index.md'],
         exclude: ['**/examples/**/*'],
         fileExtensions: ['vue', 'ts'],
