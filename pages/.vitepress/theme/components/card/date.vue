@@ -1,23 +1,50 @@
 <template lang="pug">
-.text-sm.rounded-full.py-1.px-2.flex.items-center
-  mdi-watering-can.mr-1.text-lg.opacity-50.text-green-800.transition(class="dark:text-green-200")
+.text-sm.rounded-full.flex.items-center(v-if="fresh")
+  mdi-watering-can.can(v-if="superFresh")
+  mdi-watering-can-outline.can(v-else)
   .flex-1.font-normal {{ elapsed }}
 </template>
 
 <script lang="ts" setup>
 import { defineProps, computed } from 'vue'
-import TimeAgo from 'javascript-time-ago'
+import { useTimeAgo } from '@vueuse/core'
 
 const props = defineProps({
   date: String,
 });
 
-const timeAgo = new TimeAgo('ru-RU')
-const elapsed = computed(() => {
-  return timeAgo.format(new Date(props.date), 'mini')
+const diff = computed(() => {
+  return Date.now() - new Date(props.date).getTime()
 })
+
+
+const superFresh = computed(() => {
+  return diff.value < 1000 * 60 * 60 * 24
+})
+
+
+const fresh = computed(() => {
+  return diff.value < 1000 * 60 * 60 * 24 * 7
+})
+
+const elapsed = useTimeAgo(new Date(props.date), {
+  messages: {
+    justNow: ' now',
+    past: n => n.match(/\d/) ? `${n}` : n,
+    future: n => n.match(/\d/) ? `in ${n}` : n,
+    month: (n) => `${n} mo`,
+    year: (n) => `${n} y`,
+    day: (n) => `${n} d`,
+    week: (n) => `${n} w`,
+    hour: (n) => `${n} h`,
+    minute: (n) => `${n} m`,
+    second: (n) => `${n} s`,
+  }
+});
 </script>
 
-<style lang="stylus" scoped>
-
+<style scoped>
+.can {
+  @apply mr-1 text-lg opacity-50 text-green-800 transition-all dark:text-green-200;
+}
 </style>

@@ -16,6 +16,6 @@ function getParents(tag, all) {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="" scoped>
 
 </style>
