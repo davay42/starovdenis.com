@@ -1,0 +1,1 @@
+import{e as t,f as e}from"./motion.2b3645e8.js";const i='{"title":"Публицистика","description":"","frontmatter":{"icon":"📗","title":"Публицистика","tags":"art","list":"writing"},"relativePath":"art/writing/index.md","lastUpdated":1620550129801}',r={};r.render=function(i,r,n,a,o,d){return t(),e("div")};export default r;export{i as __pageData};
