@@ -5,7 +5,7 @@ import head from './head'
 //@ts-ignore
 import getTags from 'vitepress-tags'
 
-const pages = getTags()
+const pages = getTags('./')
 
 const config: UserConfig<DefaultTheme.Config> = {
   title: metaData.title,
@@ -13,7 +13,7 @@ const config: UserConfig<DefaultTheme.Config> = {
   lang: metaData.locale,
   head,
   themeConfig: {
-    repo: 'DeFUCC/starovdenis.com',
+    repo: 'DeFUCC/starovdenis.com', 
     logo: '/img/davay.svg',
     docsDir: '.',
     docsBranch: 'master',

@@ -15,9 +15,9 @@
     "baseUrl": "."
   },
   "include": [
-    "pages/.vitepress/**/*.ts",
-    "pages/components/**/*.vue",
-    "pages/cards/**/*.vue", 
+    ".vitepress/**/*.ts",
+    "components/**/*.vue",
+    "cards/**/*.vue", 
   ],
   "exclude": [
     "**/dist/**"

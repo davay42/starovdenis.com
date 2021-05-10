@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@iconify/json': ^1.1.334
+  '@types/node': ^15.0.2
   '@vueuse/core': 4.9.0
   '@vueuse/motion': ^1.5.4
   esbuild-register: ^2.5.0
@@ -34,6 +35,7 @@ dependencies:
 
 devDependencies:
   '@iconify/json': 1.1.334
+  '@types/node': 15.0.2
   esbuild-register: 2.5.0
   markdown-it-classy: 0.2.0
   markdown-it-container: 3.0.0
@@ -253,6 +255,10 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
+    dev: true
+
+  /@types/node/15.0.2:
+    resolution: {integrity: sha512-p68+a+KoxpoB47015IeYZYRrdqMUcpbK8re/zpFB8Ld46LHC1lPEbp3EXgkEhAYEcPvjJF6ZO+869SQ0aH1dcA==}
     dev: true
 
   /@vitejs/plugin-vue/1.1.5_@vue+compiler-sfc@3.0.7:
