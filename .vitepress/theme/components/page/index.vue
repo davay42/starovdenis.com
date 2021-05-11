@@ -1,23 +1,25 @@
 <template lang="pug">
 main
-  .art.h-md.bg-cover(v-if="$frontmatter.art", :style="{ backgroundImage: 'url(' + '/art/' + $frontmatter.art + ')' }", v-motion-fade)
-  .content(:class="{ 'full-width': $frontmatter.fullWidth }")
-    page-parents
-    .text-4xl.font-bold.mb-4.flex.flex-wrap.items-center(v-if="$frontmatter.title", v-motion-fade, :key="$frontmatter.title") 
-      .mr-2 {{ $frontmatter.title }}
-      .flex-1
-      .mx-2.my-4.text-6xl {{ $frontmatter.emoji }}
-    .flex.items-center(v-if="$frontmatter.price")
-      .text-xl.font-bold.rounded-xl.text-orange-800.p-2.mr-2(class="dark:text-orange-200") {{ $frontmatter.price }}
-      a.text-xl.font-bold.rounded-xl.bg-orange-300.px-2.py-1(href="/contact") Заказать
-    .font-bold.mt-2.mb-4(v-if="$frontmatter.subtitle") {{$frontmatter.subtitle}}
-    content
-  row-list(
+  .header(:class="{ 'has-cover': $frontmatter.cover || $frontmatter.icon }")
+    .cover(v-if="$frontmatter.cover",:style="{ backgroundImage: 'url(/media/' + $frontmatter.cover + ')' }", v-motion-fade)
+    img.icon(v-if="$frontmatter.icon",:src="'/media/' + $frontmatter.icon")
+    .meta.content
+      page-parents
+      .text-4xl.font-bold.mb-4.flex.flex-wrap.items-center(v-if="$frontmatter.title", v-motion-fade, :key="$frontmatter.title") 
+        .mr-2 {{ $frontmatter.title }}
+        .flex-1
+        .mx-2.my-4.text-6xl(v-if="$frontmatter.emoji") {{ $frontmatter.emoji }}
+      shop-price(:product="$frontmatter?.product")
+      .font-bold.mt-2.mb-4(v-if="$frontmatter.subtitle") {{ $frontmatter.subtitle }}
+      shop-order(:product="$frontmatter?.product")
+  .info
+    content.content
+    row-list(
     v-if="$frontmatter.list", 
     :rows="$site.customData.pages?.[$frontmatter.list]"
     )
-  page-footer
-  page-next-prev
+    page-next-prev
+  footer-row
 </template>
 
 <script setup lang="ts">
@@ -27,19 +29,51 @@ main
 
 <style lang="postcss" scoped>
 main {
-  @apply mb-4;
+  @apply flex flex-col;
 }
 
-.art {
-  filter: saturate(30%) sepia(5%);
+.header {
+  @apply relative flex flex-col items-center;
+}
+
+.header.has-cover {
+  @apply h-42em;
+}
+
+.has-cover .meta {
+  @apply absolute bottom-0 w-full rounded-t-lg;
+}
+
+.meta {
+  @apply bg-gray-100 bg-opacity-85 z-10 max-w-55ch w-full mt-8;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.dark .meta {
+  @apply bg-true-gray-800 bg-opacity-85;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.info {
+  @apply bg-gray-100 dark:bg-gray-800 pb-32 shadow-2xl z-3;
+}
+
+.cover {
+  @apply transition-all duration-1000 bg-cover bg-center bg-gray-100 dark:(bg-gray-700) -z-5 fixed top-0 h-48em left-0 right-0 bg-fixed;
+  filter: saturate(50%) sepia(5%) opacity(70%) blur(20px);
+}
+
+.header:hover .cover {
+  filter: saturate(60%) sepia(0%) opacity(90%);
+}
+
+.icon {
+  @apply m-4 max-h-20em max-w-20em fixed;
 }
 
 .content {
-  padding-bottom: 1.5rem;
   @apply p-8 max-w-55ch mx-auto flex flex-col pb-16;
-}
-
-.content.cards {
-  @apply max-w-65ch mx-auto;
 }
 </style>

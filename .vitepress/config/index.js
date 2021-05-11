@@ -12,7 +12,7 @@ const config = {
   head,
   themeConfig: {
     repo: 'DeFUCC/starovdenis.com',
-    logo: '/img/davay.svg',
+    logo: '/media/davay.svg',
     docsDir: '.',
     docsBranch: 'master',
     docsRepo: 'DeFUCC/starovdenis.com',

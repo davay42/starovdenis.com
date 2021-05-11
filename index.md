@@ -1,7 +1,8 @@
 ---
 title: 'Главная'
-home: true
-heroImage: /img/davay.svg
+template: home
+list: main
+icon: davay.svg
 actionLink: /enter.html
 actionText: Войти
 altActionLink: /en.html

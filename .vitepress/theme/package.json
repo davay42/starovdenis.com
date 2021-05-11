@@ -1,0 +1,25 @@
+{
+  "name": "vitepress-theme-garden",
+  "description": "A basic theme for a vitepress digital garden",
+  "version": "0.0.1",
+  "keywords": [
+    "vitepress",
+    "theme",
+    "pages",
+    "digital garden",
+    "gardening",
+    "markdown",
+    "frontmatter"
+  ],
+  "licence": "MIT",
+  "author": {
+    "name": "Denis Starov",
+    "email": "davay@defucc.me",
+    "url": "https://starovdenis.com"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://www.ko-fi.com/davay"
+  },
+  "main": "index.js"
+}

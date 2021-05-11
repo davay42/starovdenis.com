@@ -20,12 +20,12 @@
   --c-text-light-2: #476582;
   --c-text-light-3: #90a4b7;
 
-  --c-link: hsla(10, 40%, 10%, 1);
+  --c-link: hsla(300, 10%, 24%, 1);
 
-  --c-brand: hsl(10, 50%, 40%);
-  --c-brand-active: hsl(10, 60%, 40%);
-  --c-brand-dark: hsl(5, 30%, 30%);
-  --c-brand-light: hsl(20, 60%, 55%);
+  --c-brand: hsl(300, 30%, 40%);
+  --c-brand-active: hsl(300, 30%, 20%);
+  --c-brand-dark: hsl(300, 30%, 30%);
+  --c-brand-light: hsl(300, 60%, 25%);
 
   --c-disabled-bg: #e5e5e5;
   --c-disabled-fg: #666;
@@ -95,10 +95,10 @@ html.dark {
 
   --c-link: hsla(10, 20%, 90%, 1);
 
-  --c-brand: hsl(10, 20%, 50%);
-  --c-brand-active: hsl(10, 40%, 50%);
-  --c-brand-dark: hsl(5, 30%, 30%);
-  --c-brand-light: hsl(20, 60%, 55%);
+  --c-brand: hsl(300, 30%, 50%);
+  --c-brand-active: hsl(300, 30%, 60%);
+  --c-brand-dark: hsl(300, 30%, 30%);
+  --c-brand-light: hsl(300, 30%, 65%);
 }
 
 /** Fallback Styles */

@@ -1,49 +1,65 @@
 <template lang="pug">
 .block(
-  :title="item.lastModified",
-  style="background-color: var(--c-bg-secondary);"
+  :id="item.title"
   v-motion,
   :initial="{ opacity: 0, y: 40 }",
   :enter="{ opacity: 0, y: 0, scale: 1 }",
   :visible="{ opacity: 1, y: 0, scale: 1 }",
   :delay="i * 80",
-  :style="{ zIndex: i + 10 }"
+  :style="{ zIndex: i + 10, borderColor: lchToHsl(i, total) }"
   )
-  a.flex.flex-col.min-content.flex-1(:href="item.link")
-    .art.w-full.h-12em.bg-cover.bg-center.mb-8.rounded(v-if="item.data.art", :style="{ backgroundImage: 'url(' + '/art/' + item.data.art + ')' }", v-motion-fade)
-    .flex.flex-1.self-stretch.flex-wrap.items-center
+  a.header(:href="item.link")
+    .cover(v-if="item.data?.cover", :style="{ backgroundImage: 'url(/media/' + item.data?.cover + ')' }", v-motion-fade)
+    .info
       .mr-2.text-2xl(v-if="item.data.emoji") {{ item.data.emoji }}
-      h3.text-3xl.flex.items-center {{ item.title }}
+      h3.text-3xl.flex.items-center {{ item.title }} 
+        shop-price(:product="item.data?.product")
       .px-2.mt-2(v-if="item.more") 
         radix-icons-text-align-left
       .flex-auto
-      card-date(:date="item.lastModified")
-    .text-md.mt-4.mb-2.font-normal(v-if="item.subtitle") {{ item.subtitle }}
-    .text-xl.font-bold.rounded-xl.text-orange-800.p-2.mt-4(class="dark:text-orange-300",v-if="item.data.price") {{ item.data.price }}
-  .mt-4.flex.flex-col.flex-auto.w-full( v-if="$site.customData.pages?.[item.data.list]")
-    my-areas(:areas="$site.customData.pages?.[item.data.list]")
+      card-date(v-if="!item.data?.product",:date="item.lastModified")
+      .text-md.mt-4.mb-2.font-normal.w-full(v-if="item.subtitle") {{ item.subtitle }}
+      .text-xl.font-bold.rounded-xl.text-orange-800.p-2.mt-4(class="dark:text-orange-300",v-if="item.data.price") {{ item.data.price }}
+  card-list(v-if="$site.customData.pages?.[item.data?.list]",:rows="$site.customData.pages?.[item.data?.list]")
+
 </template>
 
 <script setup>
 import { defineProps } from 'vue'
 const props = defineProps({
   item: Object,
-  i: Number
+  i: Number,
+  total: Number,
 });
+
+import { lchToHsl } from '../../composables/colors.js'
+
 </script>
 
 <style lang="postcss" scoped>
 .block {
-  @apply p-4 my-8 flex flex-col items-stretch shadow-lg static md:p-8;
+  @apply my-8 shadow-lg rounded-md mx-2 md:mx-0 sm:mx-4
+  flex flex-col items-stretch 
+    transition-all
+  static;
 }
 
-.art {
-  filter: saturate(10%) opacity(70%);
-  transition: all 200ms ease-in-out;
+.header {
+  @apply flex flex-col min-content flex-1;
 }
 
-.block:hover .art {
-  filter: saturate(50%);
+.info {
+  @apply flex flex-1 self-stretch flex-wrap items-center p-4 md:(px-8 py-4);
+}
+
+.cover {
+  @apply w-full h-12em bg-cover bg-center mb-2 rounded;
+  filter: saturate(10%) opacity(50%);
+  transition: all 600ms ease-in-out;
+}
+
+.block:hover .cover {
+  filter: saturate(100%) opacity(90%);
 }
 
 a:hover {

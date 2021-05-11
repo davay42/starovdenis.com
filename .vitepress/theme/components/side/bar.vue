@@ -2,7 +2,7 @@
 aside(class="h-auto border-l-1px border-$c-divider")
   .sidebar(:class="{ open }")
     nav-links.nav
-    side-Links
+    // side-Links
 </template>
 
 <script setup lang="ts">

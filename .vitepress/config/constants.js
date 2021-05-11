@@ -7,8 +7,8 @@ export const metaData = {
   description: 'Мой цифровой сад',
   site,
   locale: 'ru-RU',
-  image: `${site}/assets/logo-color.png`,
-  icon: '/img/davay.svg',
+  image: ``,
+  icon: '/media/davay.svg',
   author: 'Денис Старов',
   tags: 'денис, старов, старов денис, сайт, страничка, умения, блог',
 }

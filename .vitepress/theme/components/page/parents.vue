@@ -1,7 +1,9 @@
 <template lang="pug">
 .flex.flex-wrap.mb-4.text-lg
   .flex-1(v-for="page in getParents($frontmatter.tags, $site.customData.pages.all)", :key="page.title") 
-    a(:href="page.link") {{ page.title }}
+    a.flex.items-center(:href="page.link") 
+      ic-sharp-arrow-upward.mr-1
+      span {{ page.title }}
 </template>
 
 <script setup>
@@ -16,6 +18,5 @@ function getParents(tag, all) {
 }
 </script>
 
-<style lang="" scoped>
-
+<style  scoped>
 </style>

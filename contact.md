@@ -1,5 +1,8 @@
 ---
 editLink: false
+tags: main
+title: Контакты
+subtitle: Я открыт к сотрудничеству по множеству направлений. Выходите на связь.
 ---
 
 ![](/img/starov.jpg) {avatar}
