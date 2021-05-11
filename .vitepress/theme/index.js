@@ -6,7 +6,7 @@ import './styles/layout.postcss'
 import './styles/custom-blocks.css'
 import './styles/sidebar-links.postcss'
 
-import Layout from '../../node_modules/theme/layout.vue'
+import Layout from './layout.vue'
 import NotFound from './not-found.vue'
 import rowList from './components/row/list.vue'
 
