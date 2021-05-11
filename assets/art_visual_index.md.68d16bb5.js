@@ -1,0 +1,1 @@
+import{e as t,f as e}from"./motion.dd3e83dc.js";const r='{"title":"Визуальное искусство","description":"","frontmatter":{"title":"Визуальное искусство","tags":"art","list":"visual"},"relativePath":"art/visual/index.md","lastUpdated":1618471190160}',a={};a.render=function(r,a,i,d,o,s){return t(),e("div")};export default a;export{r as __pageData};

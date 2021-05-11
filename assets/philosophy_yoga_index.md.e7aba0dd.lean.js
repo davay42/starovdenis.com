@@ -1,0 +1,1 @@
+import{e as t,f as e}from"./motion.dd3e83dc.js";const o='{"title":"Йога","description":"","frontmatter":{"title":"Йога","tags":"philosophy","list":"yoga"},"relativePath":"philosophy/yoga/index.md","lastUpdated":1618578277605}',i={};i.render=function(o,i,r,a,d,s){return t(),e("div")};export default i;export{o as __pageData};
