@@ -2,10 +2,15 @@ import { defineConfig } from 'vite'
 import Components from 'vite-plugin-components'
 import Icons, { ViteIconsResolver } from 'vite-plugin-icons'
 import WindiCSS from 'vite-plugin-windicss'
+import { getAliases } from 'vite-aliases'
 
 
 export default defineConfig({
-
+  resolve: {
+		alias: getAliases({
+      path: '.vitepress/theme'
+    })
+	},
   plugins: [
 
     Components({
