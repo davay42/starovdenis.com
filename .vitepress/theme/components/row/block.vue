@@ -5,7 +5,6 @@
   :initial="{ opacity: 0, y: 40 }",
   :enter="{ opacity: 0, y: 0, scale: 1 }",
   :visible="{ opacity: 1, y: 0, scale: 1 }",
-  :delay="i * 80",
   :style="{ zIndex: i + 10, borderColor: lchToHsl(i, total) }"
   )
   a.header(:href="item.link")
@@ -13,13 +12,14 @@
     .info
       .mr-2.text-2xl(v-if="item.data.emoji") {{ item.data.emoji }}
       h3.text-3xl.flex.items-center {{ item.title }} 
-        shop-price(:product="item.data?.product")
+
       .px-2.mt-2(v-if="item.more") 
         radix-icons-text-align-left
       .flex-auto
       card-date(v-if="!item.data?.product",:date="item.lastModified")
       .text-md.mt-4.mb-2.font-normal.w-full(v-if="item.subtitle") {{ item.subtitle }}
-      .text-xl.font-bold.rounded-xl.text-orange-800.p-2.mt-4(class="dark:text-orange-300",v-if="item.data.price") {{ item.data.price }}
+      shop-price(:product="item.data?.product")
+      header-buttons(:buttons="item.data?.buttons")
   card-list(v-if="$site.customData.pages?.[item.data?.list]",:rows="$site.customData.pages?.[item.data?.list]")
 
 </template>
@@ -32,15 +32,15 @@ const props = defineProps({
   total: Number,
 });
 
-import { lchToHsl } from '../../composables/colors.js'
+import { lchToHsl } from '@composables/colors.js'
 
 </script>
 
 <style lang="postcss" scoped>
 .block {
-  @apply my-8 shadow-lg rounded-md mx-2 md:mx-0 sm:mx-4
+  @apply my-8 shadow-lg rounded-md mx-2 md:mx-0 sm:mx-4 bg-light-200 dark:bg-dark-200
   flex flex-col items-stretch 
-    transition-all
+  transition-all
   static;
 }
 
@@ -49,11 +49,11 @@ import { lchToHsl } from '../../composables/colors.js'
 }
 
 .info {
-  @apply flex flex-1 self-stretch flex-wrap items-center p-4 md:(px-8 py-4);
+  @apply my-4 flex flex-1 self-stretch flex-wrap items-center p-4 md:(px-8 py-4);
 }
 
 .cover {
-  @apply w-full h-12em bg-cover bg-center mb-2 rounded;
+  @apply w-full h-16em bg-cover bg-center mb-2 rounded;
   filter: saturate(10%) opacity(50%);
   transition: all 600ms ease-in-out;
 }

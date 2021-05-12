@@ -8,12 +8,3 @@ actionText: Войти
 altActionLink: /en.html
 altActionText: Enter
 ---
-
-
-
-
-
-
-
-
-
