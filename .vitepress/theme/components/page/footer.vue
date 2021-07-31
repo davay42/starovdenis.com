@@ -4,7 +4,7 @@ footer
     nav-links
   a.flex.flex-col.items-center.no-underline(href="/") 
     .mt-4.font-bold.text-2xl.p-2 {{ site.title }}
-    img.w-6rem.my-4(src="/img/sadvidya.svg")
+    //- img.w-6rem.my-4(src="/img/sadvidya.svg")
 </template>
 
 <script setup>

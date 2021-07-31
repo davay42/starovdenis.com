@@ -19,12 +19,11 @@ import {
   Vertices,
   Mouse,
   MouseConstraint,
-  Query,
   Common
 } from "matter-js";
 import decomp from "poly-decomp";
 export default {
-  data: function() {
+  data: function () {
     return {
       debug: null,
       canvasProp: {
@@ -98,7 +97,7 @@ export default {
     render.mouse = mouse;
     // an example of using mouse events on a mouse
     var fsa = [];
-    Events.on(mouseConstraint, "startdrag", function(event) {
+    Events.on(mouseConstraint, "startdrag", function (event) {
       fsa = event.body.parts.map(v => v.render.fillStyle);
       event.body.parts = event.body.parts.map(v => {
         v.render.fillStyle = "#FF0000";
@@ -106,7 +105,7 @@ export default {
       });
       //console.log("startdrag", fsa);
     });
-    Events.on(mouseConstraint, "enddrag", function(event) {
+    Events.on(mouseConstraint, "enddrag", function (event) {
       event.body.parts.map(
         (v, i) => (event.body.parts[i].render.fillStyle = fsa[i])
       );
