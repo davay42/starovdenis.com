@@ -1,1 +1,0 @@
-import{e as p,f as t,J as e}from"./motion.dd3e83dc.js";const r='{"title":"Столярное дело","description":"","frontmatter":{"title":"Столярное дело","tags":"workshop"},"relativePath":"art/workshop/wood.md","lastUpdated":1618311705053}',o={},a=e('',9);o.render=function(e,r,o,n,l,s){return p(),t("div",null,[a])};export default o;export{r as __pageData};
