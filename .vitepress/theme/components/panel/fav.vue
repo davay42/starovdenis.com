@@ -1,5 +1,6 @@
 <template lang="pug">
-p not found
+a(href="/fav.html")
+  la-star-solid.star
 </template>
 
 <script setup>

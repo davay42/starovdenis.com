@@ -1,0 +1,206 @@
+@import "fonts.css";
+
+.toggle {
+  padding: 0.5em;
+}
+
+.toggle.off {
+  opacity: 0.5;
+}
+
+.credits p {
+  display:none;
+}
+
+#body .card p, #body .card p {
+  margin:0;
+}
+
+.credits-menu a {
+  color: #fff !important;
+}
+main {
+  	line-height:1.8em;
+    margin:0 0 8px 0;
+}
+
+.content p:empty {
+ 	display:none;
+}
+
+.content p.english {
+  display:none;
+}
+
+i, em {
+  font-style: normal;
+  color:#888;
+}
+
+article.content  {
+	counter-reset: stanza 1;
+}
+
+.content section {
+  position:relative;
+  margin:40px 0;
+  padding-bottom: 20px;
+  border-bottom:2px solid #ccc;
+}
+
+.count section:hover:before {
+  opacity: 1;
+}
+
+.count section:before {
+  content: counter(stanza);
+  opacity:0;
+  transition: opacity 300ms ease;
+  position:absolute;
+  top:40%;
+  left: -80px;
+  color:#ccc;
+  font-size:30pt;
+}
+
+.count section.nonum:last-child:before {
+  content:'';
+}
+.count section {
+  counter-increment: stanza;
+}
+
+.sanskrt, .sanskrit {
+	font-weight:500;
+	font-size:2em;
+	margin: 12px 0;
+    line-height: 1.42;
+    font-family: 'Mukta';
+}
+
+.sanskrit h1, .sanskrit h2, .sanskrit h3, .sanskrit h4,  [lang=sa] {
+  font-family: 'Mukta';
+}
+
+.commentary .sanskrit {
+  font-size:1.2em;
+}
+
+.commentary .transcript {
+  font-size: 1em;
+}
+
+.big {
+  font-size: 350%;
+}
+
+.transcript {
+  font-size:1.2em;
+	color:#999;
+  margin: 12px 0;
+}
+.translation {
+  margin-top:16px;
+}
+.content small {
+  display:block;
+  margin:12px 0;
+}
+.num {
+	font-size:75%;
+	color:#999;
+}
+.title {
+	font-weight:bold;
+	font-size:150%;
+}
+.note {
+	font-size:80%;
+	color:#444;
+}
+.kala {
+	border-left: 3px #aaa solid;
+  	margin:10px 0;
+}
+.bhuta td {
+  border-right:1px solid #ccc;
+}
+.bhuta tr:not(.head) th {
+  border: 12px solid white;
+  background:#eee;
+}
+.bhuta td, .bhuta td p {
+  text-align:center !important;
+}
+.bhuta td.line {
+	border-right:1px solid black;
+}
+
+.ligatures td:nth-child(2n+1) {
+    font-family: 'Mukta';
+    font-size: 22px;
+    word-break: keep-all;
+}
+
+.only-ligatures {
+    font-family: 'Mukta';
+    font-size: 22px;
+    word-break: keep-all;
+}
+
+.only-ligatures td:nth-child(odd) {
+  background-color: hsla(0,0%,80%,0.3);
+}
+
+.megatable {
+    width: 100%;
+    overflow: scroll;
+    height:80vh;
+    position: relative;
+}
+.megatable tr:first-child {
+  background-color: hsla(0,0%,100%,1);
+  position: sticky;
+  top: 0;
+}
+
+.megatable td:first-child {
+  background-color: hsla(0,0%,100%,1);
+  position: sticky;
+  left: 0;
+}
+
+table.names {
+  width:100%
+}
+
+table.names td:nth-child(2) {
+  font-family: 'Mukta';
+}
+
+.no-sans .sanskrit {
+  display: none;
+}
+
+.no-trans .transcript {
+  display: none;
+}
+
+.no-words em {
+  display: none;
+}
+
+.no-translate > section > p {
+  display: none;
+}
+.child-cards .card {
+    padding: 0;
+}
+
+#top-bar ul#menu {
+    flex-grow: 4;
+    justify-content: center;
+}
+body[data-url="/"] #top-bar #logo {
+    display: none;
+}

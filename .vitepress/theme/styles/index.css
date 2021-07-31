@@ -1,0 +1,85 @@
+root {
+  --font-family-base: 'Commissioner', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+
+  --font-family-mono: 'Fira Code', source-code-pro, Menlo, Monaco, Consolas,
+    'Courier New', monospace;
+}
+
+/* commissioner-regular - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-regular.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-regular.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* commissioner-700 - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-700.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('/fonts/commissioner-v3-latin_cyrillic-ext_cyrillic-700.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''), url('/fonts/Mukta-Regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/Mukta-Regular.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('/fonts/Mukta-Bold.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/Mukta-Bold.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 300ms ease-in-out;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.list-enter-active {
+  transition: all 0.3s ease-out;
+}
+.list-enter-from {
+  opacity: 0;
+  z-index: 20;
+  transform: translateY(-100%);
+}
+
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.list-leave-active {
+  transition: all 0.4s ease-in;
+}
+.list-move {
+  transition: transform 0.8s ease-in-out;
+}
+.list-item {
+  z-index: 1;
+}

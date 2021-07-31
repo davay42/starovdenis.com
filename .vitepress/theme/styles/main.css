@@ -1,0 +1,137 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.4;
+  font-family: var(--font-family-base);
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  background-color: #dfdfdf;
+  direction: ltr;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply transition-colors;
+}
+
+.dark body {
+  background-color: #222;
+  color: #ddd;
+}
+
+.content {
+  @apply hyphens-auto break-words;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    @apply max-w-2xl mx-auto leading-relaxed my-4;
+  }
+  em {
+    @apply not-italic text-dark-100/60 dark:text-light-100/60;
+  }
+  .header-anchor {
+    @apply text-lg absolute -mx-5  opacity-20;
+  }
+  h2 {
+    scroll-snap-align: start;
+    @apply font-bold text-2xl p-1 my-4;
+  }
+  ul {
+    @apply p-4;
+  }
+  li {
+    @apply leading-relaxed py-2;
+  }
+  hr {
+    @apply my-16 bg-dark-100/50 h-1px dark:bg-light-100/50 max-w-xl;
+  }
+  img {
+    scroll-snap-align: start;
+    @apply mx-auto rounded-lg shadow-xl my-16;
+  }
+  img[alt='no-shadow'] {
+    @apply shadow-none;
+  }
+  table {
+    @apply border-collapse;
+    td {
+      @apply p-1;
+    }
+    tr:nth-child(2n) {
+      @apply bg-dark-100/10 dark:bg-light-100/10;
+    }
+  }
+}
+
+.sans,
+.sanskrt,
+.sanskrit {
+  @apply text-4xl;
+  font-family: 'Mukta';
+}
+
+.sans.big {
+  @apply text-6xl font-bold mt-4;
+}
+
+.trans {
+  @apply text-dark-200/40 dark:text-light-300/40 text-2xl  leading-loose mb-2;
+}
+
+.eng {
+  @apply opacity-90 text-base;
+}
+
+.stanza {
+  scroll-snap-align: start;
+  @apply transition-all max-w-2xl mx-auto relative duration-400 shadow-md p-3 sm:p-8 my-12 bg-light-400 text-left rounded overflow-x-scroll
+  dark:(bg-dark-200);
+  &:hover {
+    @apply shadow-xl;
+  }
+  & .num {
+    @apply flex items-center no-underline cursor-pointer transition-all top-3 right-3 sm:(top-3 right-3) duration-600 absolute font-bold text-2xl opacity-10;
+  }
+  & .num.fav {
+    @apply opacity-100;
+    &::before {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      right: 2rem;
+      transform: scale(0.62);
+      content: url('/fav.svg');
+    }
+  }
+  &:hover .num {
+    @apply opacity-70;
+  }
+}
+
+a {
+  @apply underline;
+}
+
+.no-sans .sans,
+.no-trans .trans,
+.no-words em,
+.no-eng .eng,
+.no-text p:not([class]) {
+  @apply hidden;
+}
+
+.star {
+  color: #ffce03;
+}
