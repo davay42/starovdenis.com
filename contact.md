@@ -3,9 +3,10 @@ editLink: false
 tags: main
 title: Контакты
 subtitle: Я открыт к сотрудничеству по множеству направлений. Выходите на связь.
+date: 1987-03-07
 ---
 
-![](/media/starov.jpg) {avatar}
+![](/media/starov.jpg) 
 
 ## Денис К Старов
 

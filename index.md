@@ -1,10 +1,7 @@
 ---
-title: 'Главная'
-template: home
+title: Начало
 list: main
 icon: davay.svg
-actionLink: /enter.html
-actionText: Войти
-altActionLink: /en.html
-altActionText: Enter
 ---
+
+Привет! Меня зовут Денис. Я исследую мир вокруг и внутри, в теории и на практике. Здесь собираю и представляю то, чем хочется поделиться.

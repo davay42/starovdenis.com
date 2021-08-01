@@ -1,7 +1,7 @@
 <template lang="pug">
-.flex.flex-wrap.max-w-60ch.mx-auto
+.cards
   a.card(
-    v-for="page in site.customData.pages[frontmatter.list]"
+    v-for="page in pages"
     :key= "page.link"
     :href="page.link"
   ) 
@@ -10,22 +10,43 @@
       v-if="page.data.cover"
       :src="page.data.cover"
     )
-    .p-2.my-auto
-      .text-xl.font-bold {{ page.title }}
-      .text-2xl.my-4.font-bold {{ page.data.sans }}
-      .text-xl.my-4.opacity-70 {{ page.data.trans }}
-      .text-sm {{ page.subtitle }}
+    .p-2
+      .title {{ page.title }}
+      .text-md.mt-2(v-if="page.subtitle") {{ page.subtitle }}
+    .time
+      ic-round-update.mr-1
+      .p-0 {{ getDate(page.lastModified) }}
 </template>
 
 <script setup>
 import { useData } from 'vitepress'
 const { site, frontmatter } = useData();
+
+const pages = site.value.customData.pages[frontmatter.value.list];
+
+function getDate(timestamp) {
+  let date = new Date(timestamp)
+  return date.toLocaleString('default', { month: 'short', year: '2-digit' });
+}
+
 </script>
 
 <style scoped>
+.cards {
+  @apply flex flex-wrap p-4;
+}
 .card {
   scroll-snap-align: start;
-  @apply flex flex-col rounded-lg bg-light-400 dark:(bg-dark-100) transition-all duration-300 p-4 m-4 shadow-lg no-underline hover:shadow-2xl items-center;
+  @apply text-left flex flex-col relative rounded-md bg-light-400 dark:(bg-dark-100) shadow-md transition-all duration-200 p-4 m-2 no-underline hover:(bg-light-100 shadow-lg dark:(bg-dark-400));
   flex: 1 1 45%;
+  & .title {
+    @apply text-xl font-bold md:text-2xl;
+  }
+  & .time {
+    @apply absolute right-8px bottom-4px opacity-10 text-xs flex items-center transition-all duration-400;
+  }
+  &:hover .time {
+    @apply opacity-80;
+  }
 }
 </style>

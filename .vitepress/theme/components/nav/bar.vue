@@ -1,6 +1,7 @@
 <template lang="pug">
-.flex.flex-wrap.items-center.justify-center
+.flex.flex-wrap.nav-bar
   nav-links
+  nav-dark
 </template>
 
 <script setup>
@@ -9,6 +10,6 @@
 
 <style scoped>
 .nav-bar {
-  @apply flex flex-col items-center p-2 border-b-1 m-2;
+  @apply flex flex-col my-4;
 }
 </style>

@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
+  hyphens: auto;
 }
 
 body {
@@ -9,7 +10,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   line-height: 1.4;
-  font-family: var(--font-family-base);
+  font-family: 'Commissioner', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #333;
@@ -73,65 +76,4 @@ body {
       @apply bg-dark-100/10 dark:bg-light-100/10;
     }
   }
-}
-
-.sans,
-.sanskrt,
-.sanskrit {
-  @apply text-4xl;
-  font-family: 'Mukta';
-}
-
-.sans.big {
-  @apply text-6xl font-bold mt-4;
-}
-
-.trans {
-  @apply text-dark-200/40 dark:text-light-300/40 text-2xl  leading-loose mb-2;
-}
-
-.eng {
-  @apply opacity-90 text-base;
-}
-
-.stanza {
-  scroll-snap-align: start;
-  @apply transition-all max-w-2xl mx-auto relative duration-400 shadow-md p-3 sm:p-8 my-12 bg-light-400 text-left rounded overflow-x-scroll
-  dark:(bg-dark-200);
-  &:hover {
-    @apply shadow-xl;
-  }
-  & .num {
-    @apply flex items-center no-underline cursor-pointer transition-all top-3 right-3 sm:(top-3 right-3) duration-600 absolute font-bold text-2xl opacity-10;
-  }
-  & .num.fav {
-    @apply opacity-100;
-    &::before {
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      right: 2rem;
-      transform: scale(0.62);
-      content: url('/fav.svg');
-    }
-  }
-  &:hover .num {
-    @apply opacity-70;
-  }
-}
-
-a {
-  @apply underline;
-}
-
-.no-sans .sans,
-.no-trans .trans,
-.no-words em,
-.no-eng .eng,
-.no-text p:not([class]) {
-  @apply hidden;
-}
-
-.star {
-  color: #ffce03;
 }
