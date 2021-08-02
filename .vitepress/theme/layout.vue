@@ -2,20 +2,20 @@
 .page
   .panels
     page-header.header
-      nav-bar
-    transition(name="fade" mode="out-in" )
-      .content(:key="route.path")
-        page-parents
-        header.my-8.px-8
-          h1.text-4xl.font-bold.mb-8 {{ frontmatter.title }}
-          .text-xl {{ frontmatter.subtitle }}
-        content.px-8.mb-16
+    .content
+      transition(name="fade" mode="out-in" )
+        div(:key="route.path")
+          page-parents
+          header.my-8.px-8
+            h1.text-4xl.font-bold.mb-8 {{ frontmatter.title }}
+            .text-xl {{ frontmatter.subtitle }}
+          content.px-8.mb-16
 
-        page-list.panel(
-        :key="route.path"
-        v-if="frontmatter.list"
-          )
-        page-siblings
+          page-list.panel(
+          :key="route.path"
+          v-if="frontmatter.list"
+            )
+          page-siblings
   page-footer
 </template>
 
@@ -27,17 +27,18 @@ const route = useRoute();
 
 <style scoped>
 .page {
+  @apply min-h-100vh flex flex-col;
 }
 .panels {
-  @apply flex overflow-x-scroll overflow-y-scroll min-h-80vh;
+  @apply flex overflow-x-scroll overflow-y-scroll;
   scroll-snap-type: x mandatory;
+  flex: 1 1 100%;
   & > * {
     flex: 1 1 100%;
     @apply max-w-65ch min-w-25ch sticky left-0;
     scroll-snap-align: start;
   }
 }
-
 .panel {
   @apply bg-light-800 dark:bg-dark-300;
   flex: 1 1 320px;
@@ -47,7 +48,7 @@ const route = useRoute();
   flex: 100 1 65ch;
 }
 .header {
-  @apply bg-light-900 dark:bg-dark-600 p-8 shadow-xl;
+  @apply bg-true-gray-200 dark:bg-true-gray-800 p-8 shadow-xl;
   scroll-snap-align: end;
   flex: 0 1 300px;
 }

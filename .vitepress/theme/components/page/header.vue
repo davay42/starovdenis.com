@@ -4,7 +4,10 @@ header
     a.no-underline.mt-4.mb-4(href="/")
       img.w-12rem.mb-8(:src="theme.logo")
       .text-3xl.font-bold {{ site.title }}
-    slot
+    .flex.flex-col
+      nav-links.my-4
+      .flex.p-2
+        nav-dark
   .flex-1
 </template>
 

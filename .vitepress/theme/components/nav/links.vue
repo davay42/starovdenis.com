@@ -1,10 +1,11 @@
 <template lang="pug">
-a.p-2.no-underline.transition-all.duration-300(
-  v-for="page in site.customData.pages.main"
-  :key= "page.link"
-  :href="page.link"
-  :class="{ active: route.path.includes(page.link) }"
-) {{ page.title }} 
+.flex.flex-col
+  a.p-4.no-underline.transition-all.duration-300.text-xl(
+    v-for="page in site.customData.pages.main"
+    :key= "page.link"
+    :href="page.link"
+    :class="{ active: route.path.includes(page.link) }"
+  ) {{ page.title }} 
 </template>
 
 <script setup>
