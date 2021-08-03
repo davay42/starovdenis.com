@@ -17,6 +17,6 @@ const route = useRoute();
   
 <style scoped>
 .active {
-  @apply bg-light-900/50 rounded;
+  @apply bg-light-900/50 dark:(bg-dark-800/50) rounded font-bold;
 }
 </style>

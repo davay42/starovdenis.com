@@ -37,7 +37,7 @@ function getDate(timestamp) {
 }
 .card {
   scroll-snap-align: start;
-  @apply text-left flex flex-col relative rounded-md bg-light-400 dark:(bg-dark-100) shadow-md transition-all duration-200 p-4 m-2 no-underline hover:(bg-light-100 shadow-lg dark:(bg-dark-400));
+  @apply text-left flex min-w-250px flex-col relative rounded-md bg-light-400 dark:(bg-dark-100) shadow-md transition-all duration-200 p-4 m-2 no-underline hover:(bg-light-100 shadow-lg dark:(bg-dark-400));
   flex: 1 1 45%;
   & .title {
     @apply text-xl font-bold md:text-2xl;

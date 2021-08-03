@@ -1,7 +1,7 @@
 <template lang="pug">
-.flex.flex-wrap.items-center
+.inline-flex.flex-wrap.items-stretch.justify-start
   a.link(v-for="page in parents", :key="page.title" :href="page.link") 
-    carbon-arrow-up.mr-1
+    carbon-chevron-right.mr-1
     span {{ page.title }}
 </template>
 
@@ -14,6 +14,7 @@ const parents = useParents();
 
 <style  scoped>
 .link {
-  @apply transition-all duration-500 no-underline text-lg flex-1 flex items-center p-8 bg-light-100/10 hover:(bg-light-100);
+  @apply transition-all duration-500 no-underline text-lg flex items-center p-4 bg-light-800/60 dark:(bg-dark-100/10) hover:(bg-light-100 dark:bg-dark-100);
+  flex: 0 1 auto;
 }
 </style>
