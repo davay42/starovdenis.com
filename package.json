@@ -10,7 +10,7 @@
   "dependencies": {
     "@vueuse/core": "5.2.0",
     "@vueuse/motion": "^1.5.6",
-    "colord": "^2.4.0",
+    "colord": "^2.6.0",
     "matter-js": "^0.17.1",
     "paper": "^0.12.15",
     "poly-decomp": "^0.3.0",
@@ -18,8 +18,8 @@
     "vue-global-api": "^0.4.1"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.381",
-    "@types/node": "^16.4.8",
+    "@iconify/json": "^1.1.384",
+    "@types/node": "^16.4.13",
     "esbuild-register": "^2.6.0",
     "markdown-it-classy": "^0.2.0",
     "markdown-it-container": "^3.0.0",
@@ -27,7 +27,7 @@
     "patch-vue-directive-ssr": "^0.0.1",
     "pug": "3.0.2",
     "vite": "^2.4.4",
-    "vite-aliases": "^0.8.4",
+    "vite-aliases": "^0.8.6",
     "vite-plugin-components": "^0.13.2",
     "vite-plugin-icons": "^0.6.5",
     "vite-plugin-windicss": "^1.2.7",
