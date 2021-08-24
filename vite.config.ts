@@ -3,11 +3,23 @@ import Components from 'vite-plugin-components'
 import Icons, { ViteIconsResolver } from 'vite-plugin-icons'
 import WindiCSS from 'vite-plugin-windicss'
 import { ViteAliases } from 'vite-aliases'
+import AutoImport from 'unplugin-auto-import/vite'
 
 
 export default defineConfig({
   
   plugins: [
+    //@ts-ignore
+    AutoImport({
+      // targets to transform
+      include: [
+        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+        /\.vue\??/, // .vue
+      ],
+      imports: [
+        'vue',
+      ],
+    }),
     //@ts-ignore
     ViteAliases({
       dir: '.vitepress',

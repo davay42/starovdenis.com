@@ -8,17 +8,16 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
-    "@vueuse/core": "5.3.0",
+    "@vueuse/core": "6.0.0",
     "@vueuse/motion": "^1.5.6",
     "colord": "^2.7.0",
     "matter-js": "^0.17.1",
     "paper": "^0.12.15",
     "poly-decomp": "^0.3.0",
-    "vue": "^3.2.2",
-    "vue-global-api": "^0.4.1"
+    "vue": "^3.2.2"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.387",
+    "@iconify/json": "^1.1.388",
     "@types/node": "^16.6.1",
     "esbuild-register": "^3.0.0",
     "markdown-it-classy": "^0.2.0",
@@ -26,7 +25,8 @@
     "markdown-it-external-links": "^0.0.6",
     "patch-vue-directive-ssr": "^0.0.1",
     "pug": "3.0.2",
-    "vite": "^2.4.4",
+    "unplugin-auto-import": "^0.1.4",
+    "vite": "^2.5.0",
     "vite-aliases": "^0.8.6",
     "vite-plugin-components": "^0.13.2",
     "vite-plugin-icons": "^0.6.5",

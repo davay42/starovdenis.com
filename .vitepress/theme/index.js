@@ -2,14 +2,6 @@ import 'virtual:windi.css'
 import './styles/index.css'
 import './styles/main.css'
 
-import 'vue-global-api/ref'
-import 'vue-global-api/computed'
-import 'vue-global-api/reactive'
-import 'vue-global-api/watch'
-import 'vue-global-api/watchEffect'
-import 'vue-global-api/onMounted'
-import 'vue-global-api/nextTick'
-
 import Layout from './layout.vue'
 import NotFound from './not-found.vue'
 
