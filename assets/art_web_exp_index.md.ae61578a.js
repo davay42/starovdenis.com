@@ -1,0 +1,1 @@
+import{o as t,f as e}from"./motion.e7f3e1ab.js";const r='{"title":"Эксперименты","description":"","frontmatter":{"title":"Эксперименты","tags":"web","list":"webExp"},"relativePath":"art/web/exp/index.md","lastUpdated":1618664123218}',a={};a.render=function(r,a,i,o,n,d){return t(),e("div")};export default a;export{r as __pageData};
