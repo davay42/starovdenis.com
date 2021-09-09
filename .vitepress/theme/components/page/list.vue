@@ -20,9 +20,9 @@
 
 <script setup>
 import { useData } from 'vitepress'
-const { site, frontmatter } = useData();
+const { theme, frontmatter } = useData();
 
-const pages = site.value.customData.pages[frontmatter.value.list];
+const pages = theme.value.pages[frontmatter.value.list];
 
 function getDate(timestamp) {
   let date = new Date(timestamp)

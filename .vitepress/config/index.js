@@ -13,11 +13,8 @@ const config = {
   themeConfig: {
     repo: 'DeFUCC/starovdenis.com',
     logo: '/media/davay.svg',
-    docsDir: '.',
-    docsBranch: 'master',
     docsRepo: 'DeFUCC/starovdenis.com',
-    editLinks: false,
-    editLinkText: 'Нашли ошибку?',
+    pages,
     nav: [
       {
         text: 'Сотрудничество',
@@ -81,9 +78,6 @@ const config = {
         internalDomains: ['localhost', 'starovdenis.com'],
       })
     },
-  },
-  customData: {
-    pages: pages,
   },
 }
 
