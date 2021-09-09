@@ -8,7 +8,6 @@ import AutoImport from 'unplugin-auto-import/vite'
 
 
 export default defineConfig({
-  
   plugins: [
     //@ts-ignore
     AutoImport({
@@ -47,7 +46,7 @@ export default defineConfig({
       scan: {
         dirs: ['.vitepress'],
         include: ['index.md'],
-        exclude: ['**/examples/**/*'],
+        exclude: ['**/dist/**/*'],
         fileExtensions: ['vue', 'ts'],
       },
     }),
