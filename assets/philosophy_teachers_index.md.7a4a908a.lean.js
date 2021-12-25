@@ -1,1 +1,0 @@
-import{o as t,g as e}from"./motion.2c60df92.js";const o='{"title":"Учителя философии","description":"","frontmatter":{"title":"Учителя философии","tags":"philosophy","list":"philosophyTeacher"},"relativePath":"philosophy/teachers/index.md","lastUpdated":1619031383288}',i={};i.render=function(o,i,r,s,a,p){return t(),e("div")};export{o as __pageData,i as default};

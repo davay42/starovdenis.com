@@ -1,1 +1,0 @@
-import{o as p,g as t,q as n}from"./motion.2c60df92.js";const e='{"title":"Sunny","description":"","frontmatter":{"title":"Sunny","tags":"writingArchive","date":"2005-08-21T00:00:00.000Z"},"relativePath":"art/writing/archive/sunny.md","lastUpdated":1617905191342}',r={},i=[n("",22)];r.render=function(n,e,r,a,_,o){return p(),t("div",null,i)};export{e as __pageData,r as default};
