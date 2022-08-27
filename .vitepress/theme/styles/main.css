@@ -55,7 +55,7 @@ body {
     @apply p-4;
   }
   li {
-    @apply leading-relaxed py-2;
+    @apply leading-relaxed py-2 list-circle list-inside;
   }
   hr {
     @apply my-16 bg-dark-100/50 h-1px dark:bg-light-100/50 max-w-xl;
@@ -76,4 +76,8 @@ body {
       @apply bg-dark-100/10 dark:bg-light-100/10;
     }
   }
+}
+
+.content a {
+  @apply  underline;
 }
