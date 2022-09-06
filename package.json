@@ -1,42 +1,43 @@
 {
-  "private": true,
-  "license": "MIT",
-  "scripts": {
-    "dev": "vitepress dev ",
-    "build": "vitepress build ",
-    "serve": "vitepress serve ",
-    "deploy": "sh deploy.sh"
-  },
-  "dependencies": {
-    "@vueuse/core": "7.4.1",
-    "@vueuse/motion": "^1.6.0",
-    "color-hash": "^2.0.1",
-    "colord": "^2.9.2",
-    "gun": "^0.2020.1235",
-    "gun-avatar": "^1.4.0",
-    "matter-js": "^0.18.0",
-    "paper": "^0.12.15",
-    "poly-decomp": "^0.3.0",
-    "vue": "^3.2.26"
-  },
-  "devDependencies": {
-    "@iconify/json": "^2.0.15",
-    "@types/node": "^17.0.4",
-    "esbuild-register": "^3.2.1",
-    "markdown-it-classy": "^0.2.0",
-    "markdown-it-container": "^3.0.0",
-    "markdown-it-external-links": "^0.0.6",
-    "patch-vue-directive-ssr": "^0.0.1",
-    "pug": "3.0.2",
-    "unplugin-auto-import": "^0.5.4",
-    "unplugin-icons": "^0.12.23",
-    "unplugin-vue-components": "^0.17.10",
-    "vite": "^2.7.6",
-    "vite-aliases": "^0.8.7",
-    "vite-plugin-windicss": "^1.6.1",
-    "vitepress": "^0.20.10",
-    "vitepress-tags": "^0.4.0",
-    "windicss": "3.4.0"
-  },
-  "version": "0.3.0"
+	"version": "0.3.0",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"build": "vitepress build ",
+		"deploy": "sh deploy.sh",
+		"dev": "vitepress dev ",
+		"serve": "vitepress serve "
+	},
+	"dependencies": {
+		"@vueuse/core": "9.2.0",
+		"@vueuse/motion": "2.0.0-beta.12",
+		"color-hash": "^2.0.1",
+		"colord": "^2.9.3",
+		"gun": "^0.2020.1238",
+		"gun-avatar": "^1.6.2",
+		"matter-js": "^0.18.0",
+		"paper": "^0.12.15",
+		"poly-decomp": "^0.3.0",
+		"vue": "^3.2.38"
+	},
+	"devDependencies": {
+		"@iconify/json": "^2.1.103",
+		"@types/node": "^18.7.15",
+		"esbuild-register": "^3.3.3",
+		"markdown-it-classy": "^0.2.0",
+		"markdown-it-container": "^3.0.0",
+		"markdown-it-external-links": "^0.0.6",
+		"patch-vue-directive-ssr": "^0.0.1",
+		"pug": "3.0.2",
+		"unplugin-auto-import": "^0.11.2",
+		"unplugin-icons": "^0.14.9",
+		"unplugin-vue-components": "^0.22.4",
+		"vite": "3.1.0",
+		"vite-aliases": "^0.9.2",
+		"vite-plugin-windicss": "^1.8.7",
+		"vitepress": "1.0.0-alpha.13",
+		"vitepress-tags": "^0.4.0",
+		"vue-demi": "^0.13.11",
+		"windicss": "3.5.6"
+	}
 }
