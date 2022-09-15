@@ -18,11 +18,11 @@
 		"matter-js": "^0.18.0",
 		"paper": "^0.12.15",
 		"poly-decomp": "^0.3.0",
-		"vue": "^3.2.38"
+		"vue": "^3.2.39"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.1.103",
-		"@types/node": "^18.7.15",
+		"@iconify/json": "^2.1.107",
+		"@types/node": "^18.7.18",
 		"esbuild-register": "^3.3.3",
 		"markdown-it-classy": "^0.2.0",
 		"markdown-it-container": "^3.0.0",
@@ -31,12 +31,12 @@
 		"pug": "3.0.2",
 		"unplugin-auto-import": "^0.11.2",
 		"unplugin-icons": "^0.14.9",
-		"unplugin-vue-components": "^0.22.4",
-		"vite": "3.1.0",
+		"unplugin-vue-components": "^0.22.7",
+		"vite": "3.1.1",
 		"vite-aliases": "^0.9.2",
-		"vite-plugin-windicss": "^1.8.7",
-		"vitepress": "1.0.0-alpha.13",
-		"vitepress-tags": "^0.4.0",
+		"vite-plugin-windicss": "^1.8.8",
+		"vitepress": "1.0.0-alpha.15",
+		"vitepress-tags": "0.4.0",
 		"vue-demi": "^0.13.11",
 		"windicss": "3.5.6"
 	}
