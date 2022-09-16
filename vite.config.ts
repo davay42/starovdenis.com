@@ -5,7 +5,9 @@ import IconsResolver from 'unplugin-icons/resolver'
 import WindiCSS from 'vite-plugin-windicss'
 import { ViteAliases } from 'vite-aliases'
 import AutoImport from 'unplugin-auto-import/vite'
-
+import Pages from "vite-plugin-pages";
+import { extendRoutes } from "vitepress-pages";
+import generateSitemap from 'vite-plugin-pages-sitemap'
 
 export default defineConfig({
   plugins: [
@@ -49,6 +51,15 @@ export default defineConfig({
         exclude: ['**/dist/**/*'],
         fileExtensions: ['vue', 'ts'],
       },
+    }),
+    Pages({
+      dirs: [
+        { dir: ".", baseRoute: "." },
+      ],
+      exclude: ['**/node_modules/**/*.*', '**/!(index).md'],
+      extensions: ['md'],
+      ...extendRoutes(),
+      onRoutesGenerated: routes => (generateSitemap({ routes, hostname: 'https://starovdenis.com' })),
     }),
   ],
   optimizeDeps: {
