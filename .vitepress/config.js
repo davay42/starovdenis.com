@@ -3,7 +3,9 @@ import head from "./config/head";
 //@ts-ignore
 import getTags from "vitepress-tags";
 
-const pages = getTags("./");
+const pages = getTags({
+  dir: "./"
+});
 
 export default {
   title: metaData.title,
