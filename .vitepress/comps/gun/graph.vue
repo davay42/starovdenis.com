@@ -21,8 +21,8 @@ article
 
 <script setup >
 import { onBeforeUnmount, reactive, ref } from "vue";
-import { gun } from "@use/db";
-import { itemColor } from "@use/colors";
+import { gun } from "#/use/db";
+import { itemColor } from "#/use/colors";
 
 const graph = ref({});
 
@@ -41,6 +41,7 @@ onBeforeUnmount(() => {
   border: 1px solid #aaa;
   cursor: pointer;
 }
+
 .prop {
   padding: 0.5em;
 }

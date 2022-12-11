@@ -33,23 +33,6 @@ root {
       format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-@font-face {
-  font-family: 'Mukta';
-  font-style: normal;
-  font-weight: normal;
-  src: local(''), url('/fonts/Mukta-Regular.woff2') format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/Mukta-Regular.woff')
-      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-  font-family: 'Mukta';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''), url('/fonts/Mukta-Bold.woff2') format('woff2'),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/Mukta-Bold.woff')
-      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
 .fade-enter-active,
 .fade-leave-active {

@@ -3,7 +3,7 @@ p GUN
 </template>
 
 <script setup>
-import { sea, gun } from '@use/db'
+import { sea, gun } from '#/use/db'
 
 gun.get('time').get('now').set(Date.now())
 
@@ -13,4 +13,5 @@ gun.get('time').get('now').map().on((t, d) => {
 </script>
 
 <style scoped>
+
 </style>
