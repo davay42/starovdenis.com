@@ -1,1 +1,0 @@
-import{_ as e,c as t,o}from"./app.c5d5edb8.js";const _=JSON.parse('{"title":"Йога","description":"","frontmatter":{"title":"Йога","tags":"philosophy","list":"yoga"},"headers":[],"relativePath":"philosophy/yoga/index.md"}'),a={name:"philosophy/yoga/index.md"};function s(n,r,i,p,c,d){return o(),t("div")}const h=e(a,[["render",s]]);export{_ as __pageData,h as default};
