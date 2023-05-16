@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as r}from"./app.e7230eea.js";const l=JSON.parse('{"title":"Публицистика","description":"","frontmatter":{"title":"Публицистика","tags":"art","list":"writing"},"headers":[],"relativePath":"art/writing/index.md"}'),a={name:"art/writing/index.md"};function n(i,s,o,c,d,p){return r(),e("div")}const m=t(a,[["render",n]]);export{l as __pageData,m as default};
