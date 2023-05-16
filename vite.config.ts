@@ -62,7 +62,9 @@ export default defineConfig({
       ],
       exclude: ['**/node_modules/**/*.*', '**/!(index).md'],
       extensions: ['md'],
-      ...extendRoutes(),
+      ...extendRoutes({
+        root: path.dirname(fileURLToPath(import.meta.url)),
+      }),
       onRoutesGenerated: routes => (generateSitemap({ routes, hostname: 'https://starovdenis.com' })),
     }),
   ],
@@ -73,8 +75,8 @@ export default defineConfig({
     ],
   },
   build: {
-    rollupOptions:{
-      output:{
+    rollupOptions: {
+      output: {
         manualChunks: {
 
         }

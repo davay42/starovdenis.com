@@ -4,4 +4,4 @@ title: tsoop
 
 ## Центр управления полетами
 
-[tsoop.ru](https://tsoop.ru)
+[tsoop.com](https://tsoop.com)
