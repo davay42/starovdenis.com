@@ -52,3 +52,5 @@ wiki/
 
 # Obsidian
 **/.obsidian/
+
+.vitepress/cache

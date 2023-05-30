@@ -14,7 +14,7 @@ const parents = useParents();
 
 <style  scoped>
 .link {
-  @apply transition-all duration-500 no-underline text-lg flex items-center p-4 bg-light-800/60 dark:(bg-dark-100/10) hover:(bg-light-100 dark:bg-dark-100);
+  @apply transition-all duration-500 no-underline text-lg flex items-center p-4 bg-light-800/60 dark-bg-dark-100/10 hover-bg-light-100 dark-bg-dark-100;
   flex: 0 1 auto;
 }
 </style>

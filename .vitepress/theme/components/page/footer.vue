@@ -13,6 +13,6 @@ const { site } = useData();
 <style scoped>
 footer {
   scroll-snap-align: end;
-  @apply transition-all duration-600 bg-dark-100 text-light-300/80 py-4 px-4 sm:px-8 md:px-16 flex flex-col items-center dark:(bg-dark-900);
+  @apply transition-all duration-600 bg-dark-100 text-light-300/80 py-4 px-4 sm: px-8 md:px-16 flex flex-col items-center dark-bg-dark-900;
 }
 </style>

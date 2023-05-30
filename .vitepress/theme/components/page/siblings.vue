@@ -17,6 +17,6 @@ const { next, prev } = useSiblings();
 
 <style  scoped>
 .link {
-  @apply transition-all duration-500 no-underline  flex-1 flex flex-col items-center p-4 bg-light-100/10 mx-auto hover:(bg-light-100 text-dark-600);
+  @apply transition-all duration-500 no-underline flex-1 flex flex-col items-center p-4 bg-light-100/10 mx-auto hover-bg-light-100 hover-text-dark-600;
 }
 </style>
