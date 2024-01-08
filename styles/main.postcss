@@ -1,0 +1,46 @@
+html {
+	@apply bg-warm-gray-300;
+}
+
+html * {
+	@apply transition duration-100;
+}
+
+main {
+	@apply flex flex-col min-h-100dvh max-w-80ch mx-auto;
+}
+
+header.main {
+	@apply p-4 flex items-center gap-8 bg-warm-gray-200;
+}
+
+nav {
+	@apply flex flex-wrap items-center w-full;
+}
+nav a[aria-current="true"] {
+	@apply bg-warm-gray-200 font-bold;
+}
+
+h1.title {
+	@apply text-2xl sm-text-4xl;
+}
+
+h2.description {
+	@apply text-md sm-text-lg opacity-60;
+}
+
+img.logo {
+	@apply w-20;
+}
+
+img.cover {
+	@apply max-h-120;
+}
+
+article {
+	@apply bg-warm-gray-100 flex flex-col;
+}
+
+footer {
+	@apply flex flex-wrap p-2 bg-dark-200 text-light-900;
+}

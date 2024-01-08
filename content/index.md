@@ -1,6 +1,5 @@
 ---
 title: Denis Starov
-
 ---
 
 Welcome!

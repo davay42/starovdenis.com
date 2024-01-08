@@ -1,0 +1,23 @@
+{
+	"title": "Denis Starov",
+	"desctription": "",
+	"title_template": "Designer, developer, philosopher",
+	"logo": "/media/davay.svg",
+	"icon": "/media/davay.svg",
+	"public_url": "https://starovdenis.com",
+	"stat_script": "https://stat.defucc.me/script.js",
+	"stat_data_id": "44ad14bf-57bf-4429-8bc7-a39bbf80e04e",
+	"stat_data_tag": "data-website-id",
+	"author": "Denis Starov",
+	"color": "#ff8800",
+	"keywords": [
+		"web-design",
+		"web-development",
+		"open-source",
+		"freelancer",
+		"vue developer",
+		"IT expert"
+	],
+	"site": "starovdenis.com",
+	"locale": "en-EN"
+}

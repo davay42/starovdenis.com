@@ -1,0 +1,33 @@
+{
+	"version": "1.0.0",
+	"name": "dir-press",
+	"type": "module",
+	"scripts": {
+		"start": "docker compose up && vitepress dev",
+		"db": "docker compose up",
+		"dev": "vitepress dev",
+		"build": "vitepress build",
+		"serve": "vitepress preview --port 3000",
+		"deploy": "sh deploy.sh"
+	},
+	"engines": {
+		"node": "^20.x"
+	},
+	"packageManager": "pnpm@8.14.0",
+	"dependencies": {
+		"@unocss/reset": "^0.58.3",
+		"@vueuse/core": "^10.7.1",
+		"vue": "^3.4.5"
+	},
+	"devDependencies": {
+		"@directus/sdk": "^14.0.0",
+		"@unocss/extractor-pug": "^0.58.3",
+		"@vue/language-plugin-pug": "^1.8.27",
+		"image-downloader": "^4.3.0",
+		"pug": "^3.0.2",
+		"unocss": "^0.58.3",
+		"unplugin-auto-import": "^0.17.3",
+		"unplugin-vue-components": "^0.26.0",
+		"vitepress": "^1.0.0-rc.35"
+	}
+}
