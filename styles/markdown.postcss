@@ -2,34 +2,49 @@
 	line-height: 1.6;
 	@apply leading-loose;
 
-	:is(p) {
-		@apply p-4;
+	p,
+	table,
+	ul,
+	h1,
+	h2,
+	h3,
+	h4 {
+		/* @apply max-w-320; */
 	}
 
-	:is(td) {
+	p {
+		@apply py-2 px-4;
+	}
+
+	td {
 		@apply p-2;
 	}
 
-	:is(table) {
+	table {
 		@apply ml-4 mr-6;
 	}
 
-	:is(tr):nth-child(2n) {
+	tr:nth-child(2n) {
 		@apply bg-dark-500 bg-opacity-10;
 	}
 
-	:is(li) {
+	li {
 		@apply p-1 list-circle;
 	}
 
-	:is(h1) {
+	h1 {
 		font-size: 3em;
 		padding-bottom: 0.3em;
 	}
 
-	:is(h2) {
+	h2 {
 		font-size: 1.9em;
 		@apply p-4 leading-tight;
+	}
+
+	h3 {
+		font-size: 1.5em;
+		@apply px-4 py-2 leading-tight;
 	}
 }
 

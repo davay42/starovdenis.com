@@ -3,8 +3,6 @@
 	"name": "dir-press",
 	"type": "module",
 	"scripts": {
-		"start": "docker compose up && vitepress dev",
-		"db": "docker compose up",
 		"dev": "vitepress dev",
 		"build": "vitepress build",
 		"serve": "vitepress preview --port 3000",

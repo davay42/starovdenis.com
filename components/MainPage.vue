@@ -17,17 +17,15 @@ const route = useRoute()
 main.grid.grid-cols-2.md-grid-cols-3.lg-grid-cols-4.p-4.xl-grid-cols-6.gap-4
 
 
-  .p-0.bg-yellow-500.shadow
+
+  a.p-0.bg-yellow-500.shadow(href="/")
     img.logo(:src="`${meta.logo}`")
-
-
 
   .p-4.flex.flex-col.bg-light-500.shadow
     .text-4xl
-      a(href="/") {{ meta.title }}
+      a(href="/") {{ f.title }}
     .flex-1
-    .description {{ meta.description }}
-
+    .description {{ f.description }}
 
 
   .py-4.px-2.flex.flex-col.bg-gray-200.shadow.gap-2
@@ -62,12 +60,10 @@ main.grid.grid-cols-2.md-grid-cols-3.lg-grid-cols-4.p-4.xl-grid-cols-6.gap-4
       .p-0 me@starovdenis.com
 
 
-  .p-4.flex.flex-col.gap-1.relative
-    a.absolute.top-2.right-2.text-2xl(
-      target="_blank"
-      href="https://en.wikipedia.org/wiki/Practical_philosophy")
-      .i-la-link
-    font-bold.text-lg.font-bold Practical philosophy
+  a.p-4.flex.flex-col.gap-1(
+    href="/philosophy/"
+    )
+    .font-bold.text-lg.font-bold Practical philosophy
     .p-0 I persue radical consistency of my values and practices of all scales. And I constantly refine my values by reflecting on all the experience I get along this life-long research. 
 
 
@@ -85,11 +81,11 @@ main.grid.grid-cols-2.md-grid-cols-3.lg-grid-cols-4.p-4.xl-grid-cols-6.gap-4
 
 
   a.p-4.bg-green-200.relative.gap-2.flex.flex-col.gap-2(
-    href="/vegan/"
+    href="/philosophy/vegan/"
     )
 
 
-    absolute.top-2.right-2.text-6xl 🌱
+    .absolute.top-2.right-2.text-6xl 🌱
     .text-sm.opacity-60 PRACTICE #1
     .text-4xl.font-bold VEGAN 
     .p-0.flex-1 Killing animals for food is superfluous. I eat only plants, mushrooms, mictobial and mineral products and it's quite a pleasant way of life for a human being.
@@ -107,8 +103,8 @@ main.grid.grid-cols-2.md-grid-cols-3.lg-grid-cols-4.p-4.xl-grid-cols-6.gap-4
 
 
   .p-4.col-span-2
-    web-sites and web-apps for the best ideas and projects I get into. Eventually some projects grow beyond just code and text and I'm happy to grow with them further.
-    I could be a designer, a frontend developer, or an engineer, but I combine all that and more into broad range self-guided web development. I'm building my dream interfaces, web sites and apps for more than 10 years. And yet barely started! I'm deep into the modern frontend development, and this page is home for all of the code I've been contributing to the global community since 2012. And I welcome you here! 🌊
+    .web-sites and web-apps for the best ideas and projects I get into. Eventually some projects grow beyond just code and text and I'm happy to grow with them further.
+    .p-0 I could be a designer, a frontend developer, or an engineer, but I combine all that and more into broad range self-guided web development. I'm building my dream interfaces, web sites and apps for more than 10 years. And yet barely started! I'm deep into the modern frontend development, and this page is home for all of the code I've been contributing to the global community since 2012. And I welcome you here! 🌊
 </template>
 
 <style lang="postcss" scoped>
