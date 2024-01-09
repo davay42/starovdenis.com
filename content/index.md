@@ -2,4 +2,4 @@
 title: Denis Starov
 ---
 
-Welcome!
+<MainPage />
