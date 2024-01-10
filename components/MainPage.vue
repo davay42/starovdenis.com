@@ -16,9 +16,7 @@ const route = useRoute()
 <template lang='pug'>
 main.grid.grid-cols-2.md-grid-cols-3.lg-grid-cols-4.p-4.xl-grid-cols-6.gap-4
 
-
-
-  a.p-0.bg-yellow-500.shadow(href="/")
+  a.p-0.bg-yellow-500.shadow.row-span-2(href="/")
     img.logo(:src="`${meta.logo}`")
 
   .p-4.flex.flex-col.bg-light-500.shadow
