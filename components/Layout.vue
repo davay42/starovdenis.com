@@ -20,11 +20,10 @@ template(v-else)
     .p-4.flex.flex-col.bg-light-500.shadow(
       :style="{background:f.color || ''}"
       )
-      .text-4xl
-        a(href="/") {{ f.title }}
+      .text-4xl {{ f.title }}
       .flex-1
       .description {{ f.description }}
-    main.col-span-2
+    main.col-span-2.lg-col-span-3
       content.markdown-body
 </template>
 
