@@ -58,11 +58,17 @@ main.grid.grid-cols-2.md-grid-cols-3.lg-grid-cols-4.p-4.xl-grid-cols-6.gap-4
       .p-0 me@starovdenis.com
 
 
-  content
 
-  a.p-8.bg-green-200.font-bold.text-lg.flex.items-center(href="/web-dev/") Web Development 
 
-  a.p-8.bg-purple-200.font-bold.text-lg.flex.items-center(href="/philosophy/") Philosophy 
+  a.p-8.bg-blue-200.font-bold.text-lg.flex.items-center(href="/web-dev/") Web Development 
+
+  a.p-8.bg-purple-200.font-bold.text-lg.flex.items-center(href="/music/") Music 
+
+  a.p-8.bg-green-200.font-bold.text-lg.flex.items-center(href="/philosophy/") Philosophy 
+
+
+
+  content.markdown-body.col-span-2
 </template>
 
 <style lang="postcss" scoped>
