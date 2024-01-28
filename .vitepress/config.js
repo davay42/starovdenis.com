@@ -1,114 +1,127 @@
-import { metaData } from "./constants";
-//@ts-ignore
-import getTags from "vitepress-tags";
+import Unocss from 'unocss/vite'
+import { defineConfig } from 'vitepress'
+import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 
-const pages = getTags({
-  dir: "./"
-});
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+const dirname = path.dirname(fileURLToPath(import.meta.url));
 
-export default {
-  title: metaData.title,
-  description: metaData.description,
-  lang: metaData.locale,
-  themeConfig: {
-    repo: "davay42/starovdenis.com",
-    logo: "/media/davay.svg",
-    docsRepo: "davay42/starovdenis.com",
-    pages,
-    nav: [
-      {
-        text: "Сотрудничество",
-        link: "/collab/",
-        //@ts-ignore
-        items: pages.collab,
+import meta from '../meta.json'
+
+export default defineConfig(async (ctx) => {
+
+  return {
+    srcDir: "content",
+    outDir: "dist",
+    logo: meta.logo,
+    title: meta.title,
+    titleTemplate: meta.title_template,
+    description: meta.description,
+    sitemap: {
+      hostname: meta.public_url,
+    },
+    markdown: {
+      headers: {
+        level: [0, 0],
       },
-      {
-        text: "Творчество",
-        link: "/art/",
-        //@ts-ignore
-        items: pages.art,
+    },
+    vite: {
+      resolve: {
+        alias: {
+          "#/": path.resolve(dirname, "../"),
+        },
       },
-      {
-        text: "Философия",
-        link: "/philosophy/",
-        //@ts-ignore
-        items: pages.philosophy,
-      },
-      {
-        text: "Контакты",
-        link: "/contact.html",
-        //@ts-ignore
-        items: pages.contact,
-      },
-    ],
-    sidebar: {
-      "/": [
-        {
-          text: "Сотрудничество",
-          link: "/collab/",
-          //@ts-ignore
-          children: pages.collab,
-        },
-        {
-          text: "Творчество",
-          link: "/art/",
-          //@ts-ignore
-          children: pages.art,
-        },
-        {
-          text: "Философия",
-          link: "/philosophy/",
-          //@ts-ignore
-          children: pages.philosophy,
-        },
-        {
-          text: "Контакты",
-          link: "/contact.html",
-          //@ts-ignore
-          children: pages.contact,
-        },
+      plugins: [
+        Unocss(),
+        AutoImport({
+          include: [
+            /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+            /\.vue$/, /\.vue\?vue/, // .vue
+            /\.md$/, // .md
+          ],
+          imports: [
+            // presets
+            'vue',
+            'vitepress'
+          ],
+          dirs: [
+            './composables'
+          ]
+        }),
+        Components({
+          dirs: ['../components'],
+          extensions: ['vue'],
+          directoryAsNamespace: true,
+          collapseSamePrefixes: true,
+          globalNamespaces: ['global'],
+          include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+          exclude: [/node_modules/, /\.git/],
+        }),
       ],
     },
-  },
-  head: [
-    ["script", { async: true, defer: true, "data-website-id": "44ad14bf-57bf-4429-8bc7-a39bbf80e04e", src: "https://stat.defucc.me/script.js" }],
+    head: [
 
-    ['meta', { name: 'author', content: metaData?.author }],
-    ['meta', { name: 'keywords', content: metaData?.tags }],
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: metaData.icon }],
-
-    ['meta', { name: 'HandheldFriendly', content: 'True' }],
-    ['meta', { name: 'MobileOptimized', content: '320' }],
-    ['meta', { name: 'theme-color', content: '#0ea5e9' }],
-    [
-      'meta',
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
+    async transformPageData(pageData) {
+      if (pageData.frontmatter?.dynamic) {
+        pageData.title = pageData.params?.title
+        pageData.description = pageData.params?.description
 
-    ['meta', { name: 'description', content: metaData.description }],
-
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:site', content: metaData?.site }],
-    ['meta', { name: 'twitter:title', value: metaData?.title }],
-    ['meta', { name: 'twitter:description', value: metaData.description }],
-    ['meta', { name: 'twitter:image', content: metaData?.image }],
-
-    ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:locale', content: metaData.locale }],
-    ['meta', { property: 'og:site', content: metaData.site }],
-    ['meta', { property: 'og:url', content: metaData.site }],
-    ['meta', { property: 'og:site_name', content: metaData.title }],
-    ['meta', { property: 'og:title', content: metaData.title }],
-    ['meta', { property: 'og:image', content: metaData.image }],
-    ['meta', { property: 'og:description', content: metaData.description }],
-
-  ],
-  markdown: {
-    config: (md) => {
-      md.use(require("markdown-it-container"), "card");
-      md.use(require("markdown-it-external-links"), {
-        internalDomains: ["localhost", "starovdenis.com"],
-      });
+        pageData.frontmatter = {
+          ...pageData.frontmatter,
+          ...pageData.params,
+        }
+      }
     },
-  },
-};
+    //@ts-ignore
+    transformHead({ pageData }) {
+      const url = pageData.relativePath.split('index.md')[0]
+
+      const head = [
+
+        ['link', { rel: 'icon', href: meta.logo }],
+
+        process.env.NODE_ENV === "production" && meta.stat_script && meta.stat_data_id ? ["script", { async: true, defer: true, [meta.stat_data_tag || "data-website-id"]: meta.stat_data_id, src: meta.stat_script }] : null,
+
+        meta.icon ? ["link", { rel: "icon", type: "image/svg+xml", href: meta.icon }] : null,
+
+        meta?.author ? ["meta", { name: "author", content: meta?.author }] : null,
+
+        meta?.keywords ? ["meta", { name: "keywords", content: meta?.keywords?.join(', ') }] : null,
+
+        meta.color ? ["meta", { name: "theme-color", content: meta.color }] : null,
+
+        ["meta", { property: "og:type", content: "website" }],
+
+        meta.site ? ["meta", { property: "og:site", content: meta.site }] : null,
+
+        meta.title ? ["meta", { property: "og:site_name", content: meta.title }] : null,
+
+        ['meta', { property: 'og:title', content: `${pageData.title} | ${meta.title}` }],
+        ['meta', { property: 'og:description', content: pageData.description }],
+
+        meta.public_url ? ['meta', { property: 'og:url', content: meta.public_url + url }] : null,
+        ['meta', { property: 'og:image', content: pageData.frontmatter?.cover || meta?.cover }],
+
+        meta.locale ? ["meta", { property: "og:locale", content: meta.locale }] : null,
+
+        meta.title ? ['meta', { name: 'twitter:title', content: `${pageData.title} | ${meta.title}` }] : null,
+
+        meta?.author ? ['meta', { name: 'twitter:site', content: `@${meta.author}` }] : null,
+
+        meta?.author ? ['meta', { name: 'twitter:creator', content: `@${meta.author}` }] : null,
+        ['meta', { name: 'twitter:image', content: pageData.frontmatter?.cover || meta?.cover }],
+
+        ['meta', { name: 'twitter:description', content: pageData.description }],
+        ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+
+        ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "white-translucent", },],
+        ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+        ["meta", { name: "HandheldFriendly", content: "True" }],
+        ["meta", { name: "MobileOptimized", content: "320" }],
+      ]
+      return head.filter(Boolean)
+    }
+  }
+})

@@ -1,0 +1,18 @@
+{
+  "include": [
+    "./**/*.js",
+    "./**/*.vue"
+  ],
+  "vueCompilerOptions": {
+    "plugins": [
+      "@vue/language-plugin-pug"
+    ]
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "esnext",
+    "moduleResolution": "nodenext",
+    "allowImportingTsExtensions": true,
+    "module": "ESNext"
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"title": "Denis Starov",
+	"description": "Artist, Web-Developer, Sociocultural Designer and Practical Philosopher",
+	"title_template": "Building open source web experiences for future",
+	"logo": "/media/davay.svg",
+	"icon": "/media/davay.svg",
+	"public_url": "https://starovdenis.com",
+	"stat_script": "https://stat.defucc.me/script.js",
+	"stat_data_id": "44ad14bf-57bf-4429-8bc7-a39bbf80e04e",
+	"stat_data_tag": "data-website-id",
+	"author": "Denis Starov",
+	"color": "#ff8800",
+	"keywords": [
+		"web-design",
+		"web-development",
+		"open-source",
+		"freelancer",
+		"vue developer",
+		"IT expert"
+	],
+	"site": "starovdenis.com",
+	"locale": "en-EN"
+}

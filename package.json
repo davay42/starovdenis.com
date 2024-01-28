@@ -1,45 +1,31 @@
 {
-	"version": "0.3.0",
-	"private": true,
-	"license": "MIT",
+	"version": "1.0.0",
+	"name": "dir-press",
+	"type": "module",
 	"scripts": {
-		"build": "vitepress build ",
-		"deploy": "sh deploy.sh",
-		"dev": "vitepress dev ",
-		"serve": "vitepress serve "
+		"dev": "vitepress dev",
+		"build": "vitepress build",
+		"serve": "vitepress preview --port 3000",
+		"deploy": "sh deploy.sh"
 	},
+	"engines": {
+		"node": "^20.x"
+	},
+	"packageManager": "pnpm@8.14.0",
 	"dependencies": {
-		"@unocss/reset": "0.52.4",
-		"@vueuse/core": "10.1.2",
-		"@vueuse/motion": "2.0.0",
-		"color-hash": "^2.0.2",
-		"colord": "^2.9.3",
-		"gun": "^0.2020.1239",
-		"gun-avatar": "^1.9.4",
-		"matter-js": "^0.19.0",
-		"paper": "^0.12.17",
-		"poly-decomp": "^0.3.0",
-		"vue": "^3.3.4"
+		"@unocss/reset": "^0.58.3",
+		"@vueuse/core": "^10.7.1",
+		"vue": "^3.4.5"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.71",
-		"@types/node": "^18.16.16",
-		"@unocss/extractor-pug": "^0.52.4",
-		"@vue/language-plugin-pug": "1.7.0",
-		"esbuild-register": "^3.4.2",
-		"markdown-it-classy": "^0.2.0",
-		"markdown-it-container": "^3.0.0",
-		"markdown-it-external-links": "^0.0.6",
-		"pug": "3.0.2",
-		"unocss": "^0.52.4",
-		"unplugin-auto-import": "^0.16.2",
-		"unplugin-icons": "^0.16.1",
-		"unplugin-vue-components": "^0.24.1",
-		"vite": "4.3.9",
-		"vite-plugin-pages": "^0.30.1",
-		"vite-plugin-pages-sitemap": "^1.5.0",
-		"vitepress": "1.0.0-beta.1",
-		"vitepress-pages": "^1.0.5",
-		"vitepress-tags": "0.6.5"
+		"@directus/sdk": "^14.0.0",
+		"@unocss/extractor-pug": "^0.58.3",
+		"@vue/language-plugin-pug": "^1.8.27",
+		"image-downloader": "^4.3.0",
+		"pug": "^3.0.2",
+		"unocss": "^0.58.3",
+		"unplugin-auto-import": "^0.17.3",
+		"unplugin-vue-components": "^0.26.0",
+		"vitepress": "^1.0.0-rc.35"
 	}
 }

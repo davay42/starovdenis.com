@@ -1,0 +1,77 @@
+.markdown-body {
+	line-height: 1.6;
+	@apply leading-loose;
+
+	p,
+	table,
+	ul,
+	h1,
+	h2,
+	h3,
+	h4 {
+		/* @apply max-w-320; */
+	}
+
+	a {
+		@apply underline underline-dashed;
+	}
+
+	p {
+		@apply py-2 px-4;
+	}
+
+	td {
+		@apply p-2;
+	}
+
+	table {
+		@apply ml-4 mr-6;
+	}
+
+	tr:nth-child(2n) {
+		@apply bg-dark-500 bg-opacity-10;
+	}
+
+	li {
+		@apply p-1 list-circle;
+	}
+
+	h1 {
+		font-size: 3em;
+		padding-bottom: 0.3em;
+	}
+
+	h2 {
+		font-size: 1.9em;
+		@apply p-4 leading-tight;
+	}
+
+	h3 {
+		font-size: 1.5em;
+		@apply px-4 py-2 leading-tight;
+	}
+}
+
+.markdown-body .markdown-body h3 {
+	font-size: 1.2em;
+	@apply py-2;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 2em;
+}
+
+.markdown-body blockquote {
+	margin: 0;
+	padding-left: 3em;
+	border-left: 0.5em #eee solid;
+}
+
+.markdown-body code {
+	padding: 0.2em 0.5em;
+	margin: 0;
+	font-family: monospace;
+	font-size: 90%;
+	border-radius: 3px;
+}
