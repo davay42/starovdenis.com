@@ -1,10 +1,10 @@
 ---
 title: Denis Starov CV
-description: My skillset and potential
+description: Digital designer, web developer and multimedia artist
 date: 2024-01-29
 ---
 
-Broad range designer and web developer based in Phuket, Thailand.
+
 
 [GitHub Profile](https://github.com/davay42) | [Personal Website](http://starovdenis.com) | [LinkedIn profile](https://www.linkedin.com/in/denis-starov/)
 
@@ -12,9 +12,11 @@ Broad range designer and web developer based in Phuket, Thailand.
 
 ## Profile
 
-I am a freelance digital designer and frontend developer with very wide skillset. I have more than 10 years of experience in web technologies. I build UIs with Vue and many other amazing open source libraries. Like Paper.js providing clever SVG animations and WebGL shaders for effects and fast renders. Or like VueUse reactive browser APIs and BLE device control and monitoring. Or the TailwindCSS and WebAudio + WebMIDI APIs. From installable PWAs to on-device audio analysis.
+I am a freelance digital and print designer and frontend developer with very wide skillset. I have more than 10 years of experience in web technologies. I build UIs with Vue and many other amazing open source libraries. I can build an interactive experience or a digital product from ground up by myself or or in collaborations with your remote team.
 
 I am passionate about working on impactful projects. I'm open for participation in creative industry and art projects, involving experiments with audio synthesis, vector graphics, web animations, interfaces and intermedia.
+
+The resulting design, site or app can be closed source and you will get all the IP rights generated in the process. But I do have a discounted rate for open-source projects.
 
 ---
 
@@ -22,20 +24,62 @@ I am passionate about working on impactful projects. I'm open for participation 
 
 ### Frontend Development
 
+- HTML5
+- CSS3
 - Vue 3
-- Vitepress
+- Vite build and plugins
+- Vitepress static site build
 - VueUse
 - UnoCSS (Tailwind)
-- Tone.js
+
+### Web browser APIs
+
+- SVG, Canvas 2D and GLSL shader graphics and animation
+- Web Audio API with Tone.js and Elementary.audio
+- Web MIDI API with WebMIDI.js
+- Web Bluetooth API in Chromium browsers
+- Fullscreen API and Intersection Observer API
+- File Reader API, Clipboard API, Web Share API
+- Local Storage API and IndexedDB for client-side data storage
+- Installable PWAs and desktop/mobile apps build with Tauri
 
 ### Backend Development
 
 - Node
+  - FileSystem API, Fetch API, ES6 data parsing
+  - package.json management
+  - NPM package release and maintainance
 - Nuxt
+  - SSR
+  - SSG
+  - Server routes
 - Directus
-  - PostgreSQL
-  - REST API
-  - Web-sockets
+  - PostgreSQL schema
+  - REST API design
+  - Flow Server Actions
+- Docker deployments with Coolify and Portainer
+
+### Auxiliary development
+
+- Git
+- GitHub actions CI/CD
+- GitHub pages static hosting
+- ESP32 prototype firmware build and upload
+
+### Design
+
+- Adobe Illustrator vector design
+- Packaging design
+- Logo and brand identity design
+- Pre-press layout preparation
+
+### Multimedia
+
+- Music production in Logic Pro and Ableton
+- Live music performance with portable synth setup
+- Field and studio sound recording and editing
+- Reportage and studio photography
+- Drone flying and filming
 
 ---
 
@@ -43,7 +87,7 @@ I am passionate about working on impactful projects. I'm open for participation 
 
 **Interactive experience designer** @ Playtronica | Freelance | 2022-2024
 
-- Easy terms and nice remote work experience
+- Remote team work experience
 - MIDI enabled Tone.js music synthesizer and custom SVG visualization for TouchMe Experience
 - A Tone.js synthesizer and visualizer of musical notes played on a MIDI controller or a computer keyboard
 - Interactive user experience with multiple scenes and usage statistics
@@ -90,9 +134,9 @@ I am passionate about working on impactful projects. I'm open for participation 
 
 ## NPM Packages Maintainer
 
-- @gun-vue - Toolset for easy p2p app development with Gun database and Vue 3 reactive components system
-- gun-avatar - Simple JS avatar generator for use with SEA Cryptographic keypairs
-- use-chromatone - Interactive visual music toolkit
+- [Gun-Vue](https://gun-vue.js.org) - Toolset for easy p2p app development with Gun database and Vue 3 reactive components system
+- [Gun-Avatar](https://gun-avatar.js.org) - Simple JS avatar generator for use with SEA Cryptographic keypairs
+- [use-chromatone](https://www.npmjs.com/package/use-chromatone) - Interactive visual music toolkit
 
 ---
 
@@ -106,28 +150,47 @@ Mendeleev University of Chemical Technology of Russia 2004–2008
 - Technical English Translation
 - Glass Ceramics Technology
 
-### English language - Upper intermediate - B2
+## Languages
 
-### Thai language - Elementary
+- **Russian** - Native speaker
+- **English** - Upper intermediate - B2
+- **Thai** - Elementary
 
-## Open for new projects
+## Let's build something together
 
 I create purposeful web-sites and internal tools for any business and personal use. It may be anything from the list:
 
 - Portfolio or Catalog static site built with Vitepress,
 - Blog with Comments and Reactions, served by Nuxt,
 - Internal CRM with analytics based on Directus,
-- Online Shop with payments API from Stripe or other providers,
+- Online Shop with payments API from Stripe or other provider,
 - Resource Management system with e-mail or other notifications system,
-- Internal Knowledge Base with certain fields available as public APIs and a client web-app,
-- a discussion and rating platform,
+- Internal Knowledge Base with certain fields available as public APIs and in your employee/customer web-app,
+- a discussion and rating platform for any goods and services...
 
-or any custom business-logic and interfaces for it. Let's talk!
+...or any custom database, logic and interface need for your business. Let's talk!
 
-----
+## I'm available for freelance projects and part/fulltime hire
+
+---
+
+## My project based work plan
+
+1. You reach me out and describe the project/task/position, that you have.
+2. I ask questions that help me figure out estimated time and efforts needed to accomplish it.
+3. My basic rate is $30-50/hour, depending to the skillset involved. A discounted rate available in case the final code will be open-sourced.
+4. I propose you my work schedule and payment terms.
+5. We negotiate and approve the project conditions.
+6. I get to work with timer and weekly progress reports
+7. You accept the results and pay for the time spent in a next week period.
+8. We continue this cycle until all of your business requirements are met.
+9. We finalize the project, you pay me the last payment and I give you all of the source code, layout files and finished product.
+10. Support and maintainance service for the product can be negotiated.
+
+---
 
 ## Contact me
 
-Email: [me@starovdenis.com](mailto:me@starovdenis.com)
-GitHub: [davay42](https://github.com/davay42)
-LinkedIn: [Denis Starov](https://www.linkedin.com/in/denis-starov/)
+- **Email:** [me@starovdenis.com](mailto:me@starovdenis.com)
+- **Telegram:** [@starov](https://t.me/starov)
+- **LinkedIn:** [Denis Starov](https://www.linkedin.com/in/denis-starov/)

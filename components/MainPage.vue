@@ -57,8 +57,6 @@ main.grid.grid-cols-2.md-grid-cols-3.lg-grid-cols-4.p-4.xl-grid-cols-6.gap-4
       .i-la-at.min-w-5
       .p-0 me@starovdenis.com
 
-
-
   a.row-span-2.p-8.bg-yellow-200.font-bold.text-lg.flex.items-center(href="/cv/") CV
 
   a.p-8.bg-blue-200.font-bold.text-lg.flex.items-center(href="/web-dev/") Web Development 
