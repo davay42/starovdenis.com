@@ -2,6 +2,7 @@ import Unocss from 'unocss/vite'
 import { defineConfig } from 'vitepress'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import ViteYaml from '@modyfi/vite-plugin-yaml';
 
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -33,6 +34,7 @@ export default defineConfig(async (ctx) => {
         },
       },
       plugins: [
+        ViteYaml(),
         Unocss(),
         AutoImport({
           include: [

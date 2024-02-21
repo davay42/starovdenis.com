@@ -1,6 +1,6 @@
 ---
 title: Denis Starov
-description: Artist, Web-Developer, Sociocultural Designer and Practical Philosopher
+description: Multimedia Artist, Full-stack Web-Developer, Sociocultural Designer and Practical Philosopher
 layout: home
 ---
 

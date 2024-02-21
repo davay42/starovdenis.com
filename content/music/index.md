@@ -14,8 +14,10 @@ Music is the language of souls. The deep and warm connections we build when thes
 
 ## Live multimedia production
 
-I've published 4+ albums, 10+ music videos for my mostly live performances. I prefer preparing everything so that final music piece is mostly there at the moment of recording. Not layering it as a painter ([as Brian Eno noted about recorded music](https://www.ft.com/content/1fe8939e-ae19-4794-ac89-b34aa4821375)), but having the exact frequency pattern we want right there at the moment. We can tune much later, but having this full main take recorded in one go is crucial to bring this moment closer to the listener. Anyway, I do both.
+I've published 4+ albums, 10+ music videos for my mostly live performances. I prefer preparing everything so that final music piece is mostly there at the moment of recording. Not layering it as a painter ([as Brian Eno noted about recorded music](https://www.ft.com/content/1fe8939e-ae19-4794-ac89-b34aa4821375)), but having the exact frequency pattern we want right there at the moment. We can tune much later, but having this full main take recorded in one go is crucial to bring this moment closer to the listener. Anyway, I use both approaches, just prefer producing live.
 
 ## My music at [tsoop.com](https://tsoop.com)
 
 My music is all there on my music band web-site, where I have all the albums, singles, videos and interactive art experiments published.
+
+[![tsoop site](/img/tsoop.png)](https://tsoop.com)

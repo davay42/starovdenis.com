@@ -2,15 +2,49 @@
 title: Denis Starov CV
 description: Digital designer, web developer and multimedia artist
 date: 2024-01-29
+experience:
+  - position: Interactive experience developer
+    company: Playtronica
+    title: Freelance
+    start: 2022
+    end: 2024
+    description: I developed a number of web-apps complementary to the hardware synths collection
+    skills:
+      - Remote team work experience
+      - MIDI enabled Tone.js music synthesizer and custom SVG visualization for TouchMe Experience
+      - A Tone.js synthesizer and visualizer of musical notes played on a MIDI controller or a computer keyboard
+      - Interactive user experience with multiple scenes and usage statistics
+      - SVG animations, full-screen mode and other modern web tech
+      - Lightweight UI and reactive database for the Web Synth Collection
+      
+  - position: Education course author and narrator
+    company: SkillBox
+    title: Visual Music Theory video-course
+    start: 2022
+    end: 2023
+    skills:
+      - Online course presenter experience with a complete video production team
+      - Deep research verified and mapped with a professional methodologist
+      - Work with remote students and educational materials production
+
+  - position: Product designer
+    company: SkillPad
+    title: Self-employed
+    start: 2018
+    end: 2021
+    skills:
+      - Adobe Illustrator vector design for print and packaging
+      - Print shop communication and comprehensive print material research
+      - Customer relations and product quality control
 ---
 
-
-
-[GitHub Profile](https://github.com/davay42) | [Personal Website](http://starovdenis.com) | [LinkedIn profile](https://www.linkedin.com/in/denis-starov/)
-
----
+<script setup>
+import MyExperience from '../../components/MyExperience.vue'
+</script>
 
 ## Profile
+
+[GitHub Profile](https://github.com/davay42) | [Personal Website](http://starovdenis.com) | [LinkedIn profile](https://www.linkedin.com/in/denis-starov/)
 
 I am a freelance digital and print designer and frontend developer with very wide skillset. I have more than 10 years of experience in web technologies. I build UIs with Vue and many other amazing open source libraries. I can build an interactive experience or a digital product from ground up by myself or or in collaborations with your remote team.
 
@@ -18,7 +52,7 @@ I am passionate about working on impactful projects. I'm open for participation 
 
 The resulting design, site or app can be closed source and you will get all the IP rights generated in the process. But I do have a discounted rate for open-source projects.
 
----
+----------
 
 ## Skillset
 
@@ -85,28 +119,7 @@ The resulting design, site or app can be closed source and you will get all the 
 
 ## Work experience
 
-**Interactive experience designer** @ Playtronica | Freelance | 2022-2024
-
-- Remote team work experience
-- MIDI enabled Tone.js music synthesizer and custom SVG visualization for TouchMe Experience
-- A Tone.js synthesizer and visualizer of musical notes played on a MIDI controller or a computer keyboard
-- Interactive user experience with multiple scenes and usage statistics
-- SVG animations, full-screen mode and other modern web tech
-- Lightweight UI and reactive database for the Web Synth Collection
-
-**Music Theory Teacher** @ SkillBox | Visual Music Course | 2022-2023
-
-- Online course presenter experience with a complete video production team
-- Deep research verified and mapped with a professional methodologist
-- Work with remote students and educational materials production
-
-**Product graphic designer** @ SkillPad | Freelance | 2018-2021
-
-- Adobe Illustrator vector design for print and packaging
-- Print shop communication and comprehensive print material research
-- Customer relations and product quality control
-
----
+<MyExperience :list="$frontmatter?.experience" />
 
 ## Personal projects
 
