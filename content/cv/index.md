@@ -5,6 +5,7 @@ date: 2024-01-29
 experience:
   - position: Interactive experience developer
     company: Playtronica
+    company_url: https://playtronica.com
     title: Freelance
     start: 2022
     end: 2024
@@ -19,6 +20,7 @@ experience:
       
   - position: Education course author and narrator
     company: SkillBox
+    company_url: https://skillbox.ru
     title: Visual Music Theory video-course
     start: 2022
     end: 2023
@@ -36,122 +38,116 @@ experience:
       - Adobe Illustrator vector design for print and packaging
       - Print shop communication and comprehensive print material research
       - Customer relations and product quality control
+
+skillset:
+  Frontend Development:
+    - HTML5
+    - CSS3
+    - JavaScript (ES6+)
+    - Vue 3
+    - Vite 5
+    - Vitepress static site build
+    - VueUse composables
+    - UnoCSS (Tailwind CSS)
+    - Markdown
+    - PUG
+    - GUN
+  
+  Web browser APIs:
+    - SVG, Canvas 2D and GLSL shader graphics and animation
+    - Web Audio API (Tone.js and Elementary.audio)
+    - Web MIDI API (WebMIDI.js)
+    - Fullscreen API and Intersection Observer API
+    - File Reader API, Clipboard API, Web Share API
+    - Local Storage API and IndexedDB for client-side data storage
+    - Web Bluetooth API (Chromium browsers)
+    - Installable PWAs and desktop/mobile apps build with Tauri
+ 
+  Backend Development:
+    - Node
+    - FileSystem API, Fetch API, ES6 data parsing
+    - Nuxt SSR, SSG, Server API routes
+    - Directus PostgreSQL schema, REST API design and Flow Server Actions
+    - Self-hosted Docker deployments with Coolify and Portainer
+  
+  Auxiliary development:
+    - Git
+    - NPM package releases and versioning
+    - GitHub actions CI/CD
+    - GitHub pages static hosting
+    - ESP32 prototype firmware build and upload
+    - Basic cryptographic literacy (DH, RSA, content-addressing) 
+
+  Design:
+    - Adobe Illustrator vector design
+    - Package design
+    - Logo and brand identity design
+    - Pre-press layout preparation
+
+  Multimedia:
+    - Music production in Logic Pro and Ableton
+    - Live music performance with portable synth setup
+    - Field and studio sound recording and editing
+    - Reportage and studio photography
+    - Dron piloting and filming
+
+projects:
+
+  - position: Researcher and Developer
+    company: chromatone.center
+    company_url: https://chromatone.center
+    title: Visual Music Theory 
+    start: 2014
+    end: Present
+    skills:
+      - Visual Music Theory research from the very basics to profound composition knowledge
+      - Knowledge packed in Theory articles and learning experience packed in Practice web-apps for everyone
+      - Real life tested and refined Vue + Vitepress web-app build process
+      - Working print shop and custom LMS in development
+
+  - position: Musician, composer and live music performer
+    company: tsoop.com
+    company_url: https://tsoop.com
+    title: Independent artist
+    start: 2017
+    end: Present
+    skills:
+      - Live multimedia generation - both music and visuals in sync
+      - Full portable electronic music performance and recording setup
+      - 5 albums and 2 singles published on all major platforms
+
+  - position: Journalist, designer, video producer, craftsman and administrator
+    company: ooley.ru
+    company_url: https://tsoop.com
+    title: Independent artist
+    start: 2012
+    end: 2022
+    skills:
+      - Makerspace catalog and up-to-date map
+      - Interviews and video reviews recording, editing and publishing
+      - Educational events planning and conducting
+      - Full brand design and media package
+
 ---
 
 <script setup>
 import MyExperience from '../../components/MyExperience.vue'
+import SkillSet from '../../components/SkillSet.vue'
 </script>
 
 ## Profile
 
+I am a digital designer and frontend developer with very wide skillset. I have more than 12 years of experience in web technologies. I build UI with Vue and many other amazing open source libraries. I can build an interactive experience or a digital product from ground up by myself or or in collaboration with a remote team.
+
+I am passionate about working on impactful projects. I'm open for participation in creative industry and art projects, involving experiments with audio synthesis, vector graphics, web animations, interfaces and intermedia. Open source is very welcomed but not required.
+
 [GitHub Profile](https://github.com/davay42) | [Personal Website](http://starovdenis.com) | [LinkedIn profile](https://www.linkedin.com/in/denis-starov/)
-
-I am a freelance digital and print designer and frontend developer with very wide skillset. I have more than 10 years of experience in web technologies. I build UIs with Vue and many other amazing open source libraries. I can build an interactive experience or a digital product from ground up by myself or or in collaborations with your remote team.
-
-I am passionate about working on impactful projects. I'm open for participation in creative industry and art projects, involving experiments with audio synthesis, vector graphics, web animations, interfaces and intermedia.
-
-The resulting design, site or app can be closed source and you will get all the IP rights generated in the process. But I do have a discounted rate for open-source projects.
 
 ----------
 
 ## Skillset
 
-### Frontend Development
-
-- HTML5
-- CSS3
-- Vue 3
-- Vite build and plugins
-- Vitepress static site build
-- VueUse
-- UnoCSS (Tailwind)
-
-### Web browser APIs
-
-- SVG, Canvas 2D and GLSL shader graphics and animation
-- Web Audio API with Tone.js and Elementary.audio
-- Web MIDI API with WebMIDI.js
-- Web Bluetooth API in Chromium browsers
-- Fullscreen API and Intersection Observer API
-- File Reader API, Clipboard API, Web Share API
-- Local Storage API and IndexedDB for client-side data storage
-- Installable PWAs and desktop/mobile apps build with Tauri
-
-### Backend Development
-
-- Node
-  - FileSystem API, Fetch API, ES6 data parsing
-  - package.json management
-  - NPM package release and maintainance
-- Nuxt
-  - SSR
-  - SSG
-  - Server routes
-- Directus
-  - PostgreSQL schema
-  - REST API design
-  - Flow Server Actions
-- Docker deployments with Coolify and Portainer
-
-### Auxiliary development
-
-- Git
-- GitHub actions CI/CD
-- GitHub pages static hosting
-- ESP32 prototype firmware build and upload
-
-### Design
-
-- Adobe Illustrator vector design
-- Packaging design
-- Logo and brand identity design
-- Pre-press layout preparation
-
-### Multimedia
-
-- Music production in Logic Pro and Ableton
-- Live music performance with portable synth setup
-- Field and studio sound recording and editing
-- Reportage and studio photography
-- Drone flying and filming
-
----
-
-## Work experience
-
-<MyExperience :list="$frontmatter?.experience" />
-
-## Personal projects
-
-**Research and development** @ chromatone.center | 2014 - Present
-
-- Visual Music Theory research from the very basics to profound composition knowledge
-- Knowledge packed in Theory articles and learning experience packed in Practice web-apps for everyone
-- Real life tested and refined Vue + Vitepress web-app build process
-- Working print shop and custom LMS in development
-  
-**Musician, composer and live music performer** @ tsoop.com | 2017 - Present
-
-- Live multimedia generation - I create both music and visuals right at the moment
-- Full yet portable electronic music performance and recording setup
-- 5 albums, 2 singles published on all major platforms
-
-**Research, design, video production, crafts and copywriter** @ OOLEY | 2012-2022
-
-- Makerspace catalog and up-to-date map
-- Interviews and video reviews recording, editing and publishing
-- Educational events planning and conducting
-- Full brand design and media package
-
----
-
-## NPM Packages Maintainer
-
-- [Gun-Vue](https://gun-vue.js.org) - Toolset for easy p2p app development with Gun database and Vue 3 reactive components system
-- [Gun-Avatar](https://gun-avatar.js.org) - Simple JS avatar generator for use with SEA Cryptographic keypairs
-- [use-chromatone](https://www.npmjs.com/package/use-chromatone) - Interactive visual music toolkit
-
----
+<SkillSet :skillset="$frontmatter.skillset" />
 
 ## Education
 
@@ -169,6 +165,26 @@ Mendeleev University of Chemical Technology of Russia 2004–2008
 - **English** - Upper intermediate - B2
 - **Thai** - Elementary
 
+---
+
+## Work experience
+
+<MyExperience :list="$frontmatter?.experience" />
+
+## Projects
+
+<MyExperience :list="$frontmatter?.projects" />
+
+---
+
+## NPM Packages Maintainer
+
+- [Gun-Vue](https://gun-vue.js.org) - Toolset for easy p2p app development with Gun database and Vue 3 reactive components system
+- [Gun-Avatar](https://gun-avatar.js.org) - Simple JS avatar generator for use with SEA Cryptographic keypairs
+- [use-chromatone](https://www.npmjs.com/package/use-chromatone) - Interactive visual music toolkit
+
+---
+
 ## Let's build something together
 
 I create purposeful web-sites and internal tools for any business and personal use. It may be anything from the list:
@@ -180,25 +196,13 @@ I create purposeful web-sites and internal tools for any business and personal u
 - Resource Management system with e-mail or other notifications system,
 - Internal Knowledge Base with certain fields available as public APIs and in your employee/customer web-app,
 - a discussion and rating platform for any goods and services...
+- and any of [100 Tools, Apps, and Platforms I Can Build With My Stack](/web-dev/all)
 
-...or any custom database, logic and interface need for your business. Let's talk!
+I can provide custom databases, logic and interfaces need for your business. Let's talk!
 
 ## I'm available for freelance projects and part/fulltime hire
 
----
-
-## My project based work plan
-
-1. You reach me out and describe the project/task/position, that you have.
-2. I ask questions that help me figure out estimated time and efforts needed to accomplish it.
-3. My basic rate is $30-50/hour, depending to the skillset involved. A discounted rate available in case the final code will be open-sourced.
-4. I propose you my work schedule and payment terms.
-5. We negotiate and approve the project conditions.
-6. I get to work with timer and weekly progress reports
-7. You accept the results and pay for the time spent in a next week period.
-8. We continue this cycle until all of your business requirements are met.
-9. We finalize the project, you pay me the last payment and I give you all of the source code, layout files and finished product.
-10. Support and maintainance service for the product can be negotiated.
+My [project based workflow page](/projects/workflow) is here to clarify the process of our mutually beneficial cooperation.
 
 ---
 
