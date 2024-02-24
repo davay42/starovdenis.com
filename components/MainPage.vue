@@ -1,6 +1,8 @@
 <script setup>
 import { useData, useRoute } from 'vitepress'
 
+import PhysicsCanvas from '../components/PhysicsCanvas.vue'
+
 import meta from "../meta.json"
 
 
@@ -31,7 +33,9 @@ main.site-grid.dark-text-light-300.min-h-100vh.flex.flex-col
 
     a.p-8.bg-purple-200.dark-bg-purple-600.font-bold.text-lg.flex.items-center(href="/music/") Music 
 
-    a.p-8.bg-green-200.dark-bg-green-600.font-bold.text-lg.flex.items-center(href="/philosophy/") Philosophy 
+    a.p-8.bg-green-200.dark-bg-green-600.font-bold.text-lg.flex.items-center(href="/philosophy/") Philosophy
+
+    PhysicsCanvas
 
     content.markdown-body.md-col-span-2.dark-bg-dark-400
 

@@ -4,7 +4,6 @@ description: Multimedia Artist, Full-stack Web-Developer, Sociocultural Designer
 layout: home
 ---
 
-
 ## Welcome
 
 I'm open to collaboration! Feel free to reach me out about any project you think we could build together!
