@@ -28,6 +28,9 @@ const { elementX: descX, elementY: descY, isOutside: descOut } = useMouseInEleme
 const cv = ref(null)
 const { elementX: cvX, elementY: cvY, isOutside: cvOut } = useMouseInElement(cv)
 
+const web = ref(null)
+const { elementX: webX, elementY: webY } = useMouseInElement(web)
+
 
 </script>
 
@@ -64,7 +67,12 @@ main.site-grid.dark-text-light-300.min-h-100vh.flex.flex-col
 
       .z-4 CV
 
-    a.p-8.bg-blue-200.dark-bg-blue-600.font-bold.text-lg.flex.items-center(href="/web-dev/") Web Development 
+    a.p-8.bg-blue-200.dark-bg-blue-600.font-bold.text-lg.flex.items-center.relative.overflow-clip(href="/web-dev/" ref="web") 
+
+      svg.w-120.absolute.-top-60.-left-60.filter.z-0.transition-none.op-50(:style="{transform:`translate(${webX}px, ${webY}px)`}" viewBox="-50 -50 100 100" fill="none" )
+        rect.fill-purple-400(:width="20" :x="-10" :y="-10" :height="20")
+
+      .z-4 Web Development 
 
     a.p-8.bg-purple-200.dark-bg-purple-600.font-bold.text-lg.flex.items-center(href="/music/") Music 
 
