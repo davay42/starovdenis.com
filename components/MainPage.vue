@@ -55,7 +55,7 @@ main.site-grid.dark-text-light-300.min-h-100vh.flex.flex-col
 
     .p-4.flex.items-end.bg-light-500.dark-bg-dark-400.shadow.text-2xl.relative.overflow-clip(ref="descBox")
 
-      svg.w-120.absolute.-top-60.-left-60.filter.z-0.transition-none.op-50(:style="{transform:`translate(${descX}px, ${descY}px)`}" viewBox="-50 -50 100 100" fill="none" )
+      svg.w-80.absolute.-top-40.-left-40.filter.z-0.transition-none.op-50(:style="{transform:`translate(${descX}px, ${descY}px)`}" viewBox="-50 -50 100 100" fill="none" )
         circle.fill-red-300(:r="50")
 
       .z-4 {{ f?.description }}
@@ -67,16 +67,16 @@ main.site-grid.dark-text-light-300.min-h-100vh.flex.flex-col
 
       .z-4 CV
 
-    a.p-8.bg-blue-200.dark-bg-blue-600.font-bold.text-lg.flex.items-center.relative.overflow-clip(href="/web-dev/" ref="web") 
+    a.p-8.bg-blue-200.dark-bg-blue-600.font-bold.text-2xl.flex.items-center.relative.overflow-clip(href="/web-dev/" ref="web") 
 
-      svg.w-120.absolute.-top-60.-left-60.filter.z-0.transition-none.op-50(:style="{transform:`translate(${webX}px, ${webY}px)`}" viewBox="-50 -50 100 100" fill="none" )
+      svg.w-120.absolute.-top-60.-left-60.filter.z-0.transition-none.op-50(:style="{transform:` translate(${webX}px, ${webY}px) rotate(45deg)`}" viewBox="-50 -50 100 100" fill="none" )
         rect.fill-purple-400(:width="20" :x="-10" :y="-10" :height="20")
 
       .z-4 Web Development 
 
-    a.p-8.bg-purple-200.dark-bg-purple-600.font-bold.text-lg.flex.items-center(href="/music/") Music 
+    a.p-8.bg-purple-200.dark-bg-purple-600.font-bold.text-2xl.flex.items-center(href="/music/") Music 
 
-    a.p-8.bg-green-200.dark-bg-green-600.font-bold.text-lg.flex.items-center(href="/philosophy/") Philosophy
+    a.p-8.bg-green-200.dark-bg-green-600.font-bold.text-2xl.flex.items-center(href="/philosophy/") Philosophy
 
     //- PhysicsCanvas
 
