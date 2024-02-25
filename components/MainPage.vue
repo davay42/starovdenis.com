@@ -13,21 +13,56 @@ const { frontmatter: f, page, params } = useData()
 
 const route = useRoute()
 
+import { useMouseInElement } from '@vueuse/core'
+
+const logo = ref(null)
+const { elementX: logoX, elementY: logoY, isOutside: logoOut } = useMouseInElement(logo)
+
+
+const titleBox = ref(null)
+const { elementX: titleX, elementY: titleY, isOutside: titleOut } = useMouseInElement(titleBox)
+
+const descBox = ref(null)
+const { elementX: descX, elementY: descY, isOutside: descOut } = useMouseInElement(descBox)
+
+const cv = ref(null)
+const { elementX: cvX, elementY: cvY, isOutside: cvOut } = useMouseInElement(cv)
+
+
 </script>
 
 <template lang='pug'>
-main.site-grid.dark-text-light-300.min-h-100vh.flex.flex-col
+main.site-grid.dark-text-light-300.min-h-100vh.flex.flex-col 
   .site-grid.grid.dark-text-light-300.flex-1
-    a.p-0.bg-yellow-500.shadow.row-span-2.min-h-80(href="/")
+    a.p-0.bg-yellow-500.shadow.row-span-2.min-h-80.relative.overflow-clip(href="/" ref="logo")
+
+      .p-40.bg-yellow-300.absolute.-top-20.-left-20.rounded-full.filter.blur-2xl.z-0.op-40.transition-none(:style="{transform:`translate(${logoX}px, ${logoY}px)`}")
+
       img.logo(:src="`${meta?.logo}`")
 
-    .text-8xl.p-4.flex.items-end.bg-light-500.dark-bg-dark-400.shadow
+    .text-8xl.p-4.flex.items-end.bg-light-500.dark-bg-dark-400.shadow.relative.overflow-clip(ref="titleBox")
 
-      a(href="/") {{ f?.title }}
 
-    .p-4.flex.items-end.bg-light-500.dark-bg-dark-400.shadow.text-2xl {{ f?.description }}
 
-    a.row-span-2.p-8.bg-yellow-200.dark-bg-yellow-600.font-bold.text-10vw.flex.items-center(href="/cv/") CV
+      svg.w-120.absolute.-top-60.-left-60.filter.z-0.transition-none.op-50(:style="{transform:`translate(${titleX}px, ${titleY}px)`}" viewBox="-50 -50 100 100" fill="none" )
+        circle.stroke-dark-300(:r="c*3" stroke-width=".25" v-for="c in 15")
+
+      a.z-20(href="/") {{ f?.title }}
+
+
+    .p-4.flex.items-end.bg-light-500.dark-bg-dark-400.shadow.text-2xl.relative.overflow-clip(ref="descBox")
+
+      svg.w-120.absolute.-top-60.-left-60.filter.z-0.transition-none.op-50(:style="{transform:`translate(${descX}px, ${descY}px)`}" viewBox="-50 -50 100 100" fill="none" )
+        circle.fill-red-300(:r="50")
+
+      .z-4 {{ f?.description }}
+
+    a.row-span-2.p-8.bg-yellow-200.dark-bg-yellow-600.font-bold.text-10vw.flex.items-center.relative.overflow-clip(href="/cv/" ref="cv")
+
+      svg.w-120.absolute.-top-60.-left-60.filter.z-0.transition-none.op-50(:style="{transform:`translate(${cvX}px, ${cvY}px)`}" viewBox="-50 -50 100 100" fill="none" )
+        rect.fill-green-300(:width="40" :x="-20" :y="-20" :height="40")
+
+      .z-4 CV
 
     a.p-8.bg-blue-200.dark-bg-blue-600.font-bold.text-lg.flex.items-center(href="/web-dev/") Web Development 
 
@@ -35,7 +70,7 @@ main.site-grid.dark-text-light-300.min-h-100vh.flex.flex-col
 
     a.p-8.bg-green-200.dark-bg-green-600.font-bold.text-lg.flex.items-center(href="/philosophy/") Philosophy
 
-    PhysicsCanvas
+    //- PhysicsCanvas
 
     content.markdown-body.md-col-span-2.dark-bg-dark-400
 
