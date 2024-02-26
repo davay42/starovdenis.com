@@ -4,17 +4,19 @@ description: The process of project collaboration
 date: 2024-02-23
 ---
 
-## How we may iterate on ideas and use some of my time to make them real
+## Here's a simplified scheme of productive collaboration with me as a freelance desugner, developer and educator
 
-1. You reach me out and describe the offer of your project/task/position.
-2. I will ask questions that help estimate time and efforts needed to accomplish it.
+1. You reach me out and describe your project/task/position offer.
+2. I ask questions and get some basic understanding to estimate time and efforts needed to accomplish it.
 3. I propose you my estimated work schedule and payment terms.
-4. My base rate is $30-90/hour, varies by urgency and skillset involved. Discounted for open-source code.
-6. We negotiate and approve the project conditions.
-7. I send you a link to securely buy some initial hours of our estimations.
-8. I get to work with timer and weekly progress reports.
-9. You accept the results and pay for the time spent in a next week period.
-10. We continue this process until the requirements are met.
-11. We finalize the project, you pay me the last payment, that includes all the bonuses and premium.
-12. I provide you a repository with all of the source code, layout files and finished product.
-13. Support and services for the product can be negotiated as new projects.
+4. My payment rate varies by urgency and skillset involved in the project. Discounted for open-source code.
+5. We negotiate and approve the collaboration conditions.
+6. I send you a link to securely pay for initial hours that we have estimated and approved.
+7. I get to work with timer and weekly progress reports.
+8. You accept the results weekly and pay for time estimated for next week or two.
+9. We continue this process until the requirements are met.
+10. We finalize the project, you pay me the last payment, that includes premium and all bonuses.
+11. I provide you a repository with all of the source code, layout files and finished product.
+12. Developer support and self-hosted services for the product can be negotiated.
+
+## [Let's talk!](mailto:me@starovdenis.com)

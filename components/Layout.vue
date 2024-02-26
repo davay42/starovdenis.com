@@ -31,8 +31,9 @@ template(v-else)
 </template>
 
 <style lang="postcss">
-html {
-  @apply bg-light-300;
+html,
+body {
+  @apply bg-light-300 dark-bg-dark-400;
 }
 
 html * {

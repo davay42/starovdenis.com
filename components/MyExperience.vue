@@ -20,5 +20,5 @@ const props = defineProps({
     .text-md {{ exp?.description }}
     //- .font-bold.text-lg Skillset
     .flex.flex-col.gap-1
-      .border-b-1.border-dark-400.border-op-20.dark-border-light-300.border-op-50(v-for="skill in exp?.skills" :key="skill") {{ skill }}
+      .border-b-1.border-dark-400.border-op-20.dark-border-light-300.dark-border-op-50(v-for="skill in exp?.skills" :key="skill") {{ skill }}
 </template>

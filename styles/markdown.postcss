@@ -12,6 +12,10 @@
 		/* @apply max-w-320; */
 	}
 
+	hr {
+		@apply mt-22 mb-12;
+	}
+
 	a {
 		@apply underline underline-dashed;
 	}
@@ -50,28 +54,32 @@
 		font-size: 1.5em;
 		@apply px-4 py-2 leading-tight;
 	}
-}
 
-.markdown-body .markdown-body h3 {
-	font-size: 1.2em;
-	@apply py-2;
-}
+	h4 {
+		font-size: 1.2em;
+		@apply px-4 py-2 leading-tight;
+	}
 
-.markdown-body ul,
-.markdown-body ol {
-	padding-left: 2em;
-}
+	ul,
+	ol {
+		@apply leading-loose;
+		padding-left: 2em;
+	}
 
-.markdown-body blockquote {
-	margin: 0;
-	padding-left: 3em;
-	border-left: 0.5em #eee solid;
-}
+	ol li {
+		@apply list-decimal;
+	}
 
-.markdown-body code {
-	padding: 0.2em 0.5em;
-	margin: 0;
-	font-family: monospace;
-	font-size: 90%;
-	border-radius: 3px;
+	blockquote {
+		margin: 0;
+		padding-left: 3em;
+		border-left: 0.5em #eee solid;
+	}
+	code {
+		padding: 0.2em 0.5em;
+		margin: 0;
+		font-family: monospace;
+		font-size: 90%;
+		border-radius: 3px;
+	}
 }

@@ -6,4 +6,4 @@ layout: home
 
 ## Welcome
 
-I'm open to collaboration! Feel free to reach me out about any project you think we could build together!
+I'm open for collaboration! Feel free to reach me out about any project you think we could build together!

@@ -139,7 +139,7 @@ import SkillSet from '../../components/SkillSet.vue'
 
 I am a digital designer and frontend developer with very wide skillset. I have more than 12 years of experience in web technologies. I build UI with Vue and many other amazing open source libraries. I can build an interactive experience or a digital product from ground up by myself or or in collaboration with a remote team.
 
-I am passionate about working on impactful projects. I'm open for participation in creative industry and art projects, involving experiments with audio synthesis, vector graphics, web animations, interfaces and intermedia. Open source is very welcomed but not required.
+I am passionate about working on impactful projects. I'm open for participation in creative industry and art projects, involving experiments with audio synthesis, vector graphics, web animations, interfaces and intermedia. Macing code open source is very welcomed but optional. Let's build something together!
 
 [GitHub Profile](https://github.com/davay42) | [Personal Website](http://starovdenis.com) | [LinkedIn profile](https://www.linkedin.com/in/denis-starov/)
 
@@ -153,11 +153,14 @@ I am passionate about working on impactful projects. I'm open for participation 
 
 ### Bachelor of Engineering - BE
 
-Mendeleev University of Chemical Technology of Russia 2004–2008
+#### **2004–2008**
 
-- Chemical Engineering
+#### High School of Composite Materials
+
+#### Mendeleev University of Chemical Technology of Russia
+
+- Chemical Engineering (Glass Ceramics)
 - Technical English Translation
-- Glass Ceramics Technology
 
 ## Languages
 
@@ -179,9 +182,14 @@ Mendeleev University of Chemical Technology of Russia 2004–2008
 
 ## NPM Packages Maintainer
 
-- [Gun-Vue](https://gun-vue.js.org) - Toolset for easy p2p app development with Gun database and Vue 3 reactive components system
-- [Gun-Avatar](https://gun-avatar.js.org) - Simple JS avatar generator for use with SEA Cryptographic keypairs
 - [use-chromatone](https://www.npmjs.com/package/use-chromatone) - Interactive visual music toolkit
+  ![badge](https://img.shields.io/npm/v/use-chromatone)
+
+- [Gun-Avatar](https://gun-avatar.js.org) - Simple JS avatar generator for use with SEA Cryptographic keypairs
+  ![badge](https://img.shields.io/npm/v/gun-avatar)
+
+- [Gun-Vue](https://gun-vue.js.org) - Toolset for easy p2p app development with Gun database and Vue 3 reactive components system
+  ![badge](https://img.shields.io/npm/v/@gun-vue/app)
 
 ---
 
