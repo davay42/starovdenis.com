@@ -38,6 +38,22 @@ experience:
       - Adobe Illustrator vector design for print and packaging
       - Print shop communication and comprehensive print material research
       - Customer relations and product quality control
+  - position: Chief System Administator
+    company: OGCC Ltd.
+    title: IT support
+    start: 2010
+    end: 2023
+    skills: 
+      - Server setup and maintenance
+      - Software and IT services management
+      - Purchase and servicing of computers, components and peripherials
+      - Consulting on IT strategy and selection of tools
+      - User access and passwords management
+      - Domain names and web hosting management
+      - Web-site development 
+      - Email, VPN and RDP services configuration
+      - Technical education for staff
+      - Backups and network security
 
 skillset:
   Frontend Development:
