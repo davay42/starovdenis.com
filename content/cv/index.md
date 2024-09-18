@@ -105,7 +105,7 @@ skillset:
     - Live music performance with portable synth setup
     - Field and studio sound recording and editing
     - Reportage and studio photography
-    - Dron piloting and filming
+    - Cinema drone flight and filming
 
 projects:
 
