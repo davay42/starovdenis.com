@@ -44,6 +44,9 @@ const { elementX: contX, elementY: contY } = useMouseInElement(cont)
 const contacts = ref(null)
 const { elementX: contactsX, elementY: contactsY } = useMouseInElement(contacts)
 
+const projects = ref(null)
+const { elementX: projectsX, elementY: projectsY } = useMouseInElement(projects)
+
 </script>
 
 <template lang='pug'>
@@ -75,7 +78,7 @@ main.w-full.site-grid.dark-text-light-300.min-h-100vh.flex.flex-col(
 
       .z-4 {{ f?.description }}
 
-    a.p-8.row-span-2.bg-yellow-200.dark-bg-yellow-600.font-bold.text-10vw.flex.items-center.relative.overflow-clip(href="/cv/" ref="cv")
+    a.p-8.row-span-2.bg-yellow-200.dark-bg-yellow-500.font-bold.text-10vw.flex.items-center.relative.overflow-clip(href="/cv/" ref="cv")
 
       svg.w-120.absolute.-top-60.-left-60.filter.z-0.transition-none(:style="{ transform: `translate(${cvX}px, ${cvY}px)` }" viewBox="-50 -50 100 100" fill="none" )
         rect.fill-green-300(:width="40" :x="-20" :y="-20" :height="40")
@@ -101,6 +104,12 @@ main.w-full.site-grid.dark-text-light-300.min-h-100vh.flex.flex-col(
 
       .z-4 Philosophy
 
+    a.p-8.bg-orange-200.dark-bg-orange-600.font-bold.text-2xl.flex.items-center.relative.overflow-clip(href="/projects/" ref="projects")
+
+      .i-la-dharmachakra.text-200px.text-cyan-200.dark-text-cyan-500.absolute.transition-none.-left-30.-top-30(:style="{ transform: `translate(${projectsX}px, ${projectsY}px)` }")
+
+      .z-4 Projects
+
     .p-8.markdown-body.md-col-span-2.dark-bg-dark-400.relative.overflow-clip.bg-light-200.dark-bg-dark-300(ref="cont")
 
       svg.w-100.absolute.-top-50.-left-50.filter.blur-xl.z-0.transition-none.op-70(:style="{ transform: `translate(${contX}px, ${contY}px)` }" viewBox="-50 -50 100 100" fill="none" )
@@ -114,11 +123,11 @@ main.w-full.site-grid.dark-text-light-300.min-h-100vh.flex.flex-col(
 
     //- PhysicsCanvas
 
-  .p-8.bg-dark-200.flex.items-center.text-light-300(
-    :style="{ background: `radial-gradient(circle at ${bodyX}px ${bodyY}px, hsla(270deg,0%,50%,1), hsla(270deg,0%,20%,1)` }"
-  )
-    a.text-lg.flex-1(href="/") Denis Starov
-    .text-sm 2026
+  //- .p-8.bg-dark-200.flex.items-center.text-light-300(
+  //-   :style="{ background: `radial-gradient(circle at ${bodyX}px ${bodyY}px, hsla(270deg,0%,50%,1), hsla(270deg,0%,20%,1)` }"
+  //-   )
+  //-   a.text-lg.flex-1(href="/") Denis Starov
+  //-   .text-sm 2026
 
   
 </template>

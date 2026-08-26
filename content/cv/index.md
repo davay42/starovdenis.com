@@ -42,16 +42,7 @@ experience:
       - Deep research verified and mapped with a professional methodologist
       - Worked with remote students and provided educational materials for reproduction
 
-  - position: Product Designer and Bootstrap Founder
-    company: SkillPad
-    title: Self-employed
-    start: 2018
-    end: 2021
-    skills:
-      - Adobe Illustrator vector design for print and packaging
-      - Print shop communication and comprehensive print material research
-      - Customer relations and product quality control
-      - Self-contained production line in a portable plywood box produced hundreds of notepads
+
   - position: Chief System Administator
     company: OGCC Ltd.
     title: IT support

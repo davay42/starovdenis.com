@@ -14,7 +14,6 @@
   "compilerOptions": {
     "allowJs": true,
     "target": "esnext",
-    "moduleResolution": "nodenext",
     "allowImportingTsExtensions": true
   }
 }
