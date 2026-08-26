@@ -15,11 +15,15 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v7
 
+      - name: Enable Corepack
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
           node-version: 24
-          cache: "pnpm"
 
       - name: Install dependencies
         run: pnpm install
