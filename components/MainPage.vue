@@ -4,10 +4,6 @@ import { useData, useRoute } from 'vitepress'
 
 import meta from "../meta.json"
 
-
-import { data as pages } from '../data/pages.data.js'
-
-
 const { frontmatter: f, page, params } = useData()
 
 const route = useRoute()
