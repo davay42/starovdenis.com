@@ -4,6 +4,9 @@
     "./**/*.vue"
   ],
   "vueCompilerOptions": {
+    "vitePressExtensions": [
+      ".md"
+    ],
     "plugins": [
       "@vue/language-plugin-pug"
     ]
@@ -12,7 +15,6 @@
     "allowJs": true,
     "target": "esnext",
     "moduleResolution": "nodenext",
-    "allowImportingTsExtensions": true,
-    "module": "ESNext"
+    "allowImportingTsExtensions": true
   }
 }

@@ -18,7 +18,7 @@ template(v-else)
       img.logo(:src="`${meta.logo}`")
 
     .p-4.flex.flex-col.bg-light-500.shadow.dark-bg-dark-600(
-      :style="{background:f.color || ''}"
+      :style="{ background: f.color || '' }"
       )
       .text-4xl {{ f.title }}
       .flex-1
@@ -27,7 +27,7 @@ template(v-else)
       content.markdown-body
       footer.mt-12.pt-42.px-8.pb-8.bg-dark-600.bg-op-20.flex.items-center
         a.flex-auto.text-lg(href="/") Denis Starov
-        .p 2024
+        .p 2026
 </template>
 
 <style lang="postcss">

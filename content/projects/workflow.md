@@ -4,7 +4,7 @@ description: The process of project collaboration
 date: 2024-02-23
 ---
 
-## Here's a simplified scheme of productive collaboration with me as a freelance desugner, developer and educator
+## Here's a simplified scheme of productive collaboration with me as a freelance designer, developer and educator
 
 1. You reach me out and describe your project/task/position offer.
 2. I ask questions and get some basic understanding to estimate time and efforts needed to accomplish it.

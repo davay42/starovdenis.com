@@ -3,7 +3,20 @@ title: Denis Starov CV
 description: Digital designer, web developer and multimedia artist
 date: 2024-01-29
 experience:
-  - position: Interactive experience developer
+  - position: Technical cofounder
+    company: Intelligraphs
+    company_url: https://intelligraphs.com
+    title: Pre-funding Research and Development
+    start: 2025
+    end: 2026
+    description: Portable knowledge graph notebook web-app and CLI
+    skills:
+      - Delivering results in highly complex knowledge graph space
+      - Developed MD-LD as human-friendly knowledge graph language
+      - Distilled decades of industry growth into compact comprehensible package
+      - Progressive and extensible web-app development
+
+  - position: Interactive Experience Developer
     company: Playtronica
     company_url: https://playtronica.com
     title: Freelance
@@ -18,7 +31,7 @@ experience:
       - SVG animations, full-screen mode and other modern web tech
       - Lightweight UI and reactive database for the Web Synth Collection
       
-  - position: Education course author and narrator
+  - position: Educational Course Author
     company: SkillBox
     company_url: https://skillbox.ru
     title: Visual Music Theory video-course
@@ -27,9 +40,9 @@ experience:
     skills:
       - Online course presenter experience with a complete video production team
       - Deep research verified and mapped with a professional methodologist
-      - Work with remote students and educational materials production
+      - Worked with remote students and provided educational materials for reproduction
 
-  - position: Product designer
+  - position: Product Designer and Bootstrap Founder
     company: SkillPad
     title: Self-employed
     start: 2018
@@ -38,6 +51,7 @@ experience:
       - Adobe Illustrator vector design for print and packaging
       - Print shop communication and comprehensive print material research
       - Customer relations and product quality control
+      - Self-contained production line in a portable plywood box produced hundreds of notepads
   - position: Chief System Administator
     company: OGCC Ltd.
     title: IT support
@@ -106,44 +120,6 @@ skillset:
     - Field and studio sound recording and editing
     - Reportage and studio photography
     - Cinema drone flight and filming
-
-projects:
-
-  - position: Researcher and Developer
-    company: chromatone.center
-    company_url: https://chromatone.center
-    title: Visual Music Theory 
-    start: 2014
-    end: Present
-    skills:
-      - Visual Music Theory research from the very basics to profound composition knowledge
-      - Knowledge packed in Theory articles and learning experience packed in Practice web-apps for everyone
-      - Real life tested and refined Vue + Vitepress web-app build process
-      - Working print shop and custom LMS in development
-
-  - position: Musician, composer and live music performer
-    company: tsoop.com
-    company_url: https://tsoop.com
-    title: Independent artist
-    start: 2017
-    end: Present
-    skills:
-      - Live multimedia generation - both music and visuals in sync
-      - Full portable electronic music performance and recording setup
-      - 5 albums and 2 singles published on all major platforms
-
-  - position: Journalist, designer, video producer, craftsman and administrator
-    company: ooley.ru
-    company_url: https://tsoop.com
-    title: Independent artist
-    start: 2012
-    end: 2022
-    skills:
-      - Makerspace catalog and up-to-date map
-      - Interviews and video reviews recording, editing and publishing
-      - Educational events planning and conducting
-      - Full brand design and media package
-
 ---
 
 <script setup>
@@ -155,7 +131,7 @@ import SkillSet from '../../components/SkillSet.vue'
 
 I am a digital designer and frontend developer with very wide skillset. I have more than 12 years of experience in web technologies. I build UI with Vue and many other amazing open source libraries. I can build an interactive experience or a digital product from ground up by myself or or in collaboration with a remote team.
 
-I am passionate about working on impactful projects. I'm open for participation in creative industry and art projects, involving experiments with audio synthesis, vector graphics, web animations, interfaces and intermedia. Macing code open source is very welcomed but optional. Let's build something together!
+I am passionate about working on impactful projects. I'm open for participation in creative industry and art projects, involving experiments with audio synthesis, vector graphics, web animations, interfaces and intermedia. Making the resulting code open source is welcomed but completely optional. Let's build something together!
 
 [GitHub Profile](https://github.com/davay42) | [Personal Website](http://starovdenis.com) | [LinkedIn profile](https://www.linkedin.com/in/denis-starov/)
 
@@ -190,31 +166,12 @@ I am passionate about working on impactful projects. I'm open for participation 
 
 <MyExperience :list="$frontmatter?.experience" />
 
-## Projects
-
-<MyExperience :list="$frontmatter?.projects" />
-
----
-
-## NPM Packages Maintainer
-
-- [use-chromatone](https://www.npmjs.com/package/use-chromatone) - Interactive visual music toolkit
-  ![badge](https://img.shields.io/npm/v/use-chromatone)
-
-- [Gun-Avatar](https://gun-avatar.js.org) - Simple JS avatar generator for use with SEA Cryptographic keypairs
-  ![badge](https://img.shields.io/npm/v/gun-avatar)
-
-- [Gun-Vue](https://gun-vue.js.org) - Toolset for easy p2p app development with Gun database and Vue 3 reactive components system
-  ![badge](https://img.shields.io/npm/v/@gun-vue/app)
-
----
-
 ## Let's build something together
 
 I create purposeful web-sites and internal tools for any business and personal use. It may be anything from the list:
 
-- Portfolio or Catalog static site built with Vitepress,
-- Blog with Comments and Reactions, served by Nuxt,
+- Portfolio or Catalog static site builds,
+- Company/Product Blog with Comments and Reactions,
 - Internal CRM with analytics based on Directus,
 - Online Shop with payments API from Stripe or other provider,
 - Resource Management system with e-mail or other notifications system,
@@ -225,10 +182,6 @@ I create purposeful web-sites and internal tools for any business and personal u
 I can provide custom databases, logic and interfaces need for your business. Let's talk!
 
 ## I'm available for freelance projects and part/fulltime hire
-
-My [project based workflow page](/projects/workflow) is here to clarify the process of our mutually beneficial cooperation.
-
----
 
 ## Contact me
 

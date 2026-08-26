@@ -4,42 +4,42 @@ description: Basic conclusions about plant based nutrition
 color: rgb(187, 247, 208)
 ---
 
-I've started my vegetarian experiments at 2006 at transitioned to complete vegan lifestyle at 2008. It was gradual process. At first very intellectual and quite offensive, but then more intricate and personal transformation. Plants can give us enough to grow and be successful human beings. We now have all the elements for that. Let animals live.
+I've started my vegetarian experiments at 2006 at transitioned to complete vegan lifestyle at 2008. It was gradual process. At first very intellectual and quite offensive, but then more intricate and personal transformation. Plants, mushrooms and bacteria can give us enough to live, grow and be successful human beings. We now have all the elements for that. Let animals live.
 
 ## Vegan diet basics
 
 ### Carbohydrates
 
-Sugars are fuel to be burnt by motions and thoughts. Adjust according to your current burn rate.
+Sugars and starches are the fuel to be burnt by motions and thoughts. Adjust according to your current burn rate.
 
 ### Fats
 
-Fats are for greasing.
+Fats are for greasing and long-term burn. 
 
 ### Protein
 
-Eat enough plant protein daily - 1g/kg of body weight
+For organism to grow and repair, eat enough protein daily - 1g/kg of body weight. 
 
 ## My daily vegan breakfast
 
 Ingredients:
 
-- 1 apple
+- 1 apple/peach/guava/pear
 - 1 measure spoon on soy/pea protein
 - 2 pinches of sesame
 - ~ 10 peeled pumpkin seeds or almonds
 - 100 ml of coconut milk
 - 100 ml of mango juice
-- 2 handfuls of not sweet corn flakes
+- 2 handfuls of corn flakes
 - a pinch of cinnamon
 
-Cut the apple, put along with all dry ingredients into a bowl. Add coconut milk and mango juice and stir to mix. Then add corn flakes, mix again and sprinkle some cinnamon on top. Breakfast ready! Fast, nutricious and delicious every time! High protein and good fat content make such breakfast very long lasting - I can forget about food for 4-6 hours.
+Cut the fruit, put along with the protein into a bowl. Shake the bowl so fruits get covered in protein powder. Add coconut milk and mango juice and stir the mix. Then add corn flakes, mix again and sprinkle some cinnamon on top. Breakfast ready! Fast, nutricious and delicious every time! High protein and good fat content make such breakfast very long lasting - I can forget about food for 4-6 hours.
 
 ## My daily dinner
 
-So if I eat my breakfast around 9-11 AM in the morning, I start thinking about food again around 4-5 PM. I like cooking myself, have enough skill and creativity in that.
+So if I eat my breakfast around 9-11 AM in the morning, I remember about food again around 4-5 PM. I like cooking myself and have enough skill and creativity in it. Yet I have the hard limit of 25 minutes maximum for the whole cooking session to not be too hungry by the end of it to enjoy the food and the fullness for the rest of the day.
 
-Basic idea is simple.Take any kind of protein - textured soy, tofu skin, vegan sausages or anything like that. Take any carbohydrates - pasta, rice, buckwheat or beans. Take any vegetables - brokkoli, green beans, cauliflower. Cook separately, then mix and fry with some vegetable oil and spices. Experiment every time and find your favourite combinations. Yum!
+Basic idea is simple. Take any kind of protein - textured soy, seitan, tofu skin, vegan sausages or anything like that. Take any carbohydrates - pasta, rice, buckwheat or beans. Take any vegetables - tomatoes, brokkoli, green beans, cauliflower. Cook separately, then mix and fry with some vegetable oil and spices. Experiment every time and find your favourite combinations. Yum!
 
 ## Additives
 

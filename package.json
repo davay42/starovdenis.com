@@ -10,26 +10,26 @@
 		"deploy": "sh deploy.sh"
 	},
 	"engines": {
-		"node": "^20.x"
+		"node": "^24.x"
 	},
-	"packageManager": "pnpm@9.10.0",
+	"packageManager": "pnpm@11.24.0",
 	"dependencies": {
-		"@unocss/reset": "^0.62.4",
-		"@vueuse/core": "^11.1.0",
+		"@unocss/reset": "^66.8.1",
+		"@vueuse/core": "^14.4.0",
 		"matter-js": "^0.20.0",
-		"vue": "^3.5.6"
+		"vue": "^3.5.41"
 	},
 	"devDependencies": {
-		"@directus/sdk": "^17.0.1",
-		"@modyfi/vite-plugin-yaml": "^1.1.0",
-		"@unocss/extractor-pug": "^0.62.4",
-		"@vue/language-plugin-pug": "^2.1.6",
+		"@directus/sdk": "^25.0.0",
+		"@modyfi/vite-plugin-yaml": "^1.1.1",
+		"@unocss/extractor-pug": "^66.8.1",
+		"@vue/language-plugin-pug": "^3.3.11",
 		"image-downloader": "^4.3.0",
-		"js-yaml": "^4.1.0",
-		"pug": "^3.0.3",
-		"unocss": "^0.62.4",
-		"unplugin-auto-import": "^0.18.3",
-		"unplugin-vue-components": "^0.27.4",
+		"js-yaml": "^5.4.0",
+		"pug": "^3.0.4",
+		"unocss": "^66.8.1",
+		"unplugin-auto-import": "^21.1.0",
+		"unplugin-vue-components": "^32.1.0",
 		"vitepress": "1.2.0"
 	}
 }

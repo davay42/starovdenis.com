@@ -10,19 +10,19 @@
 
 
 
-  .p-4.flex.flex-col.gap-2.bg-yellow-100
+  .p-4.flex.flex-col.gap-2.bg-yellow-100.dark-bg-yellow-700
     .text-sm.opacity-60 VALUE #1
     .text-4xl Universal unity. 
     .text-2xl Every living being is a sacred vessel of the same One Consciousness.
 
 
 
-  .p-6.bg-light-500
+  .p-6.bg-light-500.dark-bg-dark-400
     .text-2xl.font-italic "Looking deep into others' eyes, I find myself. Going deep within myself, I find common good."
 
 
 
-  a.p-4.bg-green-200.relative.gap-2.flex.flex-col.gap-2(
+  a.p-4.bg-green-200.dark-bg-green-700.relative.gap-2.flex.flex-col.gap-2(
     href="/philosophy/vegan/")
 
     .absolute.top-2.right-2.text-6xl 🌱
